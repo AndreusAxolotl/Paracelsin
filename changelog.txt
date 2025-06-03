@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2025-06-03
+  It's the little things you always forget about:
+
+  Additions:
+    - All new items now have inventory sounds.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2025-06-03
   I forgor to do some of these:

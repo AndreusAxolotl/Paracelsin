@@ -95,6 +95,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "a",
     icon = "__Paracelsin-Graphics__/graphics/icons/sphalerite-1.png",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     pictures =
         {
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/sphalerite-1.png",   scale = 0.5},
@@ -112,6 +115,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "b",
     icon = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-1.png",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     pictures =
         {
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-1.png",   scale = 0.5},
@@ -129,6 +135,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "c",
     icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     pictures =
         {
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",   scale = 0.5},
@@ -144,6 +153,9 @@ data:extend{
     type = "item",
     name = "paracelsin-zinc",
     subgroup = "paracelsin-paracelsin-processes",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     order = "d",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-ore.png",
     icon_size = 64,
@@ -157,6 +169,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "e",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-plate.png",
+    inventory_move_sound = item_sounds.metal_small_inventory_move,
+    pick_sound = item_sounds.metal_small_inventory_pickup,
+    drop_sound = item_sounds.metal_small_inventory_move,
     icon_size = 64,
     stack_size = 50,
     default_import_location = "paracelsin",
@@ -168,6 +183,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "f",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-rivets-1.png",
+    inventory_move_sound = item_sounds.metal_small_inventory_move,
+    pick_sound = item_sounds.metal_small_inventory_pickup,
+    drop_sound = item_sounds.metal_small_inventory_move,
     pictures =
         {
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/zinc-rivets-1.png",   scale = 0.5},
@@ -185,6 +203,9 @@ data:extend{
     subgroup = "paracelsin-paracelsin-processes",
     order = "g",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-solder.png",
+    inventory_move_sound = item_sounds.metal_small_inventory_move,
+    pick_sound = item_sounds.metal_small_inventory_pickup,
+    drop_sound = item_sounds.metal_small_inventory_move,
     icon_size = 64,
     stack_size = 200,
     default_import_location = "paracelsin",
