@@ -20,6 +20,13 @@ data:extend{
     category = "chemistry",
     auto_recycle = true,
     show_amount_in_title = false,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000},
+        secondary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000},
+        tertiary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000},
+        quaternary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000}
+    }
 },
 {
     type = "recipe",
@@ -42,6 +49,13 @@ data:extend{
     category = "chemistry",
     auto_recycle = true,
     show_amount_in_title = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, 
+      secondary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000}, 
+      tertiary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000}, 
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, 
+    }
 },
 {
     type = "recipe",
@@ -55,7 +69,8 @@ data:extend{
     ingredients = {
         {type = "fluid", name = "water",   amount = 250},
         {type = "fluid", name = "paracelsin-nitric-acid",       amount = 100},
-        {type = "item", name = "solid-fuel", amount = 10},
+        {type = "item", name = "solid-fuel", amount = 5},
+        {type = "item", name = "sulfur", amount = 5},
     },
     results = {
         {type = "item", name = "rocket-fuel", amount = 1}
@@ -64,6 +79,13 @@ data:extend{
     category = "chemistry",
     auto_recycle = true,
     show_amount_in_title = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.996, g = 0.742, b = 0.408, a = 1.000},
+      secondary = {r = 0.446, g = 0.392, b = 0.168, a = 1.000}, 
+      tertiary = {r = 0.347, g = 0.388, b = 0.387, a = 1.000}, 
+      quaternary = {r = 0.656, g = 0.562, b = 0.264, a = 1.000}, 
+    }
 },
 {
     type = "recipe",
@@ -85,6 +107,13 @@ data:extend{
     category = "chemistry",
     auto_recycle = true,
     show_amount_in_title = false,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        secondary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        tertiary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        quaternary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+    }
 },
 {
     type = "recipe",
@@ -110,6 +139,13 @@ data:extend{
     auto_recycle = true,
     show_amount_in_title = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
+    crafting_machine_tint =
+    {
+        primary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        secondary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        tertiary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        quaternary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+    }
 },
 {
     type = "recipe",
@@ -135,6 +171,13 @@ data:extend{
     auto_recycle = true,
     show_amount_in_title = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
+    crafting_machine_tint =
+    {
+        primary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        secondary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        tertiary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+        quaternary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
+    }
 },
 {
     type = "recipe",
@@ -182,6 +225,13 @@ data:extend{
     auto_recycle = true,
     show_amount_in_title = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
+    crafting_machine_tint =
+    {
+        primary = {r = 0.8, g = 0.89, b = 0.84, a = 1.000},
+        secondary = {r = 0.8, g = 0.89, b = 0.84, a = 1.000},
+        tertiary = {r = 0.8, g = 0.89, b = 0.84, a = 1.000},
+        quaternary = {r = 0.8, g = 0.89, b = 0.84, a = 1.000},
+    }
 },
 {
     type = "recipe",
@@ -207,6 +257,13 @@ data:extend{
     auto_recycle = true,
     show_amount_in_title = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
+    crafting_machine_tint =
+    {
+        primary = {r = 0.64, g = 0.67, b = 0.56, a = 1.000},
+        secondary = {r = 0.64, g = 0.67, b = 0.56, a = 1.000},
+        tertiary = {r = 0.64, g = 0.67, b = 0.56, a = 1.000},
+        quaternary = {r = 0.64, g = 0.67, b = 0.56, a = 1.000},
+    }
 },
 {
     type = "recipe",
@@ -217,7 +274,7 @@ data:extend{
     energy_required = 3.2,
     ingredients = {
         {type = "fluid", name = "paracelsin-zinc-solution",   amount = 20},
-        {type = "item", name = "carbon",       amount = 8},
+        {type = "item", name = "carbon",       amount = 4},
     },
     results = {
         {type = "item", name = "paracelsin-zinc", amount = 2},

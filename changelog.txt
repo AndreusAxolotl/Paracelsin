@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-06-03
+  I forgor to do some of these:
+
+  Additions:
+    - Added recipe tints for all new chem plant recipes (except Vaterite processing, the white fits).
+    - Now actually added the crowdin translation access like advertised (i forgor).
+
+  Changes:
+    - Changed the 10 solid fuel in the Nitric Acid Rocket Fuel recipe to 5 solid fuel and 5 sulfur, so you can deal with any extra sulfur from zinc processing.
+    - Reduced the amount of carbon needed to craft zinc to 4.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2025-06-02
   I LOVE DEVELOPING 3 MODS AT ONCE I LOVE DEVELOPING 3 MODS AT ONCE I LOVE-:
