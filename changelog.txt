@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2025-06-04
+  I'm going insane:
+  Changes:
+    - Gave nitric acid's recipe a different internal name so it doesn't conflict with Cerys.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 2025-06-04
   Iiiiiiii screwed up big time:

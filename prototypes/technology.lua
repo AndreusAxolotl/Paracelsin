@@ -14,7 +14,7 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "nitric-acid",
+        recipe = "nitrogen-nitric-acid",
       },
       {
         type = "unlock-recipe",

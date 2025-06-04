@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -12,8 +12,7 @@
     "Paracelsin-Graphics",
     "PlanetsLib",
     "elevated-pipes",
-    "? Age-of-Production",
-    "? Cerys-Moon-of-Fulgora"
+    "? Age-of-Production"
 ],
 "space_travel_required": true
 }

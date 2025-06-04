@@ -5,7 +5,7 @@ data:extend{
   },
 {
     type = "recipe",
-    name = "nitric-acid",
+    name = "nitrogen-nitric-acid",
     enabled = false,
     energy_required = 1,
     ingredients = {
