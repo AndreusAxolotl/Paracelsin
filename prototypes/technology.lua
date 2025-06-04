@@ -264,6 +264,11 @@ data:extend {
         recipe = "refined-concrete",
         change = 0.1
       },
+      {
+        type = "change-recipe-productivity",
+        recipe = "concrete-from-molten-iron",
+        change = 0.1
+      },
     },
     prerequisites = { "paracelsin-galvanization-science-pack" },
     unit =

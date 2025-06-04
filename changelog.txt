@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025-06-04
+  Nitric acid more like MYTHIC acid:
+
+  Additions:
+    - Compatibility with Cerys, nitric acid will be made into the same fluid as in Cerys when both are installed.
+
+  Changes:
+    - Concrete from molten iron is now part of concrete productivity. I forgot abt it lol.
+    - Gave a fuel value... to sulfur. Yeah. Sulfur. You can burn it now. Not much value but at least you can use the overflow from zinc processing for something else. What? Sulfur dioxide? Acid rains? It's pronounced biter repellant. Or maybe they like it? Don't ask me I'm no biterologist.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2025-06-03
   It's the little things you always forget about:

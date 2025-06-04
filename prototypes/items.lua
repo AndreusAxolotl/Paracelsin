@@ -259,3 +259,6 @@ data:extend{
     random_tint_color = item_tints.iron_rust
   },
 }
+
+data.raw.item["sulfur"].fuel_value = "1MJ"
+data.raw.item["sulfur"].fuel_category = "chemical"
