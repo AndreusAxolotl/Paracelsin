@@ -1,5 +1,5 @@
-table.insert(data.raw.lab["lab"].inputs, "paracelsin-galvanization-science-pack")
-table.insert(data.raw.lab["biolab"].inputs, "paracelsin-galvanization-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "galvanization-science-pack")
+table.insert(data.raw.lab["biolab"].inputs, "galvanization-science-pack")
 
 local function add_additional_categories(recipe_name, categories)
     local recipe = data.raw.recipe[recipe_name]

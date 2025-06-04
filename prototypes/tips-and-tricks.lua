@@ -91,7 +91,7 @@ data:extend(
     trigger =
     {
       type = "research",
-      technology = "paracelsin-planet-discovery-paracelsin"
+      technology = "planet-discovery-paracelsin"
     },
     skip_trigger =
     {

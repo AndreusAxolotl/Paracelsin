@@ -14,7 +14,7 @@ local item_effects = require("__space-age__.prototypes.item-effects")
 local meld = require("meld")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 
-circuit_connector_definitions["paracelsin-electrochemical-plant"] = circuit_connector_definitions.create_vector
+circuit_connector_definitions["electrochemical-plant"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {
@@ -24,7 +24,7 @@ circuit_connector_definitions["paracelsin-electrochemical-plant"] = circuit_conn
     { variation = 28, main_offset = util.by_pixel( 71.625,  7), shadow_offset = util.by_pixel( 71.625,  7), show_shadow = true }, 
   }
 )
-circuit_connector_definitions["paracelsin-mechanical-plant"] = circuit_connector_definitions.create_vector
+circuit_connector_definitions["mechanical-plant"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {
@@ -46,7 +46,7 @@ data:extend{
   },
   {
     type = "item",
-    name = "paracelsin-electrochemical-plant",
+    name = "electrochemical-plant",
     subgroup = "production-machine",
     order = "z",
     pick_sound = item_sounds.steam_inventory_pickup,
@@ -56,11 +56,11 @@ data:extend{
     stack_size = 10,
     default_import_location = "paracelsin",
     weight = 200000,
-    place_result = "paracelsin-electrochemical-plant"
+    place_result = "electrochemical-plant"
 },
   {
     type = "item",
-    name = "paracelsin-mechanical-plant",
+    name = "mechanical-plant",
     subgroup = "production-machine",
     order = "z",
     pick_sound = item_sounds.metal_chest_inventory_pickup,
@@ -70,63 +70,63 @@ data:extend{
     stack_size = 10,
     default_import_location = "paracelsin",
     weight = 200000,
-    place_result = "paracelsin-mechanical-plant"
+    place_result = "mechanical-plant"
 },
 {
     type = "recipe",
-    name = "paracelsin-electrochemical-plant",
+    name = "electrochemical-plant",
     enabled = false,
     energy_required = 30,
     ingredients = {
         {type = "item", name = "processing-unit",   amount = 30},
-        {type = "item", name = "paracelsin-zinc-solder",       amount = 20},
+        {type = "item", name = "zinc-solder",       amount = 20},
         {type = "item", name = "tungsten-plate", amount = 25},
         {type = "item", name = "copper-cable", amount = 20},
     },
     results = {
-        {type = "item", name = "paracelsin-electrochemical-plant", amount = 1}
+        {type = "item", name = "electrochemical-plant", amount = 1}
     },
     allow_productivity = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
-    main_product = "paracelsin-electrochemical-plant",
+    main_product = "electrochemical-plant",
     category = "pressing",
     auto_recycle = true
 },
 {
     type = "recipe",
-    name = "paracelsin-mechanical-plant",
+    name = "mechanical-plant",
     enabled = false,
     energy_required = 30,
     ingredients = {
         {type = "item", name = "processing-unit",   amount = 30},
-        {type = "item", name = "paracelsin-zinc-rivets",       amount = 20},
+        {type = "item", name = "zinc-rivets",       amount = 20},
         {type = "item", name = "tungsten-carbide", amount = 25},
         {type = "item", name = "iron-gear-wheel", amount = 20},
     },
     results = {
-        {type = "item", name = "paracelsin-mechanical-plant", amount = 1}
+        {type = "item", name = "mechanical-plant", amount = 1}
     },
     allow_productivity = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
-    main_product = "paracelsin-mechanical-plant",
+    main_product = "mechanical-plant",
     category = "pressing",
     auto_recycle = true
 },
     {
-        name = "paracelsin-electrochemical-plant",
+        name = "electrochemical-plant",
         type = "assembling-machine",
         icon = "__Paracelsin-Graphics__/graphics/icons/electrochemical-plant.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {
           mining_time = 0.5,
-          results = {{type="item", name="paracelsin-electrochemical-plant", amount=1}}
+          results = {{type="item", name="electrochemical-plant", amount=1}}
         },
         max_health = 400,
         corpse = "medium-remnants",
         dying_explosion = "medium-explosion",
         circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
-        circuit_connector = circuit_connector_definitions["paracelsin-electrochemical-plant"],
+        circuit_connector = circuit_connector_definitions["electrochemical-plant"],
         collision_box = {{-2.1, -2.1}, {2.1, 2.1}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         crafting_categories = {"electrochemistry", "chemistry"},
@@ -302,27 +302,27 @@ data:extend{
             source_effects = {
               {
                 type = "script",
-                effect_id = "paracelsin-electrochemical-plant-created",
+                effect_id = "electrochemical-plant-created",
               },
             }
           }
         },
       },
       {
-        name = "paracelsin-mechanical-plant",
+        name = "mechanical-plant",
         type = "assembling-machine",
         icon = "__Paracelsin-Graphics__/graphics/icons/mechanical-plant.png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {
           mining_time = 0.5,
-          results = {{type="item", name="paracelsin-mechanical-plant", amount=1}}
+          results = {{type="item", name="mechanical-plant", amount=1}}
         },
         max_health = 400,
         corpse = "medium-remnants",
         dying_explosion = "medium-explosion",
         circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
-        circuit_connector = circuit_connector_definitions["paracelsin-mechanical-plant"],
+        circuit_connector = circuit_connector_definitions["mechanical-plant"],
         collision_box = {{-1.6, -1.6}, {1.6, 1.6}},
         selection_box = {{-2, -2}, {2, 2}},
         crafting_categories = {"mechanics", "pressing"},
@@ -471,7 +471,7 @@ data:extend{
             source_effects = {
               {
                 type = "script",
-                effect_id = "paracelsin-mechanical-plant-created",
+                effect_id = "mechanical-plant-created",
               },
             }
           }

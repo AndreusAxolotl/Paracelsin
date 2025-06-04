@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2025-06-04
+  Iiiiiiii screwed up big time:
+  Changes:
+    - Removed all prefixes, everything will be fixed by a migration file.
+
+  Notes:
+    - Version 1.0.3 will be delisted due to issues.
+    - If there's any migration issues, please report them on the mod page.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2025-06-04
   Nitric acid more like MYTHIC acid:

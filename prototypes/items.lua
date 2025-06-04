@@ -10,32 +10,32 @@ local simulations = require("__space-age__.prototypes.factoriopedia-simulations"
 data:extend{
       {
     type = "item-subgroup",
-    name = "paracelsin-paracelsin-processes",
+    name = "paracelsin-processes",
     group = "intermediate-products",
     order = "p-a"
   },
   {
     type = "item-subgroup",
-    name = "paracelsin-nitric-acid-and-nitrogen",
+    name = "nitric-acid-and-nitrogen",
     group = "intermediate-products",
     order = "p-b"
   },
     {
     type = "item-subgroup",
-    name = "paracelsin-galvanization",
+    name = "galvanization",
     group = "intermediate-products",
     order = "p-c"
   },
       {
     type = "item-subgroup",
-    name = "paracelsin-zinc-fluids",
+    name = "zinc-fluids",
     group = "intermediate-products",
     order = "p-d"
   },
   {
     type = "fluid",
-    name = "paracelsin-dirty-zinc-solution",
-    subgroup = "paracelsin-zinc-fluids",
+    name = "dirty-zinc-solution",
+    subgroup = "zinc-fluids",
     default_temperature = 200,
     max_temperature = 300,
     base_color = {0.8, 0.89, 0.84},
@@ -45,8 +45,8 @@ data:extend{
   },
     {
     type = "fluid",
-    name = "paracelsin-zinc-solution",
-    subgroup = "paracelsin-zinc-fluids",
+    name = "zinc-solution",
+    subgroup = "zinc-fluids",
     default_temperature = 100,
     max_temperature = 200,
     base_color = {0.64, 0.67, 0.56},
@@ -56,8 +56,8 @@ data:extend{
   },
     {
     type = "fluid",
-    name = "paracelsin-zinc-concentrate",
-    subgroup = "paracelsin-zinc-fluids",
+    name = "zinc-concentrate",
+    subgroup = "zinc-fluids",
     default_temperature = 300,
     max_temperature = 400,
     base_color = {0.69, 0.65, 0.49},
@@ -67,9 +67,9 @@ data:extend{
   },
       {
     type = "fluid",
-    name = "paracelsin-nitrogen",
+    name = "nitrogen",
     order = "a",
-    subgroup = "paracelsin-nitric-acid-and-nitrogen",
+    subgroup = "nitric-acid-and-nitrogen",
     default_temperature = -200,
     max_temperature = -195,
     base_color = {0.40, 0.55, 0.71},
@@ -79,9 +79,9 @@ data:extend{
   },
   {
     type = "fluid",
-    name = "paracelsin-nitric-acid",
+    name = "nitric-acid",
     order = "b",
-    subgroup = "paracelsin-nitric-acid-and-nitrogen",
+    subgroup = "nitric-acid-and-nitrogen",
     default_temperature = 0,
     max_temperature = 83,
     base_color = {0.14, 0.07, 0.09},
@@ -91,8 +91,8 @@ data:extend{
   },
 {
     type = "item",
-    name = "paracelsin-sphalerite",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "sphalerite",
+    subgroup = "paracelsin-processes",
     order = "a",
     icon = "__Paracelsin-Graphics__/graphics/icons/sphalerite-1.png",
     inventory_move_sound = item_sounds.resource_inventory_move,
@@ -111,8 +111,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-tetrahedrite",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "tetrahedrite",
+    subgroup = "paracelsin-processes",
     order = "b",
     icon = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-1.png",
     inventory_move_sound = item_sounds.resource_inventory_move,
@@ -131,8 +131,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-vaterite",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "vaterite",
+    subgroup = "paracelsin-processes",
     order = "c",
     icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",
     inventory_move_sound = item_sounds.resource_inventory_move,
@@ -151,8 +151,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-zinc",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "zinc",
+    subgroup = "paracelsin-processes",
     inventory_move_sound = item_sounds.resource_inventory_move,
     pick_sound = item_sounds.resource_inventory_pickup,
     drop_sound = item_sounds.resource_inventory_move,
@@ -165,8 +165,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-zinc-plate",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "zinc-plate",
+    subgroup = "paracelsin-processes",
     order = "e",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-plate.png",
     inventory_move_sound = item_sounds.metal_small_inventory_move,
@@ -179,8 +179,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-zinc-rivets",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "zinc-rivets",
+    subgroup = "paracelsin-processes",
     order = "f",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-rivets-1.png",
     inventory_move_sound = item_sounds.metal_small_inventory_move,
@@ -199,8 +199,8 @@ data:extend{
 },
 {
     type = "item",
-    name = "paracelsin-zinc-solder",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "zinc-solder",
+    subgroup = "paracelsin-processes",
     order = "g",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-solder.png",
     inventory_move_sound = item_sounds.metal_small_inventory_move,
@@ -213,8 +213,8 @@ data:extend{
 },
   {
     type = "item",
-    name = "paracelsin-electric-coil",
-    subgroup = "paracelsin-paracelsin-processes",
+    name = "electric-coil",
+    subgroup = "paracelsin-processes",
     order = "h",
     inventory_move_sound = space_age_item_sounds.rocket_inventory_move,
     pick_sound = space_age_item_sounds.rocket_inventory_pickup,
@@ -226,7 +226,7 @@ data:extend{
     weight = 20000,
 },
 {type = "tool",
-    name = "paracelsin-galvanization-science-pack",
+    name = "galvanization-science-pack",
     localised_description = {"item-description.science-pack"},
     icon = "__Paracelsin-Graphics__/graphics/icons/galvanization-science-pack.png",
     subgroup = "science-pack",
@@ -246,7 +246,7 @@ data:extend{
 },
 {
     type = "repair-tool",
-    name = "paracelsin-advanced-repair-device",
+    name = "advanced-repair-device",
     icon = "__Paracelsin-Graphics__/graphics/icons/advanced-repair-device.png",
     subgroup = "tool",
     order = "b[repair]-b[repair-pack]",

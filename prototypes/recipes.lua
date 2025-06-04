@@ -5,16 +5,16 @@ data:extend{
   },
 {
     type = "recipe",
-    name = "paracelsin-nitric-acid",
+    name = "nitric-acid",
     enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "water",   amount = 100},
-        {type = "fluid", name = "paracelsin-nitrogen",       amount = 50},
-        {type = "item", name = "paracelsin-vaterite", amount = 2},
+        {type = "fluid", name = "nitrogen",       amount = 50},
+        {type = "item", name = "vaterite", amount = 2},
     },
     results = {
-        {type = "fluid", name = "paracelsin-nitric-acid", amount = 50}
+        {type = "fluid", name = "nitric-acid", amount = 50}
     },
     allow_productivity = true,
     category = "chemistry",
@@ -30,8 +30,8 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-nitric-acid-plastic",
-    subgroup = "paracelsin-nitric-acid-and-nitrogen",
+    name = "nitric-acid-plastic",
+    subgroup = "nitric-acid-and-nitrogen",
     order = "c",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/nitric-acid-plastic.png",
@@ -39,7 +39,7 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "water",   amount = 40},
-        {type = "fluid", name = "paracelsin-nitric-acid",       amount = 20},
+        {type = "fluid", name = "nitric-acid",       amount = 20},
         {type = "item", name = "carbon", amount = 4},
     },
     results = {
@@ -59,16 +59,16 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-nitric-acid-rocket-fuel",
+    name = "nitric-acid-rocket-fuel",
     enabled = false,
-    subgroup = "paracelsin-nitric-acid-and-nitrogen",
+    subgroup = "nitric-acid-and-nitrogen",
     order = "e",
     icon = "__Paracelsin-Graphics__/graphics/icons/nitric-acid-rocket-fuel.png",
     icon_size = 64,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "water",   amount = 250},
-        {type = "fluid", name = "paracelsin-nitric-acid",       amount = 100},
+        {type = "fluid", name = "nitric-acid",       amount = 100},
         {type = "item", name = "solid-fuel", amount = 5},
         {type = "item", name = "sulfur", amount = 5},
     },
@@ -89,16 +89,16 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-solid-fuel-from-nitrogen",
+    name = "solid-fuel-from-nitrogen",
     enabled = false,
-    subgroup = "paracelsin-nitric-acid-and-nitrogen",
+    subgroup = "nitric-acid-and-nitrogen",
     order = "d",
     icon = "__Paracelsin-Graphics__/graphics/icons/solid-fuel-from-nitrogen.png",
     icon_size = 64,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "paracelsin-nitrogen",   amount = 25},
-        {type = "item", name = "paracelsin-vaterite", amount = 2},
+        {type = "fluid", name = "nitrogen",   amount = 25},
+        {type = "item", name = "vaterite", amount = 2},
     },
     results = {
         {type = "item", name = "solid-fuel", amount = 2}
@@ -117,19 +117,19 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-sphalerite-processing",
+    name = "sphalerite-processing",
     enabled = false,
-    subgroup = "paracelsin-paracelsin-processes",
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/sphalerite-processing.png",
     icon_size = 64,
     order = "i",
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "steam",   amount = 30},
-        {type = "item", name = "paracelsin-sphalerite",       amount = 5},
+        {type = "item", name = "sphalerite",       amount = 5},
     },
     results = {
-        {type = "fluid", name = "paracelsin-zinc-concentrate", amount = 40},
+        {type = "fluid", name = "zinc-concentrate", amount = 40},
         {type = "item", name = "iron-ore", amount = 2},
         {type = "item", name = "sulfur", amount = 2, ignored_by_stats = 2, ignored_by_productivity = 2}
     },
@@ -149,19 +149,19 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-tetrahedrite-processing",
+    name = "tetrahedrite-processing",
     enabled = false,
-    subgroup = "paracelsin-paracelsin-processes",
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-processing.png",
     icon_size = 64,
     order = "j",
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "steam",   amount = 30},
-        {type = "item", name = "paracelsin-tetrahedrite",       amount = 5},
+        {type = "item", name = "tetrahedrite",       amount = 5},
     },
     results = {
-        {type = "fluid", name = "paracelsin-zinc-concentrate", amount = 20},
+        {type = "fluid", name = "zinc-concentrate", amount = 20},
         {type = "item", name = "copper-ore", amount = 4},
         {type = "item", name = "sulfur", amount = 2, ignored_by_stats = 2, ignored_by_productivity = 2}
     },
@@ -181,16 +181,16 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-vaterite-processing",
+    name = "vaterite-processing",
     enabled = false,
-    subgroup = "paracelsin-paracelsin-processes",
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-processing.png",
     icon_size = 64,
     order = "k",
     energy_required = 1.5,
     ingredients = {
         {type = "fluid", name = "water",   amount = 20},
-        {type = "item", name = "paracelsin-vaterite",       amount = 3},
+        {type = "item", name = "vaterite",       amount = 3},
     },
     results = {
         {type = "item", name = "calcite", amount = 1},
@@ -204,20 +204,20 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-leaching",
+    name = "zinc-leaching",
     enabled = false,
-    subgroup = "paracelsin-paracelsin-processes",
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-leaching.png",
     icon_size = 64,
     order = "l",
     energy_required = 8,
     ingredients = {
-        {type = "fluid", name = "paracelsin-zinc-concentrate",   amount = 40},
-        {type = "fluid", name = "paracelsin-nitric-acid",       amount = 20},
+        {type = "fluid", name = "zinc-concentrate",   amount = 40},
+        {type = "fluid", name = "nitric-acid",       amount = 20},
         {type = "item", name = "calcite",       amount = 5},
     },
     results = {
-        {type = "fluid", name = "paracelsin-dirty-zinc-solution", amount = 20},
+        {type = "fluid", name = "dirty-zinc-solution", amount = 20},
     },
     allow_productivity = true,
     allow_quality = false,
@@ -235,20 +235,20 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-purification",
+    name = "zinc-purification",
     enabled = false,
-    subgroup = "paracelsin-paracelsin-processes",
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-purification.png",
     icon_size = 64,
     order = "m",
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "paracelsin-dirty-zinc-solution",   amount = 20},
+        {type = "fluid", name = "dirty-zinc-solution",   amount = 20},
         {type = "fluid", name = "steam",       amount = 20},
         {type = "item", name = "copper-cable",       amount = 8},
     },
     results = {
-        {type = "fluid", name = "paracelsin-zinc-solution", amount = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
+        {type = "fluid", name = "zinc-solution", amount = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
         {type = "item", name = "stone", amount_min = 5, amount_max = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
     },
     allow_productivity = true,
@@ -267,17 +267,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc",
+    name = "zinc",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-ore.png",
     icon_size = 64,
     energy_required = 3.2,
     ingredients = {
-        {type = "fluid", name = "paracelsin-zinc-solution",   amount = 20},
+        {type = "fluid", name = "zinc-solution",   amount = 20},
         {type = "item", name = "carbon",       amount = 4},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc", amount = 2},
+        {type = "item", name = "zinc", amount = 2},
     },
     allow_productivity = true,
     allow_quality = false,
@@ -288,16 +288,16 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-plate",
+    name = "zinc-plate",
     enabled = true,
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-plate.png",
     icon_size = 64,
     energy_required = 3.2,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc",   amount = 1},
+        {type = "item", name = "zinc",   amount = 1},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc-plate", amount = 1},
+        {type = "item", name = "zinc-plate", amount = 1},
     },
     allow_productivity = true,
     allow_quality = false,
@@ -307,17 +307,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-rivets",
+    name = "zinc-rivets",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-rivets-1.png",
     icon_size = 64,
     energy_required = 4,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc-plate",   amount = 2},
+        {type = "item", name = "zinc-plate",   amount = 2},
         {type = "item", name = "iron-stick",   amount = 2},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc-rivets", amount = 10},
+        {type = "item", name = "zinc-rivets", amount = 10},
     },
     allow_productivity = true,
     category = "mechanics",
@@ -327,17 +327,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-solder",
+    name = "zinc-solder",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/zinc-solder.png",
     icon_size = 64,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc-plate",   amount = 4},
+        {type = "item", name = "zinc-plate",   amount = 4},
         {type = "item", name = "copper-cable",   amount = 4},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc-solder", amount = 4},
+        {type = "item", name = "zinc-solder", amount = 4},
     },
     allow_productivity = true,
     category = "electrochemistry",
@@ -347,20 +347,20 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-electric-coil",
+    name = "electric-coil",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/electric-coil.png",
     icon_size = 64,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc-rivets",   amount = 5},
-        {type = "item", name = "paracelsin-zinc-solder",   amount = 2},
+        {type = "item", name = "zinc-rivets",   amount = 5},
+        {type = "item", name = "zinc-solder",   amount = 2},
         {type = "item", name = "iron-gear-wheel",   amount = 5},
         {type = "item", name = "copper-cable",   amount = 10},
-        {type = "fluid", name = "paracelsin-nitric-acid",   amount = 20},
+        {type = "fluid", name = "nitric-acid",   amount = 20},
     },
     results = {
-        {type = "item", name = "paracelsin-electric-coil", amount = 1},
+        {type = "item", name = "electric-coil", amount = 1},
     },
     allow_productivity = true,
     category = "mechanics",
@@ -369,18 +369,18 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-galvanization-science-pack",
+    name = "galvanization-science-pack",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/galvanization-science-pack.png",
     icon_size = 64,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "paracelsin-electric-coil",   amount = 2},
-        {type = "fluid", name = "paracelsin-nitric-acid",   amount = 50},
+        {type = "item", name = "electric-coil",   amount = 2},
+        {type = "fluid", name = "nitric-acid",   amount = 50},
         {type = "item", name = "concrete",   amount = 10},
     },
     results = {
-        {type = "item", name = "paracelsin-galvanization-science-pack", amount = 1},
+        {type = "item", name = "galvanization-science-pack", amount = 1},
     },
     allow_productivity = true,
     category = "electrochemistry",
@@ -390,17 +390,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-casting-galvanized-iron-gear-wheel",
+    name = "casting-galvanized-iron-gear-wheel",
     enabled = false,
-    subgroup = "paracelsin-galvanization",
+    subgroup = "galvanization",
     order = "b",
     icon = "__Paracelsin-Graphics__/graphics/icons/casting-galvanized-iron-gear-wheel.png",
     icon_size = 64,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "molten-iron",   amount = 7},
-        {type = "fluid", name = "paracelsin-nitrogen",   amount = 5},
-        {type = "item", name = "paracelsin-zinc-plate",       amount = 1},
+        {type = "fluid", name = "nitrogen",   amount = 5},
+        {type = "item", name = "zinc-plate",       amount = 1},
     },
     results = {
         {type = "item", name = "iron-gear-wheel", amount = 2},
@@ -413,17 +413,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-casting-galvanized-iron-stick",
+    name = "casting-galvanized-iron-stick",
     enabled = false,
-    subgroup = "paracelsin-galvanization",
+    subgroup = "galvanization",
     order = "c",
     icon = "__Paracelsin-Graphics__/graphics/icons/casting-galvanized-iron-stick.png",
     icon_size = 64,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "molten-iron",   amount = 15},
-        {type = "fluid", name = "paracelsin-nitrogen",   amount = 5},
-        {type = "item", name = "paracelsin-zinc-plate",       amount = 1},
+        {type = "fluid", name = "nitrogen",   amount = 5},
+        {type = "item", name = "zinc-plate",       amount = 1},
     },
     results = {
         {type = "item", name = "iron-stick", amount = 8},
@@ -436,9 +436,9 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-casting-galvanized-low-density-structure",
+    name = "casting-galvanized-low-density-structure",
     enabled = false,
-    subgroup = "paracelsin-galvanization",
+    subgroup = "galvanization",
     order = "d",
     icon = "__Paracelsin-Graphics__/graphics/icons/casting-galvanized-low-density-structure.png",
     icon_size = 64,
@@ -446,7 +446,7 @@ data:extend{
     ingredients = {
         {type = "fluid", name = "molten-iron",   amount = 60},
         {type = "fluid", name = "molten-copper",   amount = 230},
-        {type = "item", name = "paracelsin-zinc-plate",       amount = 3},
+        {type = "item", name = "zinc-plate",       amount = 3},
         {type = "item", name = "plastic-bar",       amount = 5},
     },
     results = {
@@ -460,17 +460,17 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-casting-galvanized-steel-plate",
+    name = "casting-galvanized-steel-plate",
     enabled = false,
-    subgroup = "paracelsin-galvanization",
+    subgroup = "galvanization",
     order = "a",
     icon = "__Paracelsin-Graphics__/graphics/icons/casting-galvanized-steel.png",
     icon_size = 64,
     energy_required = 3.2,
     ingredients = {
         {type = "fluid", name = "molten-iron",   amount = 20},
-        {type = "fluid", name = "paracelsin-nitrogen",   amount = 10},
-        {type = "item", name = "paracelsin-zinc-plate",       amount = 2},
+        {type = "fluid", name = "nitrogen",   amount = 10},
+        {type = "item", name = "zinc-plate",       amount = 2},
     },
     results = {
         {type = "item", name = "steel-plate", amount = 2},
@@ -483,18 +483,18 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "paracelsin-advanced-repair-device",
+    name = "advanced-repair-device",
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/advanced-repair-device.png",
     icon_size = 64,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "paracelsin-electric-coil",   amount = 1},
-        {type = "item", name = "paracelsin-zinc-rivets",   amount = 10},
+        {type = "item", name = "electric-coil",   amount = 1},
+        {type = "item", name = "zinc-rivets",   amount = 10},
         {type = "item", name = "advanced-circuit",       amount = 2},
     },
     results = {
-        {type = "item", name = "paracelsin-advanced-repair-device", amount = 2},
+        {type = "item", name = "advanced-repair-device", amount = 2},
     },
     allow_productivity = false,
     category = "mechanics",
@@ -504,10 +504,10 @@ data:extend{
 }
 
 data.raw.recipe["elevated-pipe"].ingredients = {
-    {type = "item", name = "paracelsin-zinc-pipe", amount = 2},
-    {type = "item", name = "paracelsin-zinc-rivets", amount = 20},
+    {type = "item", name = "zinc-pipe", amount = 2},
+    {type = "item", name = "zinc-rivets", amount = 20},
     {type = "item", name = "iron-stick", amount = 10},
-    {type = "item", name = "paracelsin-zinc-plate", amount = 5},
+    {type = "item", name = "zinc-plate", amount = 5},
   }
 data.raw.recipe["elevated-pipe"].auto_recycle = true
 data.raw.recipe["elevated-pipe"].category = "mechanics"

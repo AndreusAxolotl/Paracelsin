@@ -15,4 +15,4 @@ if not mods["Age-of-Production"] then return end
         end
     end
 end
-add_crafting_categories("assembling-machine", "paracelsin-electrochemical-plant", {"hydraulics-or-chemistry", "petrochemistry-or-chemistry", "synthesis-or-chemistry"})
+add_crafting_categories("assembling-machine", "electrochemical-plant", {"hydraulics-or-chemistry", "petrochemistry-or-chemistry", "synthesis-or-chemistry"})

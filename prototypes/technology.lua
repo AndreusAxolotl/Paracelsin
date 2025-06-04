@@ -1,7 +1,7 @@
 data:extend {
   {
     type = "technology",
-    name = "paracelsin-planet-discovery-paracelsin",
+    name = "planet-discovery-paracelsin",
     icons = util.technology_icon_constant_planet("__Paracelsin-Graphics__/graphics/technology/planet-discovery-paracelsin.png"),
     icon_size = 256,
     essential = true,
@@ -14,19 +14,19 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-nitric-acid",
+        recipe = "nitric-acid",
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-solid-fuel-from-nitrogen"
+        recipe = "solid-fuel-from-nitrogen"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-nitric-acid-rocket-fuel"
+        recipe = "nitric-acid-rocket-fuel"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-nitric-acid-plastic"
+        recipe = "nitric-acid-plastic"
       },
     },
     prerequisites = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" },
@@ -50,17 +50,17 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-vaterite-processing",
+    name = "vaterite-processing",
     icon = "__Paracelsin-Graphics__/graphics/technology/vaterite-processing.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-vaterite-processing"
+        recipe = "vaterite-processing"
       },
     },
-    prerequisites = { "paracelsin-planet-discovery-paracelsin" },
+    prerequisites = { "planet-discovery-paracelsin" },
     research_trigger =
     {
       type = "mine-entity",
@@ -69,21 +69,21 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-sphalerite-processing",
+    name = "sphalerite-processing",
     icon = "__Paracelsin-Graphics__/graphics/technology/sphalerite-processing.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-sphalerite-processing"
+        recipe = "sphalerite-processing"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-leaching"
+        recipe = "zinc-leaching"
       },
     },
-    prerequisites = { "paracelsin-vaterite-processing" },
+    prerequisites = { "vaterite-processing" },
     research_trigger =
     {
       type = "mine-entity",
@@ -92,21 +92,21 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-tetrahedrite-processing",
+    name = "tetrahedrite-processing",
     icon = "__Paracelsin-Graphics__/graphics/technology/tetrahedrite-processing.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-tetrahedrite-processing"
+        recipe = "tetrahedrite-processing"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-leaching"
+        recipe = "zinc-leaching"
       },
     },
-    prerequisites = { "paracelsin-vaterite-processing" },
+    prerequisites = { "vaterite-processing" },
     research_trigger =
     {
       type = "mine-entity",
@@ -115,7 +115,7 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-zinc-extraction",
+    name = "zinc-extraction",
     icon = "__Paracelsin-Graphics__/graphics/technology/zinc-extraction.png",
     icon_size = 256,
     effects =
@@ -123,35 +123,35 @@ data:extend {
 
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-purification"
+        recipe = "zinc-purification"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc"
+        recipe = "zinc"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-plate"
+        recipe = "zinc-plate"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-solder"
+        recipe = "zinc-solder"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-rivets"
+        recipe = "zinc-rivets"
       },
     },
-    prerequisites = { "paracelsin-sphalerite-processing", "paracelsin-tetrahedrite-processing" },
+    prerequisites = { "sphalerite-processing", "tetrahedrite-processing" },
     research_trigger =
     {
       type = "craft-fluid",
-      fluid = "paracelsin-dirty-zinc-solution"
+      fluid = "dirty-zinc-solution"
     }
   },
   {
     type = "technology",
-    name = "paracelsin-electrochemical-plant",
+    name = "electrochemical-plant",
     icon = "__Paracelsin-Graphics__/graphics/technology/electrochemical-plant.png",
     icon_size = 256,
     effects =
@@ -159,19 +159,19 @@ data:extend {
 
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-electrochemical-plant"
+        recipe = "electrochemical-plant"
       }
     },
-    prerequisites = { "paracelsin-zinc-extraction" },
+    prerequisites = { "zinc-extraction" },
     research_trigger =
     {
       type = "craft-item",
-      item = "paracelsin-zinc-solder"
+      item = "zinc-solder"
     }
   },
   {
     type = "technology",
-    name = "paracelsin-mechanical-plant",
+    name = "mechanical-plant",
     icon = "__Paracelsin-Graphics__/graphics/technology/mechanical-plant.png",
     icon_size = 256,
     effects =
@@ -179,23 +179,23 @@ data:extend {
 
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-mechanical-plant"
+        recipe = "mechanical-plant"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-electric-coil"
+        recipe = "electric-coil"
       }
     },
-    prerequisites = { "paracelsin-zinc-extraction" },
+    prerequisites = { "zinc-extraction" },
     research_trigger =
     {
       type = "craft-item",
-      item = "paracelsin-zinc-rivets"
+      item = "zinc-rivets"
     }
   },
   {
     type = "technology",
-    name = "paracelsin-galvanization-science-pack",
+    name = "galvanization-science-pack",
     icon = "__Paracelsin-Graphics__/graphics/technology/galvanization-science-pack.png",
     icon_size = 256,
     essential = true,
@@ -204,32 +204,32 @@ data:extend {
 
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-galvanization-science-pack"
+        recipe = "galvanization-science-pack"
       },
 
     },
-    prerequisites = { "paracelsin-mechanical-plant", "paracelsin-electrochemical-plant" },
+    prerequisites = { "mechanical-plant", "electrochemical-plant" },
     research_trigger =
     {
       type = "craft-item",
-      item = "paracelsin-electric-coil",
+      item = "electric-coil",
       count = 100
     },
   },
   {
     type = "technology",
-    name = "paracelsin-vaterite-processing-productivity",
+    name = "vaterite-processing-productivity",
     icons = util.technology_icon_constant_recipe_productivity("__Paracelsin-Graphics__/graphics/technology/vaterite-processing-prod.png"),
 
     effects =
     {
       {
         type = "change-recipe-productivity",
-        recipe = "paracelsin-vaterite-processing",
+        recipe = "vaterite-processing",
         change = 0.1
       },
     },
-    prerequisites = { "paracelsin-galvanization-science-pack" },
+    prerequisites = { "galvanization-science-pack" },
     unit =
     {
       count_formula = "1.5^L*500",
@@ -240,7 +240,7 @@ data:extend {
         { "chemical-science-pack",                 1 },
         { "production-science-pack",               1 },
         { "space-science-pack",                    1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     },
@@ -249,7 +249,7 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-concrete-productivity",
+    name = "concrete-productivity",
     icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/concrete.png"),
 
     effects =
@@ -270,7 +270,7 @@ data:extend {
         change = 0.1
       },
     },
-    prerequisites = { "paracelsin-galvanization-science-pack" },
+    prerequisites = { "galvanization-science-pack" },
     unit =
     {
       count_formula = "1.5^L*1000",
@@ -283,7 +283,7 @@ data:extend {
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
         { "metallurgic-science-pack",              1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     },
@@ -292,28 +292,28 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-galvanized-casting",
+    name = "galvanized-casting",
     icon = "__Paracelsin-Graphics__/graphics/technology/galvanization.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-casting-galvanized-iron-gear-wheel"
+        recipe = "casting-galvanized-iron-gear-wheel"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-casting-galvanized-iron-stick"
+        recipe = "casting-galvanized-iron-stick"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-casting-galvanized-steel-plate"
+        recipe = "casting-galvanized-steel-plate"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-casting-galvanized-low-density-structure"
+        recipe = "casting-galvanized-low-density-structure"
       }, },
-    prerequisites = { "paracelsin-galvanization-science-pack" },
+    prerequisites = { "galvanization-science-pack" },
     unit =
     {
       count = 3000,
@@ -326,14 +326,14 @@ data:extend {
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
         { "metallurgic-science-pack",              1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     }
   },
   {
     type = "technology",
-    name = "paracelsin-zinc-piping",
+    name = "zinc-piping",
     icons =
     {
       {
@@ -346,13 +346,13 @@ data:extend {
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-pipe"
+        recipe = "zinc-pipe"
       },
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-zinc-pipe-to-ground"
+        recipe = "zinc-pipe-to-ground"
       }, },
-    prerequisites = { "paracelsin-galvanization-science-pack" },
+    prerequisites = { "galvanization-science-pack" },
     unit =
     {
       count = 1000,
@@ -363,14 +363,14 @@ data:extend {
         { "chemical-science-pack",                 1 },
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     }
   },
   {
     type = "technology",
-    name = "paracelsin-axe-mining-speed",
+    name = "axe-mining-speed",
     icons = util.technology_icon_constant_speed("__Paracelsin-Graphics__/graphics/technology/zinc-axe.png"),
     effects =
     {
@@ -379,7 +379,7 @@ data:extend {
         modifier = 0.1
       }
     },
-    prerequisites = { "paracelsin-galvanized-casting", "steel-axe" },
+    prerequisites = { "galvanized-casting", "steel-axe" },
     unit =
     {
       count_formula = "2^L*500",
@@ -388,7 +388,7 @@ data:extend {
         { "automation-science-pack",               1 },
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     },
@@ -397,7 +397,7 @@ data:extend {
   },
   {
     type = "technology",
-    name = "paracelsin-advanced-repair-device",
+    name = "advanced-repair-device",
     icon = "__Paracelsin-Graphics__/graphics/technology/advanced-repair-device.png",
     icon_size = 256,
 
@@ -405,9 +405,9 @@ data:extend {
     {
       {
         type = "unlock-recipe",
-        recipe = "paracelsin-advanced-repair-device"
+        recipe = "advanced-repair-device"
       }, },
-    prerequisites = { "paracelsin-galvanization-science-pack", "repair-pack"},
+    prerequisites = { "galvanization-science-pack", "repair-pack"},
     unit =
     {
       count = 3000,
@@ -419,13 +419,13 @@ data:extend {
         { "production-science-pack",               1 },
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
-        { "paracelsin-galvanization-science-pack", 1 }
+        { "galvanization-science-pack", 1 }
       },
       time = 60
     }
   },
 }
-data.raw.technology["elevated-pipe"].prerequisites = { "paracelsin-zinc-piping" }
+data.raw.technology["elevated-pipe"].prerequisites = { "zinc-piping" }
 data.raw.technology["elevated-pipe"].unit =
 {
   count = 3000,
@@ -436,7 +436,7 @@ data.raw.technology["elevated-pipe"].unit =
     { "chemical-science-pack",                 1 },
     { "utility-science-pack",                  1 },
     { "space-science-pack",                    1 },
-    { "paracelsin-galvanization-science-pack", 1 }
+    { "galvanization-science-pack", 1 }
   },
   time = 60
 }
@@ -470,15 +470,15 @@ local function add_tech_effect(tech_name, effect)
   tech.effects = tech.effects or {}
   table.insert(tech.effects, effect)
 end
-add_science_pack("promethium-science-pack", { "paracelsin-galvanization-science-pack", 1 })
-add_science_pack("fusion-reactor", { "paracelsin-galvanization-science-pack", 1 })
-add_science_pack("research-productivity", { "paracelsin-galvanization-science-pack", 1 })
-add_tech_prerequisites("fusion-reactor", "paracelsin-galvanization-science-pack")
+add_science_pack("promethium-science-pack", { "galvanization-science-pack", 1 })
+add_science_pack("fusion-reactor", { "galvanization-science-pack", 1 })
+add_science_pack("research-productivity", { "galvanization-science-pack", 1 })
+add_tech_prerequisites("fusion-reactor", "galvanization-science-pack")
 add_tech_effect("plastic-bar-productivity",
-  { type = "change-recipe-productivity", recipe = "paracelsin-nitric-acid-plastic", change = 0.1 })
+  { type = "change-recipe-productivity", recipe = "nitric-acid-plastic", change = 0.1 })
 add_tech_effect("rocket-fuel-productivity",
-  { type = "change-recipe-productivity", recipe = "paracelsin-nitric-acid-rocket-fuel", change = 0.1 })
+  { type = "change-recipe-productivity", recipe = "nitric-acid-rocket-fuel", change = 0.1 })
 add_tech_effect("steel-plate-productivity",
-  { type = "change-recipe-productivity", recipe = "paracelsin-casting-galvanized-steel-plate", change = 0.1 })
+  { type = "change-recipe-productivity", recipe = "casting-galvanized-steel-plate", change = 0.1 })
 add_tech_effect("low-density-structure-productivity",
-  { type = "change-recipe-productivity", recipe = "paracelsin-casting-galvanized-low-density-structure", change = 0.1 })
+  { type = "change-recipe-productivity", recipe = "casting-galvanized-low-density-structure", change = 0.1 })

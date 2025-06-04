@@ -297,7 +297,7 @@ end
 data:extend({
 {
     type = "item",
-    name = "paracelsin-zinc-pipe",
+    name = "zinc-pipe",
     icons =
     {
       {
@@ -311,13 +311,13 @@ data:extend({
     inventory_move_sound = item_sounds.metal_small_inventory_move,
     pick_sound = item_sounds.metal_small_inventory_pickup,
     drop_sound = item_sounds.metal_small_inventory_move,
-    place_result = "paracelsin-zinc-pipe",
+    place_result = "zinc-pipe",
     stack_size = 50,
     weight = 10 * kg,
   },
   {
     type = "item",
-    name = "paracelsin-zinc-pipe-to-ground",
+    name = "zinc-pipe-to-ground",
      icons =
     {
       {
@@ -331,20 +331,20 @@ data:extend({
     inventory_move_sound = item_sounds.metal_small_inventory_move,
     pick_sound = item_sounds.metal_small_inventory_pickup,
     drop_sound = item_sounds.metal_small_inventory_move,
-    place_result = "paracelsin-zinc-pipe-to-ground",
+    place_result = "zinc-pipe-to-ground",
     stack_size = 20,
   },
   {
     type = "recipe",
-    name = "paracelsin-zinc-pipe",
+    name = "zinc-pipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc-plate",   amount = 4},
-        {type = "item", name = "paracelsin-zinc-rivets",       amount = 2},
+        {type = "item", name = "zinc-plate",   amount = 4},
+        {type = "item", name = "zinc-rivets",       amount = 2},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc-pipe", amount = 1}
+        {type = "item", name = "zinc-pipe", amount = 1}
     },
     allow_productivity = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
@@ -353,16 +353,16 @@ data:extend({
 },
 {
     type = "recipe",
-    name = "paracelsin-zinc-pipe-to-ground",
+    name = "zinc-pipe-to-ground",
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "paracelsin-zinc-plate",   amount = 10},
-        {type = "item", name = "paracelsin-zinc-rivets",       amount = 5},
-        {type = "item", name = "paracelsin-zinc-pipe",       amount = 10},
+        {type = "item", name = "zinc-plate",   amount = 10},
+        {type = "item", name = "zinc-rivets",       amount = 5},
+        {type = "item", name = "zinc-pipe",       amount = 10},
     },
     results = {
-        {type = "item", name = "paracelsin-zinc-pipe-to-ground", amount = 2}
+        {type = "item", name = "zinc-pipe-to-ground", amount = 2}
     },
     allow_productivity = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
@@ -371,7 +371,7 @@ data:extend({
 },
   {
     type = "pipe",
-    name = "paracelsin-zinc-pipe",
+    name = "zinc-pipe",
     icons =
     {
       {
@@ -381,7 +381,7 @@ data:extend({
       },
     },
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "paracelsin-zinc-pipe"},
+    minable = {mining_time = 0.1, result = "zinc-pipe"},
     max_health = 200,
     corpse = "pipe-remnants",
     dying_explosion = "pipe-explosion",
@@ -425,7 +425,7 @@ data:extend({
   },
  {
     type = "pipe-to-ground",
-    name = "paracelsin-zinc-pipe-to-ground",
+    name = "zinc-pipe-to-ground",
     icons =
     {
       {
@@ -435,7 +435,7 @@ data:extend({
       },
     },
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "paracelsin-zinc-pipe-to-ground"},
+    minable = {mining_time = 0.1, result = "zinc-pipe-to-ground"},
     max_health = 300,
     corpse = "pipe-to-ground-remnants",
     dying_explosion = "pipe-to-ground-explosion",
