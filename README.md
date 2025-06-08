@@ -42,11 +42,6 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Source**: [Unused Renders](https://github.com/malcolmriley/unused-renders)
 - **License**: Public domain.
 
-#### Paracelsin-1 track
-- **Creators**: [Alexander Borodin ](https://en.wikipedia.org/wiki/Alexander_Borodin)
-- **Source**: [Youtube](https://youtu.be/fJ8quMO4srk?si=XF9dAE5LrSFO1V2o)
-- **License**: Public domain.
-
 #### Various other help and inspiration
 - The mod-dev-help channel in general!
 - If I forgot you just tell me! With proof u helped in any way ofc!

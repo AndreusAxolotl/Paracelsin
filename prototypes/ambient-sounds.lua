@@ -1,16 +1,8 @@
 data:extend(
 {
-{
-    type = "ambient-sound",
-    name = "paracelsin-1",
-    track_type = "main-track",
-    planet = "paracelsin",
-    sound = "__Paracelsin-Graphics__/sounds/paracelsin-1.ogg",
-    weight = 10
-  },
   {
     type = "ambient-sound",
-    name = "paracelsin-2",
+    name = "paracelsin-1",
     track_type = "main-track",
     planet = "paracelsin",
     sound = "__space-age__/sound/ambient/aquilo/aquilo-4.ogg",
@@ -18,7 +10,7 @@ data:extend(
   },
   {
     type = "ambient-sound",
-    name = "paracelsin-3",
+    name = "paracelsin-2",
     track_type = "main-track",
     planet = "paracelsin",
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-1.ogg",
@@ -26,7 +18,7 @@ data:extend(
   },
   {
     type = "ambient-sound",
-    name = "paracelsin-4",
+    name = "paracelsin-3",
     track_type = "main-track",
     planet = "paracelsin",
     sound = "__space-age__/sound/ambient/vulcanus/vulcanus-3.ogg",
@@ -34,7 +26,7 @@ data:extend(
   },
   {
     type = "ambient-sound",
-    name = "paracelsin-5",
+    name = "paracelsin-4",
     track_type = "main-track",
     planet = "paracelsin",
     sound = "__space-age__/sound/ambient/aquilo/aquilo-9.ogg",

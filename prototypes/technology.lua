@@ -351,7 +351,16 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "zinc-pipe-to-ground"
-      }, },
+      }, 
+      {
+        type = "unlock-recipe",
+        recipe = "zinc-storage-tank"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "zinc-pump"
+      }, 
+    },
     prerequisites = { "galvanization-science-pack" },
     unit =
     {
