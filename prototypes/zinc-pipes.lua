@@ -415,6 +415,7 @@ data:extend({
     place_result = "zinc-pipe",
     stack_size = 30,
     weight = 100000,
+     default_import_location = "paracelsin",
   },
   {
     type = "item",
@@ -435,6 +436,7 @@ data:extend({
     place_result = "zinc-pipe-to-ground",
     stack_size = 10,
     weight = 100000,
+     default_import_location = "paracelsin",
   },
     {
     type = "item",
@@ -455,6 +457,7 @@ data:extend({
     place_result = "zinc-storage-tank",
     stack_size = 10,
     weight = 1000000,
+     default_import_location = "paracelsin",
   },
   {
     type = "item",
@@ -475,6 +478,7 @@ data:extend({
     place_result = "zinc-pump",
     stack_size = 10,
     weight = 1000000,
+     default_import_location = "paracelsin",
   },
   {
     type = "recipe",
