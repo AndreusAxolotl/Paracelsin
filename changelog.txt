@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-06-09
+  More useful...:
+
+  Additions:
+    - More recipes have been made compatible with the Mechanical Plant. These are:
+      - Flying robot frame
+      - Construction robot
+      - Logistic robot
+      - Rail
+      - Rail support
+      - Rail ramp
+      - Low density structure
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2025-06-08
   Zincer and piper:
