@@ -256,6 +256,7 @@ data:extend{
     speed = 5,
     durability = 1000,
     stack_size = 50,
+    weight = 20000,
     random_tint_color = item_tints.iron_rust
   },
 }

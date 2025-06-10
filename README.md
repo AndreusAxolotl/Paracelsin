@@ -31,6 +31,13 @@ Many rewards will come from conquering the frozen wasteland of nitrogen and zinc
 
 This mod wouldn't be possible without the help of these amazing people!
 
+#### Paracelsin-1 Track (In The Steppes of Central Asia)
+
+- **Creator**: [Alexander Borodin](https://en.wikipedia.org/wiki/Alexander_Borodin)
+- **Source**: [Musopen](https://musopen.org/music/681-in-the-steppes-of-central-asia/)
+- **License**: Public Domain
+- **Finder of the recording (Thx so much)**: podrickequus
+
 #### Building Textures
 
 - **Creator**: [Hurricane](https://mods.factorio.com/user/Hurricane046)

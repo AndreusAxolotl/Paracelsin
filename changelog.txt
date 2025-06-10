@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 2025-06-10
+  Return of the king:
+
+  Readditions:
+    - Added back the track removed in 1.0.6. Thanks to podrickequus a public domain recording for "In the steppes of central asia" by Borodin was found.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2025-06-09
+  Device repaired advancedly(?):
+
+  Fixes:
+    - Fixed the very odd rocket stack size of Advanced Repair Devices. Like why tf was it 32.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2025-06-09
   Location:
