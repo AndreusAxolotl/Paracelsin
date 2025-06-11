@@ -13,6 +13,29 @@ On the world of Zinc you'll have to make your way between heating up your factor
 
 Many rewards will come from conquering the frozen wasteland of nitrogen and zinc, from a new repair pack to longer insulated pipes!
 
+## Planet
+
+Paracelsin is located farther than Fulgora in space. You can reach it from Fulgora or Nauvis, but beware of the large asteroids on the way. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
+
+## Resources
+
+Paracelsin includes the following resources:
+- Sphalerite, compound of zinc, iron and sulfur
+- Tetrahedrite, compound of copper, zinc and sulfur
+- Vaterite, a mineral not unlike Calcite
+- Nitrogen, which must be pumped from the shallow lakes on the surface
+- Water cryovolcanoes, ejecting water that can be extracted via pumpjack
+
+## New Machines
+
+Paracelsin comes with two new buildings for further automation: the Electrochemical Plant and the Mechanical Plant
+
+Aside from being useful (and even necessary) for this planet's products, they can be used for some base game stuff:
+
+The Electrochemical Plant can make Concrete (and its Refined variant), Plastic, Sulfur and Sulfuric Acid, and Batteries.
+
+The Mechanical Plant, on the other hand, can make engines, express belts, all types of inserters, all types of pipes, storage tanks, and pumps, and even flying frames and the robot themselves; it can also make repair packs, low density structures, and rail (elevated too)
+
 # PLEASE REPORT ANY BUGS YOU FIND
 
 ## Compat:
