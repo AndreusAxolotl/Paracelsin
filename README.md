@@ -40,7 +40,6 @@ The Mechanical Plant, on the other hand, can make engines, express belts, all ty
 
 ## Compat:
 - [Age of Production](https://mods.factorio.com/mod/Age-of-Production): Solves a bit of recipe category mayhem.
-- [Cerys Moon of Fulgora](https://mods.factorio.com/mod/Cerys-Moon-of-Fulgora): Cerys' nitric acid gets replaced by Paracelsin's.
 
 ### Future Plans:
 - Adding more rewards
