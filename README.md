@@ -1,4 +1,4 @@
-### Temporary warnings: The mod just released so there may be big bugs, warn me if you find them. The mod is currently running on an experimental version of the game, so if you have issues just update to 2.0.50 or above. I'm currently accepting suggestions for new recipes and rewards. Just put them in an issue/pr/factorio mod browser discussion!!
+### Temporary warnings: The mod just released so there may be big bugs, warn me if you find them. I'm currently accepting suggestions for new recipes and rewards. Just put them in an issue/pr/factorio mod browser discussion!!
 
 Another frozen world on the horizon... Paracelsin is much colder than Aquilo, but unlike the world of ammonia this planet has a solid surface.
 Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered by ice and liquid nitrogen.
@@ -40,7 +40,6 @@ The Mechanical Plant, on the other hand, can make engines, express belts, all ty
 
 ## Compat:
 - [Age of Production](https://mods.factorio.com/mod/Age-of-Production): Solves a bit of recipe category mayhem.
-- [Cerys Moon of Fulgora](https://mods.factorio.com/mod/Cerys-Moon-of-Fulgora): Cerys' nitric acid gets replaced by Paracelsin's.
 
 ### Future Plans:
 - Adding more rewards
