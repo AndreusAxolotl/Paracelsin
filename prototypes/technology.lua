@@ -12,6 +12,14 @@ data:extend {
         space_location = "paracelsin",
         use_icon_overlay_constant = true
       },
+      --[[{
+        type = "unlock-recipe",
+        recipe = "burner-pumpjack"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "cryovolcanic-turbine"
+      },]]--
       {
         type = "unlock-recipe",
         recipe = "nitrogen-nitric-acid",
@@ -80,6 +88,10 @@ data:extend {
       },
       {
         type = "unlock-recipe",
+        recipe = "sphalerite-melting"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "zinc-leaching"
       },
     },
@@ -100,6 +112,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "tetrahedrite-processing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tetrahedrite-melting"
       },
       {
         type = "unlock-recipe",

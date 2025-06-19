@@ -188,7 +188,7 @@ data:extend({
         {
           type = "fluid",
           name = "water",
-          amount_min = 1,
+          amount_min = 5,
           amount_max = 5,
           probability = 1
         }

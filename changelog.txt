@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-06-19
+  Frozen power and inefficient melting:
+
+  Additions:
+    - Added the Sphalerite and Tetrahedrite melting recipes, to directly obtain molten iron and copper from the ores. They will be very inefficient compared to melting the ores obtained from their processing, but will not give off any byproducts. Nitric acid is needed for the recipe alongside calcite.
+
+  Changes:
+    - Solar power on Paracelsin is now one to fix some issues.
+
+  Notes:
+    - The code now contains two new entities, the Burner Pumpjack and Cryovolcanic Turbine. These two will be unused until I manage to make the Turbine work correctly. If anyone can help I'll gladly appreciate the help. The graphics mod will be updated with the Turbine's textures, alongside the new recipes'.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.4
 Date: 2025-06-10
   Return of the king:

@@ -162,7 +162,7 @@ data:extend{{
       ["day-night-cycle"] = 15 * minute,
       ["magnetic-field"] = 50,
       pressure = 5300,
-      ["solar-power"] = 0.5,
+      ["solar-power"] = 1,
       gravity = 12
     },
     asteroid_spawn_influence = 1,
