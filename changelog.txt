@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-06-20
+  Actual frozen power:
+
+  Additions:
+    - Fully implemented the Cryovolcanic Turbine. This special power building exclusive to Paracelsin generates power from the warmer water produced by the Cryovolcanoes.
+    - Fully implemented the Burner Pumpjack, a new faster but highly inefficient pumpjack useful to kickstart Paracelsin.
+
+  Changes:
+    - Solar power on Paracelsin is now zero. Sorry guys :3.
+    - Cryovolcanoes now release 30°C Water.
+
+  Fixes:
+    - Fixed placement issues with the Paracelsin Briefing tips and tricks when other planet mods were installed.
+    - Fixed the zinc plate recipe appearing in the crafting menu since the start of the game.
+
+  Notes:
+    - The Cryovolcanic Turbine may be fully reworked in the future so don't rely on them too much.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2025-06-19
   Frozen power and inefficient melting:

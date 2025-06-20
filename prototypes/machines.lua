@@ -72,7 +72,7 @@ data:extend{
     weight = 200000,
     place_result = "mechanical-plant"
 },
---[[{
+{
     type = "item",
     name = "cryovolcanic-turbine",
     subgroup = "environmental-protection",
@@ -107,7 +107,7 @@ data:extend{
     default_import_location = "paracelsin",
     weight = 50000,
     place_result = "burner-pumpjack"
-},]]--
+},
 {
     type = "recipe",
     name = "electrochemical-plant",
@@ -148,7 +148,7 @@ data:extend{
     category = "pressing",
     auto_recycle = true
 },
---[[{
+{
     type = "recipe",
     name = "cryovolcanic-turbine",
     enabled = false,
@@ -185,7 +185,7 @@ data:extend{
     main_product = "burner-pumpjack",
     category = "pressing",
     auto_recycle = true
-},]]--
+},
     {
         name = "electrochemical-plant",
         type = "assembling-machine",
@@ -551,7 +551,7 @@ data:extend{
           }
         },
       },
-      --[[{
+      {
     type = "generator",
     name = "cryovolcanic-turbine",
     icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-turbine.png",
@@ -563,7 +563,7 @@ data:extend{
     effectivity = 5,
     fluid_usage_per_tick = 0.25,
     burns_fluid = false,
-    maximum_temperature = 15,
+    maximum_temperature = 30,
     resistances =
     {
       {
@@ -574,7 +574,7 @@ data:extend{
     collision_box = {{-1.1, -1.1}, {1.1, 1.1}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    max_power_output= "75kW",
+    max_power_output= "80kW",
     fluid_box =
     {
       volume = 200,
@@ -582,7 +582,9 @@ data:extend{
       pipe_connections =
       {
         { flow_direction = "input-output", direction = defines.direction.south, position = {0, 1} },
-        { flow_direction = "input-output", direction = defines.direction.north, position = {0, -1} }
+        { flow_direction = "input-output", direction = defines.direction.north, position = {0, -1} },
+        { flow_direction = "input-output", direction = defines.direction.east, position = {1, 0} },
+        { flow_direction = "input-output", direction = defines.direction.west, position = {-1, -0} }
       },
       production_type = "input",
       filter = "water",
@@ -801,5 +803,5 @@ data:extend{
 
     circuit_connector = circuit_connector_definitions["pumpjack"],
     circuit_wire_max_distance = default_circuit_wire_max_distance
-  }]]--
+  }
   }

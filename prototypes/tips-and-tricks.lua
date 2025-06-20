@@ -87,7 +87,7 @@ data:extend(
     name = "paracelsin-briefing",
     tag = "[planet=paracelsin]",
     category = "space-age",
-    order = "e-a",
+    order = "z-a",
     trigger =
     {
       type = "research",

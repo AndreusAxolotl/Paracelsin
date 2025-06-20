@@ -12,14 +12,14 @@ data:extend {
         space_location = "paracelsin",
         use_icon_overlay_constant = true
       },
-      --[[{
+      {
         type = "unlock-recipe",
         recipe = "burner-pumpjack"
       },
       {
         type = "unlock-recipe",
         recipe = "cryovolcanic-turbine"
-      },]]--
+      },
       {
         type = "unlock-recipe",
         recipe = "nitrogen-nitric-acid",

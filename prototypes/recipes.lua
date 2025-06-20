@@ -354,6 +354,7 @@ data:extend{
     category = "smelting",
     auto_recycle = true,
     show_amount_in_title = false,
+    hidden_from_player_crafting = true,
 },
 {
     type = "recipe",

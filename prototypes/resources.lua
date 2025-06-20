@@ -190,7 +190,8 @@ data:extend({
           name = "water",
           amount_min = 5,
           amount_max = 5,
-          probability = 1
+          probability = 1,
+          temperature = 30
         }
       }
     },
