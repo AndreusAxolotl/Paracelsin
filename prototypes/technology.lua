@@ -248,7 +248,7 @@ data:extend {
     prerequisites = { "galvanization-science-pack" },
     unit =
     {
-      count_formula = "1.5^L*500",
+      count_formula = "1.5^L*500",      
       ingredients =
       {
         { "automation-science-pack",               1 },

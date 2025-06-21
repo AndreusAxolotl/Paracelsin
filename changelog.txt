@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-06-21
+  Actual frozen power:
+
+  Changes:
+    - Hid the zinc plate recipe from the player crafting menu.
+    - Added descriptions to all zinc pipings since people don't read the tech descriptions.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 2025-06-20
   Actual frozen power:
