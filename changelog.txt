@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2025-06-24
+  Moving around:
+
+  Additions:
+    - Added initial compat with AAI Industry.
+
+  Changes:
+    - Moved the planet a bit to avoid overlap with the Nexus planet mod.
+    - Moved the Cryovolcanic Turbine to the power subgroup.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.2
 Date: 2025-06-21
   Actual frozen power:

@@ -136,7 +136,7 @@ data:extend{{
     starmap_icon = "__Paracelsin-Graphics__/graphics/icons/starmap-planet-paracelsin.png",
     starmap_icon_size = 512,
     gravity_pull = 12,
-    distance = 40,
+    distance = 42,
     orientation = 0.45,
     magnitude = 1.0,
     label_orientation = 0.15,
