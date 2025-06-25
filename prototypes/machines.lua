@@ -75,8 +75,8 @@ data:extend{
 {
     type = "item",
     name = "cryovolcanic-turbine",
-    subgroup = "environmental-protection",
-    order = "z",
+    subgroup = "energy",
+    order = "f[nuclear-energy]-c[cryovolcanic-turbine]" ,
     pick_sound = item_sounds.steam_inventory_pickup,
     drop_sound = item_sounds.steam_inventory_move,
     icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-turbine.png",
