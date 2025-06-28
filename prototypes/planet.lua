@@ -38,7 +38,132 @@ data:extend(
     richness = true,
     order = "z-d",
     category = "resource"
-  },})
+  },
+{
+    type = "noise-expression",
+    name = "paracelsin_starting_sphalerite",
+    expression = "starting_spot_at_angle{ angle = vulcanus_ashlands_angle + 15 * vulcanus_starting_direction,\z
+                                          distance = 180 * vulcanus_starting_area_radius,\z
+                                          radius = 30 * paracelsin_sphalerite_size,\z
+                                          x_distortion = 0.5 * vulcanus_resource_wobble_x,\z
+                                          y_distortion = 0.5 * vulcanus_resource_wobble_y}"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_starting_tetrahedrite",
+    expression = "starting_spot_at_angle{ angle = vulcanus_mountains_angle - 20 * vulcanus_starting_direction,\z
+                                          distance = 350 * vulcanus_starting_area_radius,\z
+                                          radius = 35 / 1.5 * paracelsin_tetrahedrite_size,\z
+                                          x_distortion = 0.5 * vulcanus_resource_wobble_x,\z
+                                          y_distortion = 0.5 * vulcanus_resource_wobble_y}"
+  },
+    {
+    type = "noise-expression",
+    name = "paracelsin_starting_water_cryovolcano",
+    expression = "starting_spot_at_angle{angle = aquilo_angle, distance = 40, radius = aquilo_spot_size * 0.8, x_distortion = 0, y_distortion = 0}"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_water_cryovolcano_spots",
+    expression = "aquilo_spot_noise{seed = 567,\z
+                                    count = 4,\z
+                                    skip_offset = 0,\z
+                                    region_size = 600 + 400 / control:water_cryovolcano:frequency,\z
+                                    density = 1,\z
+                                    radius = aquilo_spot_size * sqrt(control:water_cryovolcano:size),\z
+                                    favorability = 1}"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_water_cryovolcano_probability",
+    expression = "(control:water_cryovolcano:size > 0)\z
+                  * (max(paracelsin_starting_water_cryovolcano * 0.02,\z
+                         min(aquilo_starting_mask, paracelsin_water_cryovolcano_spots) * 0.015))"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_water_cryovolcano_richness",
+    expression = "max(paracelsin_starting_water_cryovolcano * 1800000,\z
+                      paracelsin_water_cryovolcano_spots * 1440000) * control:water_cryovolcano:richness"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_vaterite_richness",
+    expression = "4000 * max(starting, gleba_simple_spot(1000, 6 * size ^ 0.5, 80 / frequency ^ 0.5, gleba_highland) * max(gleba_highland, gleba_midland_aux_2)) * richness / size",
+    local_expressions =
+    {
+      richness = "control:vaterite:richness",
+      frequency = "control:vaterite:frequency",
+      size = "control:vaterite:size",
+      starting = "starting_spot_at_angle{ angle = gleba_starting_angle + 85 * gleba_starting_direction,\z
+                                          distance = 80 * gleba_starting_area_multiplier,\z
+                                          radius = 7 * size ^ 0.5,\z
+                                          x_distortion = gleba_wobble_x * 8,\z
+                                          y_distortion = gleba_wobble_x * 8}"
+    }
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_vaterite_probability",
+    expression = "(control:vaterite:size > 0) * (paracelsin_vaterite_richness > 1)"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_sphalerite_size",
+    expression = "slider_rescale(control:sphalerite:size, 2)"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_sphalerite_region",
+    -- -1 to 1: needs a positive region for resources & decoratives plus a subzero baseline and skirt for surrounding decoratives.
+    expression = "max(paracelsin_starting_sphalerite,\z
+                      min(1 - vulcanus_starting_circle,\z
+                          vulcanus_place_non_metal_spots(782349, 12, 1,\z
+                                                         paracelsin_sphalerite_size * min(1.2, vulcanus_ore_dist) * 25,\z
+                                                         control:sphalerite:frequency,\z
+                                                         vulcanus_ashlands_resource_favorability)))"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_sphalerite_probability",
+    expression = "(control:sphalerite:size > 0) * (1000 * ((1 + paracelsin_sphalerite_region) * random_penalty_between(0.9, 1, 1) - 1))"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_sphalerite_richness",
+    expression = "paracelsin_sphalerite_region * random_penalty_between(0.9, 1, 1)\z
+                  * 18000 * vulcanus_starting_area_multiplier\z
+                  * control:sphalerite:richness / paracelsin_sphalerite_size"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_tetrahedrite_size",
+    expression = "slider_rescale(control:tetrahedrite:size, 2)"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_tetrahedrite_region",
+    -- -1 to 1: needs a positive region for resources & decoratives plus a subzero baseline and skirt for surrounding decoratives.
+    expression = "max(paracelsin_starting_tetrahedrite,\z
+                      min(1 - vulcanus_starting_circle,\z
+                          vulcanus_place_non_metal_spots(749, 12, 1,\z
+                                                         paracelsin_tetrahedrite_size * min(1.2, vulcanus_ore_dist) * 25,\z
+                                                         control:tetrahedrite:frequency,\z
+                                                         vulcanus_mountains_resource_favorability)))"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_tetrahedrite_probability",
+    expression = "(control:tetrahedrite:size > 0) * (1000 * ((1 + paracelsin_tetrahedrite_region) * random_penalty_between(0.9, 1, 1) - 1))"
+  },
+  {
+    type = "noise-expression",
+    name = "paracelsin_tetrahedrite_richness",
+    expression = "paracelsin_tetrahedrite_region * random_penalty_between(0.9, 1, 1)\z
+                  * 24000 * vulcanus_starting_area_multiplier\z
+                  * control:tetrahedrite:richness / paracelsin_tetrahedrite_size"
+  },
+})
 
 planet_map_gen.paracelsin = function()
   return
@@ -51,14 +176,14 @@ planet_map_gen.paracelsin = function()
       aux = "vulcanus_aux",
       cliffiness = "cliffiness_basic",
       cliff_elevation = "cliff_elevation_from_elevation",
-      ["entity:sphalerite:probability"] = "vulcanus_coal_probability",
-      ["entity:sphalerite:richness"] = "vulcanus_coal_richness",
-      ["entity:tetrahedrite:probability"] = "vulcanus_calcite_probability",
-      ["entity:tetrahedrite:richness"] = "vulcanus_calcite_richness",
-      ["entity:vaterite:probability"] = "gleba_stone_probability",
-      ["entity:vaterite:richness"] = "gleba_stone_richness",
-      ["entity:water-cryovolcano:probability"] = "aquilo_crude_oil_probability",
-      ["entity:water-cryovolcano:richness"] = "aquilo_crude_oil_richness",
+      ["entity:sphalerite:probability"] = "paracelsin_sphalerite_probability",
+      ["entity:sphalerite:richness"] = "paracelsin_sphalerite_richness",
+      ["entity:tetrahedrite:probability"] = "paracelsin_tetrahedrite_probability",
+      ["entity:tetrahedrite:richness"] = "paracelsin_tetrahedrite_richness",
+      ["entity:vaterite:probability"] = "paracelsin_vaterite_probability",
+      ["entity:vaterite:richness"] = "paracelsin_vaterite_richness",
+      ["entity:water-cryovolcano:probability"] = "paracelsin_water_cryovolcano_probability",
+      ["entity:water-cryovolcano:richness"] = "paracelsin_water_cryovolcano_richness",
     },
     cliff_settings =
     {
