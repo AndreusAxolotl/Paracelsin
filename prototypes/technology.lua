@@ -497,8 +497,12 @@ local function add_tech_effect(tech_name, effect)
 end
 add_science_pack("promethium-science-pack", { "galvanization-science-pack", 1 })
 add_science_pack("fusion-reactor", { "galvanization-science-pack", 1 })
+add_science_pack("railgun", { "galvanization-science-pack", 1 })
+add_science_pack("quantum-processor", { "galvanization-science-pack", 1 })
 add_science_pack("research-productivity", { "galvanization-science-pack", 1 })
-add_tech_prerequisites("fusion-reactor", "galvanization-science-pack")
+add_science_pack("railgun-shooting-speed-1", { "galvanization-science-pack", 1 })
+add_science_pack("railgun-damage-1", { "galvanization-science-pack", 1 })
+add_tech_prerequisites("quantum-processor", "galvanization-science-pack")
 add_tech_effect("plastic-bar-productivity",
   { type = "change-recipe-productivity", recipe = "nitric-acid-plastic", change = 0.1 })
 add_tech_effect("rocket-fuel-productivity",

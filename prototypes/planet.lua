@@ -1,11 +1,9 @@
 require("__space-age__/prototypes/planet/planet-vulcanus-map-gen")
 local planet_map_gen = require("__space-age__/prototypes/planet/planet-map-gen")
-
+local asteroid_util = require("prototypes.asteroid-spawn-definitions")
 local effects = require("__core__.lualib.surface-render-parameter-effects")
-local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
 local planet_catalogue_aquilo = require("__space-age__.prototypes.planet.procession-catalogue-aquilo")
 local planet_map_gen = require("__base__/prototypes/planet/planet-map-gen")
-
 
 data:extend(
 {
@@ -135,9 +133,9 @@ data:extend{{
     icon = "__Paracelsin-Graphics__/graphics/icons/paracelsin.png",
     starmap_icon = "__Paracelsin-Graphics__/graphics/icons/starmap-planet-paracelsin.png",
     starmap_icon_size = 512,
-    gravity_pull = 12,
+    gravity_pull = 10,
     distance = 42,
-    orientation = 0.45,
+    orientation = 0.31,
     magnitude = 1.0,
     label_orientation = 0.15,
     order = "f",
@@ -163,10 +161,10 @@ data:extend{{
       ["magnetic-field"] = 50,
       pressure = 5300,
       ["solar-power"] = 0,
-      gravity = 12
+      gravity = 65
     },
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo, 0.9),
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_paracelsin, 0.9),
     persistent_ambient_sounds =
     {
       base_ambience = {filename = "__space-age__/sound/wind/base-wind-aquilo.ogg", volume = 0.5},
@@ -230,17 +228,27 @@ data:extend{{
     subgroup = "planet-connections",
     from = "fulgora",
     to = "paracelsin",
-    order = "x",
+    order = "g1",
     length = 35000,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_paracelsin)
   },
-{
+  {
     type = "space-connection",
-    name = "nauvis-paracelsin",
+    name = "paracelsin-aquilo",
     subgroup = "planet-connections",
-    from = "nauvis",
-    to = "paracelsin",
-    order = "y",
-    length = 45000,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
-  }}
+    from = "paracelsin",
+    to = "aquilo",
+    order = "g2",
+    length = 50000,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.aquilo_paracelsin)
+  },
+  {
+    type = "space-connection",
+    name = "paracelsin-solar-system-edge",
+    subgroup = "planet-connections",
+    from = "paracelsin",
+    to = "solar-system-edge",
+    order = "h1",
+    length = 100000,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.paracelsin_solar_system_edge)
+  },}

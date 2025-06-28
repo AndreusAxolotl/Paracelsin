@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-06-28
+  Operation make zinc more useful:
+
+  Changes:
+    - Added Zinc Solder to the Quantum Chip recipe.
+    - Added Electric Coils to the Fusion Reactor, Fusion Generator and Railgun recipes.
+    - Changed some things about ore generation on the planet.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 2025-06-26
+  Moving around even more:
+
+  Additions:
+    - Added the Paracelsin-Solar System Edge route.
+    - Added the Aquilo-Paracelsin route.
+
+  Changes:
+    - Removed the Paracelsin-Nauvis route. DON'T UPDATE BEFORE ALL SHIPS ARE OUT OF IT IDK WHAT HAPPENS IF THEY ARE IN IT WHEN ITS REMOVED.
+    - Moved Paracelsin again.
+    - Changed asteroid definitions to use new "custom" ones.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.3
 Date: 2025-06-24
   Moving around:
