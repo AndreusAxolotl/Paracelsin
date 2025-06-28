@@ -7,7 +7,7 @@ Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead
 
 This mod adds planet Paracelsin, the world of Zinc, and its various resources and processes!
 
-Should be safe to add in an already started save!
+Should be safe to add in an already started save but some recipes will have some ingredients added and some techs will also require the new science pack.
 
 On the world of Zinc you'll have to make your way between heating up your factory in the cold, dealing with endless byproducts and solving the puzzle of zinc's long production chain.
 
@@ -15,7 +15,7 @@ Many rewards will come from conquering the frozen wasteland of nitrogen and zinc
 
 ## Planet
 
-Paracelsin is located farther than Fulgora in space. You can reach it from Fulgora or Nauvis, but beware of the large asteroids on the way. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
+Paracelsin is located farther than Aquilo in space. You can reach it from Fulgora or Aquilo, but beware of the large asteroids on the way. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
 
 ## Resources
 

@@ -4,9 +4,9 @@ Date: 2025-06-28
   Operation make zinc more useful:
 
   Changes:
-    - Added Zinc Solder to the Quantum Chip recipe.
-    - Added Electric Coils to the Fusion Reactor, Fusion Generator and Railgun recipes.
-    - Changed some things about ore generation on the planet.
+    - Added 2 Zinc Solder to the Quantum Chip recipe.
+    - Added Electric Coils to the Fusion Reactor (200), Fusion Generator (50), Portable Fusion Reactor (25), Railgun Turret (50) and Railgun (20) recipes.
+    - Changed some things about ore generation on the planet so you can now actually use the sliders to change resource size, richness and frequency.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 2025-06-26
