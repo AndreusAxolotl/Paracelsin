@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 2025-07-01
+  Settingsful:
+
+  Additions:
+    - Added a setting (on by default) to disable Zinc Solder and Electric Coils from Quantum Chips and Quantum Chip-tier entity recipes respectively.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.0
 Date: 2025-06-28
   Operation make zinc more useful:

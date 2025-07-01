@@ -40,6 +40,7 @@ add_additional_categories("sulfur", {"electrochemistry"})
 add_additional_categories("battery", {"electrochemistry"})
 add_additional_categories("sulfuric-acid", {"electrochemistry"})
 
+if settings.startup["paracelsin-zinc-implementation"].value then
 data.raw.recipe["quantum-processor"].ingredients =
     {
       {type = "item", name = "tungsten-carbide", amount = 1},
@@ -91,7 +92,8 @@ data.raw.recipe["fusion-reactor-equipment"].ingredients =
       {type = "item", name = "electric-coil", amount = 25},
       {type = "item", name = "quantum-processor", amount = 250}
     }
-
+  end
+  
 require "prototypes.items"
 require "prototypes.machines"
 require "prototypes.tiles"
