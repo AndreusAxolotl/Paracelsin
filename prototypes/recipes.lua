@@ -558,6 +558,28 @@ data.raw.recipe["elevated-pipe"].category = "mechanics"
 data.raw.recipe["elevated-pipe"].subgroup = "zinc-pipe"
 data.raw.item["elevated-pipe"].subgroup = "zinc-pipe"
 data.raw.item["elevated-pipe"].order = "e"
+data.raw.recipe["elevated-pipe"].surface_conditions = {{property = "pressure", min = 5300, max = 5300}}
+data.raw.recipe["solar-matrix"].energy_required = 20
+data.raw.recipe["solar-matrix"].ingredients = {
+    {type = "item", name = "superconductor", amount = 5},
+    {type = "item", name = "zinc-solder", amount = 10},
+    {type = "item", name = "electric-coil", amount = 2},
+    {type = "item", name = "carbon-fiber", amount = 5},
+    {type = "fluid", name = "nitrogen", amount = 25},
+  }
+data.raw.recipe["solar-matrix"].category = "mechanics"
+data.raw.item["solar-matrix"].order = "d[solar-panel]-b[solar-matrix]"
+data.raw.recipe["solar-matrix"].surface_conditions = {{property = "pressure", min = 5300, max = 5300}}
+data.raw.recipe["accumulator-v2"].energy_required = 20
+data.raw.recipe["accumulator-v2"].ingredients = {
+    {type = "item", name = "supercapacitor", amount = 4},
+    {type = "item", name = "zinc-solder", amount = 5},
+    {type = "item", name = "electric-coil", amount = 5},
+    {type = "item", name = "tungsten-carbide", amount = 15},
+    {type = "fluid", name = "nitric-acid", amount = 25},
+  }
+data.raw.recipe["accumulator-v2"].category = "electrochemistry"
+data.raw.recipe["accumulator-v2"].surface_conditions = {{property = "pressure", min = 5300, max = 5300}}
 
 local function add_player_crafting_categories(categories)
     local entity = data.raw.character.character

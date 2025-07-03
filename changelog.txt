@@ -1,6 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.4
+Date: 2025-07-03
+  Powerful:
+
+  Additions:
+    - Added the Solar Matrix from the Solar Matrix mod as a planetary reward and dependency.
+    - Added the Super-Accumulator (Accumulator V2) from the Accumulator V2 mod as a planetary reward and dependency.
+    - Added the tiniest possible type of compat with the galore mods so the Galvanization Science Pack is in the correct category and order.
+
+  Changes:
+    - Changed the description of the elevated pipe.  
+    - Changed Paracelsin Planet Discovery science price to 3000 from 2500.
+
+  Fixes:
+    - Added missing crafting surface condition to the elevated pipes.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.3
-Date: 2025-07-01
+Date: 2025-07-03
   patchful:
 
   Changes:

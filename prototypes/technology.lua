@@ -40,7 +40,7 @@ data:extend {
     prerequisites = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" },
     unit =
     {
-      count = 2500,
+      count = 3000,
       ingredients =
       {
         { "automation-science-pack",      1 },
@@ -471,6 +471,40 @@ data.raw.technology["elevated-pipe"].effects =
     type = "unlock-recipe",
     recipe = "elevated-pipe"
   },
+}
+data.raw.technology["solar-matrix"].prerequisites = { "galvanization-science-pack" }
+data.raw.technology["solar-matrix"].unit =
+{
+  count = 2000,
+  ingredients =
+  {
+    { "automation-science-pack",               1 },
+    { "logistic-science-pack",                 1 },
+    { "chemical-science-pack",                 1 },
+    { "production-science-pack",                  1 },
+    { "space-science-pack",                    1 },
+    { "electromagnetic-science-pack", 1 },
+    { "agricultural-science-pack", 1 },
+    { "galvanization-science-pack", 1 }
+  },
+  time = 60
+}
+data.raw.technology["accumulator-v2"].prerequisites = { "galvanization-science-pack" }
+data.raw.technology["accumulator-v2"].unit =
+{
+  count = 2000,
+  ingredients =
+  {
+    { "automation-science-pack",               1 },
+    { "logistic-science-pack",                 1 },
+    { "chemical-science-pack",                 1 },
+    { "production-science-pack",                  1 },
+    { "space-science-pack",                    1 },
+    { "electromagnetic-science-pack", 1 },
+    { "metallurgic-science-pack", 1 },
+    { "galvanization-science-pack", 1 }
+  },
+  time = 60
 }
 
 local function add_tech_prerequisites(tech_name, prerequisites)

@@ -73,6 +73,12 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Source**: [Elevated Pipes](https://mods.factorio.com/mod/elevated-pipes)
 - **License**: [MIT](https://opensource.org/license/MIT)
 
+#### Solar Matrix and Accumulator V2 mods
+
+- **Creator**: [Sacredanarchy](https://mods.factorio.com/user/Sacredanarchy)
+- **Sources**: [Solar Matrix](https://mods.factorio.com/mod/SolarMatrix) and  [Accumulator V2](https://mods.factorio.com/mod/Accumulator-V2)
+- **License**: [IPL](https://docs.google.com/document/d/12w08VwWvGfG_Tb3ds9phw5Q4ob_GyLduDGobANV1HmQ/edit?tab=t.0)
+
 #### Item and tech Icons
 - **Creators**: [Malcolm Riley](https://github.com/malcolmriley)
 - **Source**: [Unused Renders](https://github.com/malcolmriley/unused-renders)
