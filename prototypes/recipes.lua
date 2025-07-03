@@ -533,7 +533,8 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "item", name = "electric-coil",   amount = 1},
-        {type = "item", name = "zinc-rivets",   amount = 10},
+        {type = "item", name = "zinc-rivets",   amount = 5},
+        {type = "item", name = "zinc-solder",   amount = 2},
         {type = "item", name = "advanced-circuit",       amount = 2},
     },
     results = {
@@ -554,6 +555,7 @@ data.raw.recipe["elevated-pipe"].ingredients = {
   }
 data.raw.recipe["elevated-pipe"].auto_recycle = true
 data.raw.recipe["elevated-pipe"].category = "mechanics"
+data.raw.recipe["elevated-pipe"].subgroup = "zinc-piping"
 
 local function add_player_crafting_categories(categories)
     local entity = data.raw.character.character

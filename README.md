@@ -66,6 +66,13 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Source**: [Figma](https://shorturl.at/AFcDm)
 - **License**: [CC BY](https://creativecommons.org/licenses/by/4.0/)
 
+
+#### Elevated Pipes mod
+
+- **Creator**: [Redotix99](https://mods.factorio.com/user/redotix99)
+- **Source**: [Elevated Pipes](https://mods.factorio.com/mod/elevated-pipes)
+- **License**: [MIT](https://opensource.org/license/MIT)
+
 #### Item and tech Icons
 - **Creators**: [Malcolm Riley](https://github.com/malcolmriley)
 - **Source**: [Unused Renders](https://github.com/malcolmriley/unused-renders)
