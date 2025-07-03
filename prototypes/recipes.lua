@@ -555,7 +555,9 @@ data.raw.recipe["elevated-pipe"].ingredients = {
   }
 data.raw.recipe["elevated-pipe"].auto_recycle = true
 data.raw.recipe["elevated-pipe"].category = "mechanics"
-data.raw.recipe["elevated-pipe"].subgroup = "zinc-piping"
+data.raw.recipe["elevated-pipe"].subgroup = "zinc-pipe"
+data.raw.item["elevated-pipe"].subgroup = "zinc-pipe"
+data.raw.item["elevated-pipe"].order = "e"
 
 local function add_player_crafting_categories(categories)
     local entity = data.raw.character.character
