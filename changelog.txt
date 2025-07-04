@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.5
+Date: 2025-07-04
+  importful:
+
+  Fixes:
+    - Changed the default import location of the elevated pipe, solar matrix and super-accumulator to Paracelsin as intended.
+    - Changed the weight of the elevated pipe, solar matrix and super-accumulator.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.4
 Date: 2025-07-03
   Powerful:
