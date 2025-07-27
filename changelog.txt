@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-07-27
+  Burnery:
+
+  Changes:
+    - Changed the textures of the Burner Pumpjack to the Oil Pumpjack textures from Krastorio 2 to make it more recognizable.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.6
 Date: 2025-07-22
   We not makin 🌐 now uh?:

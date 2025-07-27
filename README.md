@@ -84,6 +84,11 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Source**: [Unused Renders](https://github.com/malcolmriley/unused-renders)
 - **License**: Public domain.
 
+#### Burner Pumpjack Textures
+- **Creators**: Krastorio Team
+- **Source**: [Krastorio 2 Assets](https://mods.factorio.com/mod/Krastorio2Assets)
+- **License**: [GNU LGPLv3](https://opensource.org/license/lgpl-3.0)
+
 #### Various other help and inspiration
 - The mod-dev-help channel in general!
 - If I forgot you just tell me! With proof u helped in any way ofc!

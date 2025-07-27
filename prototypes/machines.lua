@@ -94,14 +94,7 @@ data:extend{
     inventory_move_sound = item_sounds.pumpjack_inventory_move,
     pick_sound = item_sounds.pumpjack_inventory_pickup,
     drop_sound = item_sounds.pumpjack_inventory_move,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/icons/pumpjack.png",
-        icon_size = 64,
-        tint = { r = 0.31, g = 0.31, b = 0.31, a = 1 }
-      },
-    },
+    icon = "__Paracelsin-Graphics__/graphics/icons/burner-pumpjack.png",
     icon_size = 64,
     stack_size = 20,
     default_import_location = "paracelsin",
@@ -171,7 +164,7 @@ data:extend{
     type = "recipe",
     name = "burner-pumpjack",
     enabled = false,
-    energy_required = 5,
+    energy_required = 10,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 5},
       {type = "item", name = "iron-gear-wheel", amount = 15},
@@ -679,14 +672,7 @@ data:extend{
     {
     type = "mining-drill",
     name = "burner-pumpjack",
-    icons =
-    {
-      {
-        icon = "__base__/graphics/icons/pumpjack.png",
-        icon_size = 64,
-        tint = { r = 0.31, g = 0.31, b = 0.31, a = 1 }
-      },
-    },
+    icon = "__Paracelsin-Graphics__/graphics/icons/burner-pumpjack.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "burner-pumpjack"},
     resource_categories = {"basic-fluid"},
@@ -725,7 +711,7 @@ data:extend{
     module_slots = 0,
     radius_visualisation_picture =
     {
-      filename = "__base__/graphics/entity/pumpjack/pumpjack-radius-visualization.png",
+      filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-radius-visualization.png",
       width = 12,
       height = 12
     },
@@ -736,16 +722,15 @@ data:extend{
       sheets =
       {
         {
-          filename = "__base__/graphics/entity/pumpjack/pumpjack-base.png",
+          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base.png",
           priority = "extra-high",
           width = 261,
           height = 273,
           shift = util.by_pixel(-2.25, -4.75),
           scale = 0.5,
-          tint = { r = 0.31, g = 0.31, b = 0.31, a = 1 }
         },
         {
-          filename = "__base__/graphics/entity/pumpjack/pumpjack-base-shadow.png",
+          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base-shadow.png",
           width = 220,
           height = 220,
           scale = 0.5,
@@ -764,7 +749,7 @@ data:extend{
           {
             {
               priority = "high",
-              filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead.png",
+              filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead.png",
               animation_speed = 0.5,
               scale = 0.5,
               line_length = 8,
@@ -772,11 +757,10 @@ data:extend{
               height = 202,
               frame_count = 40,
               shift = util.by_pixel(-4, -24),
-              tint = { r = 0.31, g = 0.31, b = 0.31, a = 1 }
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/pumpjack/pumpjack-horsehead-shadow.png",
+              filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead-shadow.png",
               animation_speed = 0.5,
               draw_as_shadow = true,
               line_length = 8,
