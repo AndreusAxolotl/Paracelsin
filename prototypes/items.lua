@@ -195,7 +195,7 @@ data:extend{
     icon_size = 64,
     stack_size = 200,
     default_import_location = "paracelsin",
-    weight = 10000,
+    weight = 2000,
 },
 {
     type = "item",
@@ -209,7 +209,7 @@ data:extend{
     icon_size = 64,
     stack_size = 200,
     default_import_location = "paracelsin",
-    weight = 10000,
+    weight = 2000,
 },
   {
     type = "item",
@@ -223,7 +223,7 @@ data:extend{
     icon_size = 64,
     stack_size = 100,
     default_import_location = "paracelsin",
-    weight = 20000,
+    weight = 4000,
 },
 {type = "tool",
     name = "galvanization-science-pack",
@@ -256,7 +256,7 @@ data:extend{
     speed = 5,
     durability = 1000,
     stack_size = 50,
-    weight = 20000,
+    weight = 2000,
     random_tint_color = item_tints.iron_rust
   },
 }
