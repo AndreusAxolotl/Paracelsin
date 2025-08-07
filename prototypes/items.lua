@@ -257,6 +257,7 @@ data:extend{
     durability = 1000,
     stack_size = 50,
     weight = 2000,
+    default_import_location = "paracelsin",
     random_tint_color = item_tints.iron_rust
   },
 }
