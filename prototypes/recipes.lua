@@ -77,7 +77,7 @@ data:extend{
     },
     allow_productivity = true,
     category = "chemistry",
-    auto_recycle = true,
+    auto_recycle = false,
     show_amount_in_title = false,
     crafting_machine_tint =
     {
@@ -86,6 +86,75 @@ data:extend{
       tertiary = {r = 0.347, g = 0.388, b = 0.387, a = 1.000}, 
       quaternary = {r = 0.656, g = 0.562, b = 0.264, a = 1.000}, 
     }
+},
+{
+    type = "recipe",
+    name = "paracelsin-processing-units-from-nitric-acid",
+    enabled = false,
+    subgroup = "nitric-acid-and-nitrogen",
+    order = "f",
+    icon = "__Paracelsin-Graphics__/graphics/icons/paracelsin-processing-units-from-nitric-acid.png",
+    icon_size = 64,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "nitric-acid",       amount = 5},
+        {type = "item", name = "advanced-circuit", amount = 4},
+        {type = "item", name = "electronic-circuit", amount = 16},
+        {type = "item", name = "zinc-solder", amount = 2},
+    },
+    results = {
+        {type = "item", name = "processing-unit", amount = 1}
+    },
+    allow_productivity = true,
+    category = "electromagnetics",
+    additional_categories = {"electrochemistry"},
+    auto_recycle = false,
+    show_amount_in_title = false,
+},
+{
+    type = "recipe",
+    name = "batteries-from-nitric-acid",
+    enabled = false,
+    subgroup = "nitric-acid-and-nitrogen",
+    order = "g",
+    icon = "__Paracelsin-Graphics__/graphics/icons/batteries-from-nitric-acid.png",
+    icon_size = 64,
+    energy_required = 5,
+    ingredients = {
+        {type = "fluid", name = "nitric-acid",       amount = 20},
+        {type = "item", name = "zinc-rivets", amount = 4},
+        {type = "item", name = "copper-cable", amount = 4},
+        {type = "item", name = "iron-plate", amount = 1},
+    },
+    results = {
+        {type = "item", name = "battery", amount = 1}
+    },
+    allow_productivity = true,
+    category = "cryogenics",
+    additional_categories = {"electrochemistry"},
+    auto_recycle = false,
+    show_amount_in_title = false,
+},
+{
+    type = "recipe",
+    name = "lubricant-from-nitric-acid",
+    enabled = false,
+    subgroup = "nitric-acid-and-nitrogen",
+    order = "h",
+    icon = "__Paracelsin-Graphics__/graphics/icons/lubricant-from-nitric-acid.png",
+    icon_size = 64,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "nitric-acid",       amount = 5},
+        {type = "item", name = "carbon", amount = 5},
+    },
+    results = {
+        {type = "fluid", name = "lubricant", amount = 20}
+    },
+    allow_productivity = true,
+    category = "electrochemistry",
+    auto_recycle = false,
+    show_amount_in_title = false,
 },
 {
     type = "recipe",

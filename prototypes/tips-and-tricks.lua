@@ -99,4 +99,16 @@ data:extend(
       surface = "paracelsin"
     },
     simulation = simulations.paracelsin_briefing
-  },})
+  },
+{
+    type = "tips-and-tricks-item",
+    name = "fulgoran-log",
+    tag = "[entity=crashed-fulgoran-pod]",
+    category = "space-age",
+    order = "z-b",
+    trigger =
+    {
+      type = "research",
+      technology = "cryovolcanic-power"
+    },
+  }})

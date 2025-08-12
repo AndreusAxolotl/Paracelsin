@@ -39,6 +39,20 @@ data:extend(
     order = "z-d",
     category = "resource"
   },
+  {
+        type = "autoplace-control",
+        name = "big_metallic_rock",
+        order = "z-e",
+        category = "terrain",
+        can_be_disabled = false,
+    },
+    {
+        type = "autoplace-control",
+        name = "crashed_fulgoran_pod",
+        order = "z-f",
+        category = "terrain",
+        can_be_disabled = false,
+    },
 {
     type = "noise-expression",
     name = "paracelsin_starting_sphalerite",
@@ -246,6 +260,8 @@ planet_map_gen.paracelsin = function()
           ["sphalerite"] = {},
           ["tetrahedrite"] = {},
           ["crater-cliff"] = {},
+          ["big-metallic-rock"] = {},
+          ["crashed-fulgoran-pod"] = {},
         }
       }
     }

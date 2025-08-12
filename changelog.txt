@@ -1,4 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2025-08-12
+  Oil chuggers and lightning lovers:
+
+  Changes:
+    - Changed the text in the [ACCESS DENIED] to be funnier. (Thanks to my friend metajuices for writing help)
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2025-08-10
+  What the recycle:
+
+  Changes:
+    - Moved the three new recipes to other techs.
+    - Nitric Batteries and blue chips are now craftable in the cryo and em plants respectively alongside the echem plant.
+
+  Fixes:
+    - Fixed recycling for batteries and blue chips.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2025-08-10
+  Bringing life... err. death to the planet:
+
+  Additions:
+    - Added Crashed Fulgoran Pods and Big Metallic Rocks to the surface of the planet. If you dont fine any nearby in a started save, just walk into new chunks for a bit.
+    - Added 2 new techs.
+    - Added a new recipe for lube, batteries and blue circuits, all using nitric acid.
+    - Added a new Tips and Tricks about [ACCESS DENIED].
+
+  Changes:
+    - Tech three reworked to unclutter the planet discovery tech from some recipes.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.2
 Date: 2025-08-07
   Repaired the pack:

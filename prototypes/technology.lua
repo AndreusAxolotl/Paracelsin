@@ -12,30 +12,6 @@ data:extend {
         space_location = "paracelsin",
         use_icon_overlay_constant = true
       },
-      {
-        type = "unlock-recipe",
-        recipe = "burner-pumpjack"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "cryovolcanic-turbine"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "nitrogen-nitric-acid",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "solid-fuel-from-nitrogen"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "nitric-acid-rocket-fuel"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "nitric-acid-plastic"
-      },
     },
     prerequisites = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" },
     unit =
@@ -58,6 +34,64 @@ data:extend {
   },
   {
     type = "technology",
+    name = "cryovolcanic-power",
+    icon = "__Paracelsin-Graphics__/graphics/technology/cryovolcanic-power.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "burner-pumpjack"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "cryovolcanic-turbine"
+      },
+    },
+    prerequisites = { "planet-discovery-paracelsin" },
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "crashed-fulgoran-pod"
+    }
+  },
+  {
+    type = "technology",
+    name = "nitric-acid-handling",
+    icon = "__Paracelsin-Graphics__/graphics/technology/nitric-acid-handling.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "nitrogen-nitric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "solid-fuel-from-nitrogen"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "nitric-acid-rocket-fuel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "nitric-acid-plastic"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "lubricant-from-nitric-acid"
+      },
+    },
+    prerequisites = { "planet-discovery-paracelsin" },
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "big-metallic-rock"
+    }
+  },
+  {
+    type = "technology",
     name = "vaterite-processing",
     icon = "__Paracelsin-Graphics__/graphics/technology/vaterite-processing.png",
     icon_size = 256,
@@ -68,7 +102,7 @@ data:extend {
         recipe = "vaterite-processing"
       },
     },
-    prerequisites = { "planet-discovery-paracelsin" },
+    prerequisites = { "nitric-acid-handling", "cryovolcanic-power"},
     research_trigger =
     {
       type = "mine-entity",
@@ -176,6 +210,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "electrochemical-plant"
+      },
+            {
+        type = "unlock-recipe",
+        recipe = "paracelsin-processing-units-from-nitric-acid"
       }
     },
     prerequisites = { "zinc-extraction" },
@@ -200,6 +238,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "electric-coil"
+      },
+            {
+        type = "unlock-recipe",
+        recipe = "batteries-from-nitric-acid"
       }
     },
     prerequisites = { "zinc-extraction" },
@@ -221,8 +263,7 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "galvanization-science-pack"
-      },
-
+      }
     },
     prerequisites = { "mechanical-plant", "electrochemical-plant" },
     research_trigger =
