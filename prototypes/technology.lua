@@ -349,47 +349,6 @@ data:extend {
   },
   {
     type = "technology",
-    name = "galvanized-casting",
-    icon = "__Paracelsin-Graphics__/graphics/technology/galvanization.png",
-    icon_size = 256,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "casting-galvanized-iron-gear-wheel"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "casting-galvanized-iron-stick"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "casting-galvanized-steel-plate"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "casting-galvanized-low-density-structure"
-      }, },
-    prerequisites = { "galvanization-science-pack" },
-    unit =
-    {
-      count = 3000,
-      ingredients =
-      {
-        { "automation-science-pack",               1 },
-        { "logistic-science-pack",                 1 },
-        { "chemical-science-pack",                 1 },
-        { "production-science-pack",               1 },
-        { "utility-science-pack",                  1 },
-        { "space-science-pack",                    1 },
-        { "metallurgic-science-pack",              1 },
-        { "galvanization-science-pack", 1 }
-      },
-      time = 60
-    }
-  },
-  {
-    type = "technology",
     name = "zinc-piping",
     icons =
     {
@@ -445,7 +404,7 @@ data:extend {
         modifier = 0.1
       }
     },
-    prerequisites = { "galvanized-casting", "steel-axe" },
+    prerequisites = { "galvanization-science-pack", "steel-axe" },
     unit =
     {
       count_formula = "2^L*500",
@@ -582,7 +541,3 @@ add_tech_effect("plastic-bar-productivity",
   { type = "change-recipe-productivity", recipe = "nitric-acid-plastic", change = 0.1 })
 add_tech_effect("rocket-fuel-productivity",
   { type = "change-recipe-productivity", recipe = "nitric-acid-rocket-fuel", change = 0.1 })
-add_tech_effect("steel-plate-productivity",
-  { type = "change-recipe-productivity", recipe = "casting-galvanized-steel-plate", change = 0.1 })
-add_tech_effect("low-density-structure-productivity",
-  { type = "change-recipe-productivity", recipe = "casting-galvanized-low-density-structure", change = 0.1 })

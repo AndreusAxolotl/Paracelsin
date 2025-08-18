@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.3
+Date: 2025-08-18
+  Gone, reduced to atoms (of zinc):
+
+  Changes:
+    - Removed the Galvanized Casting tech and its unlocks. They were redundant and useless. Their textures will remain in the files for now. Expect to see a new Galvanization tech in the future. May help in... another place.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.2
 Date: 2025-08-12
   Oil chuggers and lightning lovers:

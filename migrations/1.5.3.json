@@ -1,0 +1,9 @@
+{
+    "recipe": 
+    [
+        ["casting-galvanized-iron-gear-wheel", "casting-iron-gear-wheel"],
+        ["casting-galvanized-iron-stick", "casting-iron-stick"],
+        ["casting-galvanized-low-density-structure", "casting-low-density-structure"],
+        ["casting-galvanized-steel-plate", "casting-steel"]
+    ]
+    }
