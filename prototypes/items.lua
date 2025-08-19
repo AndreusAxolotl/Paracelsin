@@ -260,6 +260,16 @@ data:extend{
     default_import_location = "paracelsin",
     random_tint_color = item_tints.iron_rust
   },
+  {
+        type = "item",
+        name = "galvanized-steel-plate",
+        icon = "__Paracelsin-Graphics__/graphics/icons/galvanized-steel-plate.png",
+        stack_size = 100,
+        weight = 2000,
+        subgroup = "paracelsin-processes",
+        default_import_location = "paracelsin",
+        order = "i"
+    },
 }
 
 data.raw.item["sulfur"].fuel_value = "1MJ"

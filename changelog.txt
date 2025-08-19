@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2025-08-19
+  Not gonna leave so easily huh:
+
+  Additions:
+    - Added... back the Galvanized Cas- Galvanization? Ok guess we changing names now. Brought back Galvanization to add the new intermediate Galvanized Steel.
+
+  Changes:
+    - Once again reordered the tech tree to implement Galvanized Steel.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.3
 Date: 2025-08-18
   Gone, reduced to atoms (of zinc):

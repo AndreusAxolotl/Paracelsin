@@ -486,9 +486,10 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "zinc-plate",   amount = 10},
+        {type = "item", name = "zinc-plate",   amount = 5},
         {type = "item", name = "zinc-rivets",       amount = 5},
         {type = "fluid", name = "molten-iron",       amount = 10},
+        {type = "item", name = "galvanized-steel-plate", amount = 1},
     },
     results = {
         {type = "item", name = "zinc-pipe", amount = 1}
@@ -504,10 +505,11 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "zinc-plate",   amount = 20},
+        {type = "item", name = "zinc-plate",   amount = 10},
         {type = "item", name = "zinc-rivets",       amount = 10},
         {type = "item", name = "zinc-pipe",       amount = 20},
         {type = "fluid", name = "molten-iron",       amount = 20},
+        {type = "item", name = "galvanized-steel-plate", amount = 2},
     },
     results = {
         {type = "item", name = "zinc-pipe-to-ground", amount = 2}
@@ -524,10 +526,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "zinc-plate",   amount = 40},
+      {type = "item", name = "zinc-plate",   amount = 20},
         {type = "item", name = "zinc-rivets",       amount = 20},
         {type = "item", name = "zinc-pipe",       amount = 5},
         {type = "fluid", name = "molten-iron",       amount = 30},
+        {type = "item", name = "galvanized-steel-plate", amount = 10},
     },
     results = {{type="item", name="zinc-storage-tank", amount=1}},
     allow_productivity = false,
@@ -542,11 +545,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "zinc-plate",   amount = 20},
+      {type = "item", name = "zinc-plate",   amount = 15},
       {type = "item", name = "electric-coil",   amount = 10},
       {type = "item", name = "zinc-rivets",       amount = 20},
       {type = "item", name = "zinc-pipe",       amount = 2},
       {type = "fluid", name = "molten-iron",       amount = 25},
+      {type = "item", name = "galvanized-steel-plate", amount = 10},
     },
     results = {{type="item", name="zinc-pump", amount=1}},
     allow_productivity = false,

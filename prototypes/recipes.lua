@@ -521,4 +521,25 @@ data:extend{
     auto_recycle = false,
     show_amount_in_title = false,
 },
+{
+    type = "recipe",
+    name = "casting-galvanized-steel-plate",
+    enabled = false,
+    icon = "__Paracelsin-Graphics__/graphics/icons/casting-galvanized-steel-plate.png",
+    icon_size = 64,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "molten-iron",   amount = 150},
+        {type = "fluid", name = "nitrogen",   amount = 20},
+        {type = "item", name = "zinc",   amount = 2},
+        {type = "item", name = "carbon",   amount = 2},
+    },
+    results = {
+        {type = "item", name = "galvanized-steel-plate", amount = 5},
+    },
+    allow_productivity = true,
+    category = "metallurgy",
+    auto_recycle = false,
+    show_amount_in_title = false,
+},
 }

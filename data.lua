@@ -50,10 +50,10 @@ table.insert(data.raw.recipe["fusion-reactor-equipment"].ingredients, {type = "i
   end
   
 data.raw.recipe["elevated-pipe"].ingredients = {
-    {type = "item", name = "zinc-pipe", amount = 2},
+    {type = "item", name = "pipe", amount = 5},
     {type = "item", name = "zinc-rivets", amount = 20},
     {type = "item", name = "iron-stick", amount = 10},
-    {type = "item", name = "zinc-plate", amount = 5},
+    {type = "item", name = "galvanized-steel-plate", amount = 5},
   }
 data.raw.recipe["elevated-pipe"].auto_recycle = true
 data.raw.recipe["elevated-pipe"].category = "mechanics"
@@ -69,6 +69,7 @@ data.raw.recipe["solar-matrix"].ingredients = {
     {type = "item", name = "zinc-solder", amount = 10},
     {type = "item", name = "electric-coil", amount = 2},
     {type = "item", name = "carbon-fiber", amount = 5},
+    {type = "item", name = "galvanized-steel-plate", amount = 5},
     {type = "fluid", name = "nitrogen", amount = 25},
   }
 data.raw.recipe["solar-matrix"].category = "mechanics"
@@ -81,6 +82,7 @@ data.raw.recipe["accumulator-v2"].ingredients = {
     {type = "item", name = "supercapacitor", amount = 4},
     {type = "item", name = "zinc-solder", amount = 5},
     {type = "item", name = "electric-coil", amount = 5},
+    {type = "item", name = "galvanized-steel-plate", amount = 5},
     {type = "item", name = "tungsten-carbide", amount = 15},
     {type = "fluid", name = "nitric-acid", amount = 25},
   }

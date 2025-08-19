@@ -305,6 +305,34 @@ data:extend {
     upgrade = true
   },
   {
+        type = "technology",
+        name = "galvanized-steel",
+        icon = "__Paracelsin-Graphics__/graphics/technology/galvanized-steel.png",
+        icon_size = 256,
+        effects =
+        {
+        {
+        type ="unlock-recipe",
+        recipe="casting-galvanized-steel-plate"
+        }
+        },
+        prerequisites = { "galvanization-science-pack" },
+        unit =
+        {
+            count = 500,
+            ingredients =
+            {
+                { "automation-science-pack",               1 },
+                { "logistic-science-pack",                  1 },
+                { "chemical-science-pack",                    1 },
+                { "space-science-pack",                    1 },
+                { "metallurgic-science-pack",                    1 },
+                { "galvanization-science-pack", 1 }
+            },
+            time = 60
+        }
+    },
+  {
     type = "technology",
     name = "concrete-productivity",
     icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/concrete.png"),
@@ -377,7 +405,7 @@ data:extend {
         recipe = "zinc-pump"
       }, 
     },
-    prerequisites = { "galvanization-science-pack" },
+    prerequisites = { "galvanized-steel" },
     unit =
     {
       count = 1000,
@@ -404,7 +432,7 @@ data:extend {
         modifier = 0.1
       }
     },
-    prerequisites = { "galvanization-science-pack", "steel-axe" },
+    prerequisites = { "galvanized-steel", "steel-axe" },
     unit =
     {
       count_formula = "2^L*500",
@@ -450,7 +478,7 @@ data:extend {
     }
   },
 }
-data.raw.technology["elevated-pipe"].prerequisites = { "zinc-piping" }
+data.raw.technology["elevated-pipe"].prerequisites = { "galvanized-steel" }
 data.raw.technology["elevated-pipe"].unit =
 {
   count = 3000,
@@ -472,7 +500,7 @@ data.raw.technology["elevated-pipe"].effects =
     recipe = "elevated-pipe"
   },
 }
-data.raw.technology["solar-matrix"].prerequisites = { "galvanization-science-pack" }
+data.raw.technology["solar-matrix"].prerequisites = { "galvanized-steel" }
 data.raw.technology["solar-matrix"].unit =
 {
   count = 2000,
@@ -489,7 +517,7 @@ data.raw.technology["solar-matrix"].unit =
   },
   time = 60
 }
-data.raw.technology["accumulator-v2"].prerequisites = { "galvanization-science-pack" }
+data.raw.technology["accumulator-v2"].prerequisites = { "galvanized-steel" }
 data.raw.technology["accumulator-v2"].unit =
 {
   count = 2000,
