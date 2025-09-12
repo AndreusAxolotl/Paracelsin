@@ -490,6 +490,7 @@ data:extend{
         {type = "item", name = "electric-coil",   amount = 2},
         {type = "fluid", name = "nitric-acid",   amount = 50},
         {type = "item", name = "concrete",   amount = 10},
+        {type = "item", name = "vaterite",   amount = 2},
     },
     results = {
         {type = "item", name = "galvanization-science-pack", amount = 1},
@@ -541,5 +542,26 @@ data:extend{
     category = "metallurgy",
     auto_recycle = false,
     show_amount_in_title = false,
+},
+{
+    type = "recipe",
+    name = "vaterite-formation",
+    enabled = false,
+    icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-formation.png",
+    icon_size = 64,
+    energy_required = 5,
+    ingredients = {
+        {type = "item", name = "stone",   amount = 10},
+        {type = "item", name = "vaterite", amount = 1},
+        {type = "fluid", name = "nitrogen",   amount = 20},
+    },
+    results = {
+        {type = "item", name = "vaterite", amount_min = 1, amount_max = 10,},
+    },
+    allow_productivity = true,
+    category = "electrochemistry",
+    auto_recycle = true,
+    show_amount_in_title = false,
+    surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
 },
 }

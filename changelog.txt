@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2025-09-12
+  Vaterite Rework:
+
+  Additions:
+    - Added the Vaterite Formation recipe and tech to help with the lack of vaterite many people are experiencing.
+
+  Changes:
+    - Vaterite is now needed in the Galvanization Science Pack.
+    - Vaterite is now more present. (Thanks oobanooba!)
+---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Date: 2025-08-24
+  Now im gonna leave soon:
+
+  Fixes:
+    - Removed unused lines.
+
+  Notes:
+    - Gonna be on vacation for the next two weekls, try not to find too many bugs cuz i won't be able to fix them until i come back.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.4
 Date: 2025-08-19
   Not gonna leave so easily huh:

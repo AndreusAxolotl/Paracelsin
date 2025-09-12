@@ -20,17 +20,11 @@ data:extend{
     group = "intermediate-products",
     order = "p-b"
   },
-    {
-    type = "item-subgroup",
-    name = "galvanization",
-    group = "intermediate-products",
-    order = "p-c"
-  },
       {
     type = "item-subgroup",
     name = "zinc-fluids",
     group = "intermediate-products",
-    order = "p-d"
+    order = "p-c"
   },
   {
     type = "fluid",

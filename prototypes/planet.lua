@@ -100,10 +100,10 @@ data:extend(
     expression = "max(paracelsin_starting_water_cryovolcano * 1800000,\z
                       paracelsin_water_cryovolcano_spots * 1440000) * control:water_cryovolcano:richness"
   },
-  {
+ {
     type = "noise-expression",
     name = "paracelsin_vaterite_richness",
-    expression = "4000 * max(starting, gleba_simple_spot(1000, 6 * size ^ 0.5, 80 / frequency ^ 0.5, gleba_highland) * max(gleba_highland, gleba_midland_aux_2)) * richness / size",
+    expression = "4000 * max(starting, (gleba_simple_spot(1000, 6 * size ^ 0.5, 80 / frequency ^ 0.5, gleba_highland) * max(gleba_highland, gleba_midland_aux_2)*(sqrt(x*x + y*y)/20))) * richness / size",
     local_expressions =
     {
       richness = "control:vaterite:richness",

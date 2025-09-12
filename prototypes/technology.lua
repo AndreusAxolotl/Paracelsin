@@ -477,6 +477,36 @@ data:extend {
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "vaterite-formation",
+    icon = "__Paracelsin-Graphics__/graphics/technology/vaterite-formation.png",
+    icon_size = 256,
+
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "vaterite-formation"
+      }, 
+    },
+    prerequisites = { "galvanization-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",               1 },
+        { "logistic-science-pack",                 1 },
+        { "chemical-science-pack",                 1 },
+        { "production-science-pack",               1 },
+        { "utility-science-pack",                  1 },
+        { "space-science-pack",                    1 },
+        { "galvanization-science-pack", 1 }
+      },
+      time = 60
+    }
+  },
 }
 data.raw.technology["elevated-pipe"].prerequisites = { "galvanized-steel" }
 data.raw.technology["elevated-pipe"].unit =
