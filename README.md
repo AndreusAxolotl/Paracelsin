@@ -1,5 +1,3 @@
-### Temporary warnings: The mod just released so there may be big bugs, warn me if you find them. I'm currently accepting suggestions for new recipes and rewards. Just put them in an issue/pr/factorio mod browser discussion!!
-
 Another frozen world on the horizon... Paracelsin is much colder than Aquilo, but unlike the world of ammonia this planet has a solid surface.
 Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered by ice and liquid nitrogen.
 
