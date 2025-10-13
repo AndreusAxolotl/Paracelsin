@@ -579,8 +579,13 @@ end
 
 local function add_science_pack(tech_name, science_pack)
   local tech = data.raw.technology[tech_name]
-  tech.unit.ingredients = tech.unit.ingredients or {}
-  table.insert(tech.unit.ingredients, science_pack)
+  -- If `tech.unit` doesn't exist then it is a trigger tech rather than a science tech, cannot modify it in this way
+  if tech.unit then
+    tech.unit.ingredients = tech.unit.ingredients or {}
+    table.insert(tech.unit.ingredients, science_pack)
+  else
+    log("Paracelsin: Unable to add science to tech `" .. tech_name .. "` due to it being a trigger technology, skipped.")
+  end
 end
 local function add_tech_effect(tech_name, effect)
   local tech = data.raw.technology[tech_name]
