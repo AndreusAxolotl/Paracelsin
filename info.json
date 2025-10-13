@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.6.0",
+  "version": "1.6.3",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -9,7 +9,7 @@
   "dependencies": [
     "base >= 2.0.50",
     "space-age >= 2.0.50",
-    "Paracelsin-Graphics = 1.6.0",
+    "Paracelsin-Graphics = 1.6.1",
     "PlanetsLib",
     "elevated-pipes",
     "SolarMatrix",

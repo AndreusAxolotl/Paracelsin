@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.3
+Date: 2025-10-13
+  Nexusful:
+
+  Fixes:
+    - Fixed crash with Nexus.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.2
+Date: 2025-09-21
+  whoops:
+
+  Fixes:
+    - Fixed bug, 1.6.1 removed from downloading.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2025-09-21
+  Blast from the unreleased past:
+
+  Changes:
+    - Now the track Aquilo 4 (Cryogenics) on Paracelsin is replaced by Undisclosed, the beta version of Cryogenics we heard in FFF406. I have had permission to use it for over a week but forgot!
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2025-09-12
   Vaterite Rework:

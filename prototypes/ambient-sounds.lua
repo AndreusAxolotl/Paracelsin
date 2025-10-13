@@ -13,8 +13,15 @@ data:extend(
     name = "paracelsin-2",
     track_type = "main-track",
     planet = "paracelsin",
+    sound = "__Paracelsin-Graphics__/sounds/paracelsin-2.ogg",
+    weight = 10
+  },
+  {
+    type = "ambient-sound",
+    name = "paracelsin-2-hero",
+    track_type = "hero-track",
+    planet = "paracelsin",
     sound = "__space-age__/sound/ambient/aquilo/aquilo-4.ogg",
-    weight = 8
   },
   {
     type = "ambient-sound",
