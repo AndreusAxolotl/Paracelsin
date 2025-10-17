@@ -42,15 +42,19 @@ data:extend(
   {
         type = "autoplace-control",
         name = "big_metallic_rock",
+        localised_name = {"", "[entity=big-metallic-rock] ", {"entity-name.big-metallic-rock"}},
         order = "z-e",
         category = "terrain",
+        hidden = true,
         can_be_disabled = false,
     },
     {
         type = "autoplace-control",
         name = "crashed_fulgoran_pod",
+        localised_name = {"", "[entity=crashed-fulgoran-pod] ", {"entity-name.crashed-fulgoran-pod"}},
         order = "z-f",
         category = "terrain",
+        hidden = true,
         can_be_disabled = false,
     },
 {
