@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.5
+Date: 2025-10-22
+  productivityful:
+
+  Changes:
+    - Thanks to PlanetsLib now Concrete prod automatically adds any recipe that makes concrete or refined concrete to itself.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2025-10-17
   weird...:

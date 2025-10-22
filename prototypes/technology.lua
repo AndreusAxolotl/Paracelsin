@@ -355,6 +355,21 @@ data:extend {
         change = 0.1
       },
     },
+    PlanetsLib_recipe_productivity_effects = {
+            purge_other_effects = false,
+            effects = {
+                {
+                    type = "item",
+                    name = "concrete",
+                    change = 0.1
+                },
+                {
+                    type = "item",
+                    name = "refined-concrete",
+                    change = 0.1
+                },
+            }
+        },
     prerequisites = { "galvanization-science-pack" },
     unit =
     {
