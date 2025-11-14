@@ -13,6 +13,86 @@ local item_tints = require("__base__.prototypes.item-tints")
 local item_effects = require("__space-age__.prototypes.item-effects")
 local meld = require("meld")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
+local ecp_pipe_picture =
+  {
+    north =
+    {
+      layers =
+      {
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-pipe-connections-n",
+        {
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {0, 3}
+        }),
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-shadow-n",
+        {
+          priority = "extra-high",
+          draw_as_shadow = true,
+          scale = 0.5,
+          shift = {0,3}
+        }),
+      },
+    },
+    east =
+    {
+      layers =
+      {
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-pipe-connections-e",
+        {
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {-3, 0}
+        }),
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-shadow-e",
+        {
+          priority = "extra-high",
+          draw_as_shadow = true,
+          scale = 0.5,
+          shift = {-3,0}
+        })
+      }
+    },
+    south =
+    {
+      layers =
+      {
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-pipe-connections-s",
+        {
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {0, -3}
+        }),
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-shadow-s",
+        {
+          priority = "extra-high",
+          draw_as_shadow = true,
+          scale = 0.5,
+          shift = {0,-3}
+        }),
+      }
+    },
+    west =
+    {
+      layers =
+      {
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-pipe-connections-w",
+        {
+          priority = "extra-high",
+          scale = 0.5,
+          shift = {3, 0}
+        }),
+        util.sprite_load("__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-shadow-w",
+        {
+          priority = "extra-high",
+          draw_as_shadow = true,
+          scale = 0.5,
+          shift = {3,0}
+        }),
+      }
+    }
+  }
+
 
 circuit_connector_definitions["electrochemical-plant"] = circuit_connector_definitions.create_vector
 (
@@ -201,40 +281,44 @@ data:extend{
         {
           {
             production_type = "input",
+			always_draw_covers = false,
             pipe_covers = pipecoverspictures(),
             volume = 1000,
             pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-2, 2} }}
           },
           {
             production_type = "input",
-            pipe_picture =  require("__space-age__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
-            always_draw_covers = true, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
+            pipe_picture =  ecp_pipe_picture,
+            always_draw_covers = false, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
             pipe_covers = pipecoverspictures(),
             volume = 1000,
             pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }}
           },
           {
             production_type = "input",
+			always_draw_covers = false,
             pipe_covers = pipecoverspictures(),
             volume = 1000,
             pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {2, 2} }}
           },
           {
             production_type = "output",
+			always_draw_covers = false,
             pipe_covers = pipecoverspictures(),
             volume = 100,
             pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, -2} }}
           },
           {
             production_type = "output",
-            pipe_picture =  require("__space-age__.prototypes.entity.cryogenic-plant-pictures").pipe_picture,
-            always_draw_covers = true, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
+            pipe_picture =  ecp_pipe_picture,
+            always_draw_covers = false, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
             pipe_covers = pipecoverspictures(),
             volume = 100,
             pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {0, -2} }}
           },
           {
             production_type = "output",
+			always_draw_covers = false,
             pipe_covers = pipecoverspictures(),
             volume = 100,
             pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {2, -2} }}
@@ -270,6 +354,7 @@ data:extend{
                       priority = "high",
                       width = 600,
                       height = 500,
+					  shift = util.by_pixel( 3.5, 0.0),
                       frame_count = 1,
                       line_length = 1,
                       repeat_count = 32,
@@ -281,6 +366,7 @@ data:extend{
                       priority = "high",
                       width = 340,
                       height = 340,
+					  shift = util.by_pixel( 3.5, 0.0),
                       frame_count = 32,
                       lines_per_file = 8,
                       animation_speed = 1,
@@ -304,6 +390,7 @@ data:extend{
                               priority = "high",
                               width = 340,
                               height = 340,
+							  shift = util.by_pixel( 3.5, 0.0),
                               frame_count = 32,
                               lines_per_file = 8,
                               animation_speed = 1,
@@ -322,6 +409,7 @@ data:extend{
                               blend_mode = "additive",
                               width = 340,
                               height = 340,
+							  shift = util.by_pixel( 3.5, 0.0),
                               frame_count = 32,
                               lines_per_file = 8,
                               animation_speed = 1,
@@ -340,6 +428,7 @@ data:extend{
                               blend_mode = "additive",
                               width = 340,
                               height = 340,
+							  shift = util.by_pixel( 3.5, 0.0),
                               frame_count = 32,
                               lines_per_file = 8,
                               animation_speed = 1,

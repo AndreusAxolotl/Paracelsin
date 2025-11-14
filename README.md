@@ -64,6 +64,9 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Source**: [Figma](https://shorturl.at/AFcDm)
 - **License**: [CC BY](https://creativecommons.org/licenses/by/4.0/)
 
+#### Electrochemical Plant's pipe connections
+
+- **Creator**: citizenjoe
 
 #### Elevated Pipes mod
 
