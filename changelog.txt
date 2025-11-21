@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.9
+Date: 2025-11-21
+  fulgoran engines...:
+
+  Additions:
+    - Added engines to the crashed fulgoran pod drops to make crafting burner pumpjacks easier.
+
+  Fixes:
+    - Fixed Paracelsin's temperature not having been set. Like ever.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.8
+Date: 2025-11-18
+  satusey!:
+
+  Additions:
+    - Added a status light to the echem plant (Thanks again citizenjoe!)
+---------------------------------------------------------------------------------------------------
 Version: 1.6.7
 Date: 2025-11-10
   pipey!:

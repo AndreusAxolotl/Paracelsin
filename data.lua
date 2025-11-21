@@ -40,6 +40,8 @@ add_additional_categories("sulfur", {"electrochemistry"})
 add_additional_categories("battery", {"electrochemistry"})
 add_additional_categories("sulfuric-acid", {"electrochemistry"})
 
+data.raw.planet["paracelsin"].surface_properties["temperature"] = 140
+
 if settings.startup["paracelsin-zinc-implementation"].value then
 table.insert(data.raw.recipe["quantum-processor"].ingredients, {type = "item", name = "zinc-solder",       amount = 2})
 table.insert(data.raw.recipe["railgun"].ingredients, {type = "item", name = "electric-coil",       amount = 20})

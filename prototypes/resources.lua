@@ -340,7 +340,8 @@ data:extend({
             {type = "item", name = "electronic-circuit", amount_min = 2, amount_max = 10},
             {type = "item", name = "steel-plate", amount_min = 0, amount_max = 10},
             {type = "item", name = "tungsten-plate", amount_min = 5, amount_max = 10},
-            {type = "item", name = "tungsten-carbide", amount_min = 5, amount_max = 10}        
+            {type = "item", name = "tungsten-carbide", amount_min = 5, amount_max = 10},
+            {type = "item", name = "engine-unit", amount_min = 1, amount_max = 3}        
         }
         },
         resistances =

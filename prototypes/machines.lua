@@ -13,7 +13,17 @@ local item_tints = require("__base__.prototypes.item-tints")
 local item_effects = require("__space-age__.prototypes.item-effects")
 local meld = require("meld")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
-local ecp_pipe_picture =
+local status_colors_electrochem = {
+    idle = {r = 1, g = 0, b = 0, a = 1},
+    full_output = {r = 1, g = 1, b = 0, a = 1},
+    disabled = {r = 0, g = 1, b = 1, a = 1},
+    insufficient_input = {r = 1, g = 0, b = 0, a = 1},
+    working = {r = 0, g = 1, b = 0, a = 1},
+    low_power = { r = 1, g = 0.5, b = 0, a = 1},
+    no_power = { r = 0, g = 0, b = 0, a = 0},
+    no_minable_resources = { r = 1, g = 0, b = 0, a = 1}
+}
+local ECP_pipe_picture =
   {
     north =
     {
@@ -248,7 +258,7 @@ data:extend{
     ingredients = {
       {type = "item", name = "steel-plate", amount = 5},
       {type = "item", name = "iron-gear-wheel", amount = 15},
-      {type = "item", name = "engine-unit", amount = 10},
+      {type = "item", name = "engine-unit", amount = 2},
       {type = "item", name = "pipe", amount = 5}
     },
     results = {
@@ -288,7 +298,7 @@ data:extend{
           },
           {
             production_type = "input",
-            pipe_picture =  ecp_pipe_picture,
+            pipe_picture =  ECP_pipe_picture,
             always_draw_covers = false, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
             pipe_covers = pipecoverspictures(),
             volume = 1000,
@@ -310,7 +320,7 @@ data:extend{
           },
           {
             production_type = "output",
-            pipe_picture =  ecp_pipe_picture,
+            pipe_picture =  ECP_pipe_picture,
             always_draw_covers = false, -- fighting against FluidBoxPrototype::always_draw_covers crazy default
             pipe_covers = pipecoverspictures(),
             volume = 100,
@@ -337,6 +347,7 @@ data:extend{
         open_sound = {filename = "__base__/sound/open-close/fluid-open.ogg", volume = 0.55},
         close_sound = {filename = "__base__/sound/open-close/fluid-close.ogg", volume = 0.54},
         energy_usage = "4MW",
+		perceived_performance = {minimum = 0.25, maximum = 8},
         heating_energy = "350kW",
         module_slots = 4,
         source_inventory_size = 1,
@@ -347,6 +358,7 @@ data:extend{
           }
         },
         graphics_set = {
+		  status_colors = status_colors_electrochem,
           animation = {
               layers = {
                   {
@@ -357,20 +369,20 @@ data:extend{
 					  shift = util.by_pixel( 3.5, 0.0),
                       frame_count = 1,
                       line_length = 1,
-                      repeat_count = 32,
+                      repeat_count = 64,
                       animation_speed = 1,
                       draw_as_shadow = true,
                       scale = 0.5
                   },
                   {
                       priority = "high",
-                      width = 340,
-                      height = 340,
+                      width = 400,
+                      height = 400,
 					  shift = util.by_pixel( 3.5, 0.0),
-                      frame_count = 32,
+                      frame_count = 64,
                       lines_per_file = 8,
                       animation_speed = 1,
-                      scale = 0.5,
+                      scale = 0.425,
                       stripes = {
                           {
                               filename = "__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-animation.png",
@@ -383,34 +395,21 @@ data:extend{
           },
           working_visualisations = {
               {
-                  fadeout = true,
+				  
+                  fadeout = false,
+				  apply_tint = "status",
+				  always_draw = true,
                   animation = {
                       layers = {
                           {
-                              priority = "high",
-                              width = 340,
-                              height = 340,
-							  shift = util.by_pixel( 3.5, 0.0),
-                              frame_count = 32,
-                              lines_per_file = 8,
-                              animation_speed = 1,
-                              scale = 0.5,
-                              stripes = {
-                                  {
-                                      filename = "__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-animation.png",
-                                      width_in_frames = 8,
-                                      height_in_frames = 8
-                                  }
-                              }
-                          },
-                          {
+							  
                               priority = "high",
                               draw_as_glow = true,
                               blend_mode = "additive",
                               width = 340,
                               height = 340,
 							  shift = util.by_pixel( 3.5, 0.0),
-                              frame_count = 32,
+                              frame_count = 64,
                               lines_per_file = 8,
                               animation_speed = 1,
                               scale = 0.5,
@@ -421,15 +420,22 @@ data:extend{
                                       height_in_frames = 8
                                   },
                               }
-                          },
-                          {
+                          }
+                      }
+                  }
+              },
+			  {
+				fadeout = false,
+				animation = {
+                      layers = {
+						  {
                               priority = "high",
                               draw_as_glow = true,
                               blend_mode = "additive",
                               width = 340,
                               height = 340,
 							  shift = util.by_pixel( 3.5, 0.0),
-                              frame_count = 32,
+                              frame_count = 64,
                               lines_per_file = 8,
                               animation_speed = 1,
                               scale = 0.5,
@@ -438,12 +444,13 @@ data:extend{
                                       filename = "__Paracelsin-Graphics__/graphics/entity/electrochemical-plant/electrochemical-plant-emission-2.png",
                                       width_in_frames = 8,
                                       height_in_frames = 8
-                                  }
+                                  },
                               }
                           }
                       }
                   }
-              }
+			  
+			  }
           }
       },
         working_sound =
