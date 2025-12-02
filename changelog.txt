@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.12
+Date: 2025-12-02
+  Icon-ic:
+
+  Changes:
+    - Reverted version 1.3.6
+    - Fulgoran Log T&T is now indented
+---------------------------------------------------------------------------------------------------
+Version: 1.6.11
+Date: 2025-11-29
+  There's options:
+
+  Changes:
+    - Now the zinc implementation setting also includes the addition of the galvanization science pack to the aquilo techs where it becomes needed. Now turning the setting off completely detaches aquilo from paracelsin progression-wise.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.10
+Date: 2025-11-28
+  buffedful:
+
+  Changes:
+    - Democracy spoke and, following the poll on the Foundry discord server, the blue chip from nitric acid recipe has been buffed!
+---------------------------------------------------------------------------------------------------
 Version: 1.6.9
 Date: 2025-11-21
   fulgoran engines...:

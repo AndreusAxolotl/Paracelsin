@@ -106,6 +106,7 @@ data:extend(
     tag = "[entity=crashed-fulgoran-pod]",
     category = "space-age",
     order = "z-b",
+    indent = 1,
     trigger =
     {
       type = "research",
