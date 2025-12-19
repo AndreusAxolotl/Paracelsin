@@ -16,7 +16,8 @@
     "Accumulator-V2",
     "? Age-of-Production",
     "? space_age_galore",
-    "? aai-industry"
+    "? aai-industry",
+    "? canal-excavator >= 1.12"
 ],
 "space_travel_required": true
 }
