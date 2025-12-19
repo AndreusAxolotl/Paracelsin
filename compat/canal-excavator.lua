@@ -8,7 +8,7 @@ data:extend({{
     surfaceName = "paracelsin",
     localisation = {"space-location-name.paracelsin"},
     oreStartingAmount = 20,
-    mining_time = 8,
+    mining_time = 5,
     tint = {r = 180, g = 165, b = 145},
     mineResult = "stone"
   },
