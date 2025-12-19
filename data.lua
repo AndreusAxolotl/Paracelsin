@@ -111,3 +111,5 @@ require "prototypes.resources"
 require "prototypes.technology"
 require "prototypes.zinc-pipes"
 require "prototypes.tips-and-tricks"
+
+require "compat.canal-excavator"
