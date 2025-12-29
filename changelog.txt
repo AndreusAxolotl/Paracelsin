@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.14
+Date: 2025-12-29
+  buffed buffet:
+
+  Changes:
+    - Buffed the nitric acid blue chips recipe again.
+    - Changed the base power values for the solar matrix and super accumulator to be more in line with other modded planets' upgraded solar panels and accumulators. Still useless on paracelsin.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.13
 Date: 2025-12-19
   canals!:
