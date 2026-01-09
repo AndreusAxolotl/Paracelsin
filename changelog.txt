@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.15
+Date: 2026-01-08
+  Party's over:
+
+  Changes:
+    - Rebalanced the solar matrix and accumulator to be still slightly better than some other modded planets' fellow solar infrastructure but like. NOT THAT OP LIKE BEFORE TwT. Have fun rebuilding all your solar builds again <3
+
+  Notes:
+    - Happy new year btw!!
+---------------------------------------------------------------------------------------------------
 Version: 1.6.14
 Date: 2025-12-29
   buffed buffet:
