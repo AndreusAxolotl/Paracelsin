@@ -9,7 +9,7 @@
   "dependencies": [
     "base >= 2.0.50",
     "space-age >= 2.0.50",
-    "Paracelsin-Graphics = 1.6.8",
+    "Paracelsin-Graphics = 1.6.16",
     "PlanetsLib",
     "elevated-pipes",
     "SolarMatrix",

@@ -5,6 +5,7 @@ Date: 2026-01-13
 
   Changes:
     - Sulfur now has a fuel emission multiplier cuz realism or smth
+    - Updated graphics mod requirements
 
   Notes:
     - Check out my new planet Muria!
