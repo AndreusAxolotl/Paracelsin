@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -14,7 +14,6 @@
     "elevated-pipes",
     "SolarMatrix",
     "Accumulator-V2",
-    "? Age-of-Production",
     "? space_age_galore",
     "? aai-industry",
     "? canal-excavator >= 1.12"
