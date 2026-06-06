@@ -1,6 +1,17 @@
 table.insert(data.raw.lab["lab"].inputs, "galvanization-science-pack")
 table.insert(data.raw.lab["biolab"].inputs, "galvanization-science-pack")
 
+local replace_base_game_simulations = false
+local paracelsin_menu_simulations = require("__Paracelsin__/prototypes/menu-simulations.lua")
+if not data.raw["utility-constants"]["default"].main_menu_simulations or replace_base_game_simulations then
+  data.raw["utility-constants"]["default"].main_menu_simulations = {}
+end
+local main_menu_simulations = data.raw["utility-constants"]["default"].main_menu_simulations
+main_menu_simulations.paracelsin_cryovolcanoes = paracelsin_menu_simulations.paracelsin_cryovolcanoes
+main_menu_simulations.paracelsin_desolation = paracelsin_menu_simulations.paracelsin_desolation
+main_menu_simulations.paracelsin_zinc = paracelsin_menu_simulations.paracelsin_zinc
+main_menu_simulations.paracelsin_nitric = paracelsin_menu_simulations.paracelsin_nitric
+
 local function add_additional_categories(recipe_name, categories)
     local recipe = data.raw.recipe[recipe_name]
     if recipe and categories then
