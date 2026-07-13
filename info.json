@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -13,9 +13,10 @@
     "PlanetsLib",
     "SolarMatrix",
     "Accumulator-V2",
-    "? space_age_galore",
-    "? aai-industry",
-    "? canal-excavator"
+    "+ elevated-pipes",
+    "(?) space_age_galore",
+    "(?) aai-industry",
+    "(?) canal-excavator"
 ],
 "space_travel_required": true
 }

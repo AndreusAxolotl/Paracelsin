@@ -552,7 +552,8 @@ data:extend {
     }
   },
 }
-if mods["elevated-pipes"] then
+if  mods["elevated-pipes"] then
+if settings.startup["paracelsin-elevated-pipes"].value then
 data.raw.technology["elevated-pipe"].prerequisites = { "galvanized-steel" }
 data.raw.technology["elevated-pipe"].unit =
 {
@@ -576,7 +577,7 @@ data.raw.technology["elevated-pipe"].effects =
   },
 }
 end
-
+end
 data.raw.technology["solar-matrix"].prerequisites = { "galvanized-steel" }
 data.raw.technology["solar-matrix"].unit =
 {

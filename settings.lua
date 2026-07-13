@@ -12,3 +12,13 @@ data:extend({
       default_value = true
   },
 })
+if  mods["elevated-pipes"] then
+data:extend({
+    {
+      type = "bool-setting",
+      name = "paracelsin-elevated-pipes",
+      setting_type = "startup",
+      default_value = true
+  },
+    })
+end

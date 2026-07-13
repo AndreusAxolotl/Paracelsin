@@ -74,8 +74,8 @@ table.insert(data.raw.recipe["fusion-reactor"].ingredients, {type = "item", name
 table.insert(data.raw.recipe["fusion-generator"].ingredients, {type = "item", name = "electric-coil",       amount = 50})
 table.insert(data.raw.recipe["fusion-reactor-equipment"].ingredients, {type = "item", name = "electric-coil",       amount = 25})
   end
-  
-if mods["elevated-pipes"] then
+if  mods["elevated-pipes"] then
+  if settings.startup["paracelsin-elevated-pipes"].value then
 data.raw.recipe["elevated-pipe"].ingredients = {
     {type = "item", name = "pipe", amount = 5},
     {type = "item", name = "zinc-rivets", amount = 20},
@@ -90,6 +90,7 @@ data.raw.item["elevated-pipe"].order = "e"
 data.raw.recipe["elevated-pipe"].surface_conditions = {{property = "pressure", min = 5300, max = 5300}}
 data.raw.item["elevated-pipe"].default_import_location = "paracelsin"
 data.raw.item["elevated-pipe"].weight = 50000
+end
 end
 data.raw.recipe["solar-matrix"].energy_required = 20
 data.raw.recipe["solar-matrix"].ingredients = {
