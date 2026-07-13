@@ -336,6 +336,7 @@ data:extend{
         collision_box = {{-2.1, -2.1}, {2.1, 2.1}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         crafting_categories = {"electrochemistry", "chemistry"},
+        use_mirroring = true,
         fluid_boxes =
         {
           {
@@ -538,6 +539,7 @@ data:extend{
         collision_box = {{-1.6, -1.6}, {1.6, 1.6}},
         selection_box = {{-2, -2}, {2, 2}},
         crafting_categories = {"mechanics"},
+        use_mirroring = true,
         fluid_boxes = {
             {
                 production_type = "input",
