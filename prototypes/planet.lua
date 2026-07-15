@@ -306,6 +306,8 @@ data:extend{{
       ["magnetic-field"] = 50,
       pressure = 5300,
       ["solar-power"] = 0,
+      ["robot-energy-usage"] = 0.35,
+      ["temperature"] = 140,
       gravity = 65
     },
     asteroid_spawn_influence = 1,

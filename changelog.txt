@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.1
+Date: 2026-07-15
+  peculiar:
+
+  Fixes:
+    - Fixed crash with Muluna
+---------------------------------------------------------------------------------------------------
+Version: 1.9.0
+Date: 2026-07-15
+  Heavy acknowledgement:
+
+  Changes:
+    - Rockets on Paracelsin now require 2 times the parts to be launched. I wanted to make use of the new feature to add a bit of extra difficulty to the planet and an effect to the planet's 65 m/s^2 gravity! I'm sure everyone has big enough bases on Paracelsin to survive the change, it is a forge-world after all!
+    - Readjusted robot energy usage, I had forgotten to change it after they made it a standalone surface condition. As before, robots on Paracelsin use less energy. Reason's uhhh... it's easier to fly in dense atmospheres ig? Kurzgesagt told me that don't blame me if I'm wrong!
+---------------------------------------------------------------------------------------------------
 Version: 1.8.5
 Date: 2026-07-13
   welcome back:

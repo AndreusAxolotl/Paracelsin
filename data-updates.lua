@@ -1,3 +1,4 @@
 require "compat.aai"
 require "compat.galore"
-data.raw.planet["paracelsin"].surface_properties["temperature"] = 140
+
+PlanetsLib.set_special_properties("paracelsin",{rocket_part_multiplier=2})
