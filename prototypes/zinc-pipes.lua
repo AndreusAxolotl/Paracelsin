@@ -595,13 +595,15 @@ data:extend({
       pipe_covers = zincpipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
       {
-        { direction = defines.direction.north, position = {0, 0} },
-        { direction = defines.direction.east, position = {0, 0} },
-        { direction = defines.direction.south, position = {0, 0} },
-        { direction = defines.direction.west, position = {0, 0} }
-      },
-      hide_connection_info = true
+        { direction = defines.direction.north, position = {0, 0}, hide_connection_info = true },
+        { direction = defines.direction.east, position = {0, 0}, hide_connection_info = true },
+        { direction = defines.direction.south, position = {0, 0}, hide_connection_info = true },
+        { direction = defines.direction.west, position = {0, 0}, hide_connection_info = true }
+      }
     },
+    circuit_connector = circuit_connector_definitions["pipe"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    default_fluid_temperature_signal = {type = "virtual", name = "signal-T"},
     impact_category = "metal",
     pictures = zincpipepictures(),
     working_sound = sounds.pipe,
@@ -645,26 +647,30 @@ data:extend({
     collision_box = {{-0.29, -0.29}, {0.29, 0.2}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     damaged_trigger_effect = hit_effects.entity(),
+    damaged_trigger_effect = hit_effects.entity(),
     fluid_box =
     {
-      volume = 200,
-      pipe_covers = zincpipecoverspictures(),
+      volume = 100,
+      pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { direction = defines.direction.north, position = {0, 0} },
+        { direction = defines.direction.north, position = {0, 0}, hide_connection_info = true },
         {
           connection_type = "underground",
           direction = defines.direction.south,
           position = {0, 0},
-          max_underground_distance = 20
+          max_underground_distance = 10,
+          hide_connection_info = true
         }
       },
-      hide_connection_info = true
     },
     impact_category = "metal",
     working_sound = sounds.pipe,
     open_sound = sounds.metal_small_open,
     close_sound = sounds.metal_small_close,
+    circuit_connector = circuit_connector_definitions["pipe-to-ground"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    default_fluid_temperature_signal = {type = "virtual", name = "signal-T"},
     pictures =
     {
       north =
@@ -811,10 +817,10 @@ data:extend({
       pipe_covers = zincpipecoverspictures(),
       pipe_connections =
       {
-        { direction = defines.direction.north, position = {-1, -1} },
-        { direction = defines.direction.east, position = {1, 1} },
-        { direction = defines.direction.south, position = {1, 1} },
-        { direction = defines.direction.west, position = {-1, -1} }
+        { direction = defines.direction.north, position = {-1, -1}, hide_connection_info = true },
+        { direction = defines.direction.east, position = {1, 1}, hide_connection_info = true },
+        { direction = defines.direction.south, position = {1, 1}, hide_connection_info = true },
+        { direction = defines.direction.west, position = {-1, -1}, hide_connection_info = true }
       },
       hide_connection_info = true
     },
@@ -895,6 +901,7 @@ data:extend({
 
     circuit_connector = circuit_connector_definitions["storage-tank"],
     circuit_wire_max_distance = default_circuit_wire_max_distance,
+    default_fluid_temperature_signal = {type = "virtual", name = "signal-T"},
     water_reflection =
     {
       pictures =
@@ -952,10 +959,10 @@ data:extend({
     {
       volume = 800,
       pipe_covers = zincpipecoverspictures(),
-      pipe_connections =
+       pipe_connections =
       {
         { direction = defines.direction.north, position = {0, -0.5}, flow_direction = "output" },
-        { direction = defines.direction.south, position = {0, 0.5}, flow_direction = "input" }
+        { direction = defines.direction.south, position = {0, 0.5}, flow_direction = "input", hide_connection_info = true }
       }
     },
     energy_source =
