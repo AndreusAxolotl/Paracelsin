@@ -24,6 +24,9 @@ asteroid_functions.small_angle = 0.7
 asteroid_functions.medium_angle = 0.6
 asteroid_functions.big_angle = 0.5
 asteroid_functions.huge_angle = 0.4
+asteroid_functions.muria_chunks      = 0.0030
+asteroid_functions.muria_medium       = 0.0025
+asteroid_functions.muria_ratio      = {3, 3, 3, 0}
 
 asteroid_functions.fulgora_paracelsin =
 {
@@ -101,6 +104,32 @@ asteroid_functions.paracelsin_solar_system_edge =
     {position = 0.9, ratios = asteroid_functions.system_edge_ratio},
   }
 }
+asteroid_functions.muria_paracelsin =
+{
+  has_promethium_asteroids = false,
+  probability_on_range_chunk =
+  {
+    {position = 0.1, probability = asteroid_functions.muria_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
+    {position = 0.9, probability = asteroid_functions.paracelsin_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  },
+  probability_on_range_medium =
+  {
+    {position = 0.1, probability = asteroid_functions.muria_medium, angle_when_stopped = asteroid_functions.medium_angle},
+    {position = 0.9, probability = 0, angle_when_stopped = asteroid_functions.medium_angle}
+  },
+  probability_on_range_big =
+  {
+    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.big_angle},
+    {position = 0.9, probability = asteroid_functions.paracelsin_big, angle_when_stopped = asteroid_functions.big_angle}
+  },
+  type_ratios =
+  {
+    {position = 0.1, ratios = asteroid_functions.muria_ratio},
+    {position = 0.4, ratios = asteroid_functions.paracelsin_ratio},
+    {position = 0.9, ratios = asteroid_functions.paracelsin_ratio}
+  }
+}
+
 
 asteroid_functions.search_in_table = function(table, key)
   local found = false

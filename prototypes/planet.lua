@@ -376,7 +376,7 @@ data:extend{{
     from = "fulgora",
     to = "paracelsin",
     order = "g1",
-    length = 35000,
+    length = 30000,
     asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_paracelsin)
   },
   {
@@ -398,4 +398,18 @@ data:extend{{
     order = "h1",
     length = 100000,
     asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.paracelsin_solar_system_edge)
+  },
+}
+if mods["Muria"] then
+  data:extend{
+{
+    type = "space-connection",
+    name = "muria-paracelsin",
+    subgroup = "planet-connections",
+    from = "muria",
+    to = "paracelsin",
+    order = "g2",
+    length = 30000,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.muria_paracelsin)
   },}
+end

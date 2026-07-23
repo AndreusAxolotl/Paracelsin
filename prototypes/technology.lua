@@ -1,3 +1,10 @@
+local prereq 
+if not mods["Muria"] then 
+prereq = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" }
+else
+prereq = { "explosive-shotgun-shell", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" }
+end
+
 data:extend {
   {
     type = "technology",
@@ -13,7 +20,7 @@ data:extend {
         use_icon_overlay_constant = true
       },
     },
-    prerequisites = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" },
+    prerequisites = prereq,
     unit =
     {
       count = 3000,

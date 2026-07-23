@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.9.3",
+  "version": "1.9.5",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -16,7 +16,8 @@
     "+ elevated-pipes",
     "(?) space_age_galore",
     "(?) aai-industry",
-    "(?) canal-excavator"
+    "(?) canal-excavator",
+    "? Muria"    
 ],
 "space_travel_required": true
 }

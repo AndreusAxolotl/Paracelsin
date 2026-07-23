@@ -1,24 +1,39 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.5
+Date: 2026-07-23
+  Muriatic compliance:
+
+  Changes:
+    - Due to the changes done to Muria, when installed Paracelsin will have its new unlock of Explosive Shotgun Charges as a requirement for the planet discovery.
+    - A new route between the planets will also exist if both mods are installed.
+---------------------------------------------------------------------------------------------------
+Version: 1.9.4
+Date: 2026-07-23
+  pipey:
+
+  Fixes:
+    - Fixed undeground zinc pipes length.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.3
 Date: 2026-07-20
   pipey:
 
   Fixes:
-    - Fixed zinc pipes not having the 2.1 new pipe stuff 
+    - Fixed zinc pipes not having the 2.1 new pipe stuff.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.2
 Date: 2026-07-15
   rocket_part cap wowwwww:
 
   Fixes:
-    - Fixed issues with Planetslib
+    - Fixed issues with Planetslib.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.1
 Date: 2026-07-15
   peculiar:
 
   Fixes:
-    - Fixed crash with Muluna
+    - Fixed crash with Muluna.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.0
 Date: 2026-07-15
