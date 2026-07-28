@@ -1,13 +1,13 @@
 [![foundrygg.com](https://img.shields.io/badge/foundrygg-4a1402?style=for-the-badge&logo=vercel&logoColor=white)](https://foundrygg.com)[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VuVhYUBbWE)
 
 Another frozen world on the horizon... Paracelsin is much colder than Aquilo, but unlike the world of ammonia this planet has a solid surface.
-Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered by ice and liquid nitrogen.
+Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered in ice and liquid nitrogen.
 
 # Paracelsin
 
 This mod adds planet Paracelsin, the world of Zinc, and its various resources and processes!
 
-Should be safe to add in an already started save but some recipes will have some ingredients added and some techs will also require the new science pack.
+Should be safe to add in an already started save but, unlike my other Planet [Muria](https://mods.factorio.com/mod/Muria), some recipes will have some ingredients added and some techs will also require the new science pack.
 
 On the world of Zinc you'll have to make your way between heating up your factory in the cold, dealing with endless byproducts and solving the puzzle of zinc's long production chain.
 
@@ -37,11 +37,9 @@ The Mechanical Plant, on the other hand, can make engines, express belts, all ty
 # PLEASE REPORT ANY BUGS YOU FIND
 
 ## Compat:
-- [Age of Production](https://mods.factorio.com/mod/Age-of-Production): Solves a bit of recipe category mayhem.
+- [Muria](https://mods.factorio.com/mod/Muria): When Muria and Paracelsin are installed together, Murian technology is required to access Paracelsin.
 
 ### Future Plans:
-- Adding more rewards
-- Maybe reworking the planet's generation.
 - Compatibility with other mods.
 
 ### Translation
