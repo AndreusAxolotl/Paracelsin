@@ -104,6 +104,75 @@ local ECP_pipe_picture =
     }
   }
 
+local function pumpjack_animation()
+  return
+  {
+    north =
+    {
+      layers =
+      {
+        {
+          priority = "high",
+          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead.png",
+          animation_speed = 0.5,
+          scale = 0.5,
+          line_length = 8,
+          width = 206,
+          height = 202,
+          frame_count = 40,
+          shift = util.by_pixel(-4.5, -29)
+        },
+        {
+          priority = "high",
+          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead-shadow.png",
+          animation_speed = 0.5,
+          draw_as_shadow = true,
+          line_length = 8,
+          width = 309,
+          height = 82,
+          frame_count = 40,
+          scale = 0.5,
+          shift = util.by_pixel(17.75, 14.5)
+        }
+      }
+    }
+  }
+end
+
+local function pumpjack_visualisations(flipped)
+  local base_sheets =
+  {
+    {
+      filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base" .. (flipped and "-flipped" or "") .. ".png",
+      priority = "extra-high",
+      width = 261,
+      height = 273,
+      shift = util.by_pixel(-2.25, -4.75),
+      scale = 0.5
+    },
+    {
+      filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base" .. (flipped and "-flipped" or "") .. "-shadow.png",
+      width = 220,
+      height = 220,
+      scale = 0.5,
+      draw_as_shadow = true,
+      shift = util.by_pixel(-2, -5)
+    }
+  }
+
+  local base_visualisation = {always_draw = true, secondary_draw_order = -1}
+  for i, name in pairs{"north_animation", "east_animation", "south_animation", "west_animation"} do
+    local layers = {}
+    for _, sheet in pairs(base_sheets) do
+      sheet = table.deepcopy(sheet)
+      sheet.x = sheet.width * (i - 1)
+      table.insert(layers, sheet)
+    end
+    base_visualisation[name] = {layers = layers}
+  end
+  return {base_visualisation}
+end
+
 
 circuit_connector_definitions["electrochemical-plant"] = circuit_connector_definitions.create_vector
 (
@@ -272,9 +341,9 @@ data:extend{
     enabled = false,
     energy_required = 20,
     ingredients = {
-        {type = "item", name = "iron-gear-wheel", amount = 20},
-        {type = "item", name = "steam-turbine", amount = 1},
-        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "iron-gear-wheel", amount = 15},
+        {type = "item", name = "engine-unit", amount = 2},
+        {type = "item", name = "steel-plate", amount = 5},
         {type = "item", name = "copper-cable", amount = 10},
     },
     results = {
@@ -701,7 +770,7 @@ data:extend{
     corpse = "small-remnants",
     dying_explosion = "medium-explosion",
     effectivity = 5,
-    fluid_usage_per_tick = 0.25,
+    fluid_usage_per_tick = 0.05,
     burns_fluid = false,
     maximum_temperature = 30,
     resistances =
@@ -714,7 +783,7 @@ data:extend{
     collision_box = {{-1.1, -1.1}, {1.1, 1.1}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    max_power_output= "80kW",
+    max_power_output= "200kW",
     fluid_box =
     {
       volume = 200,
@@ -870,62 +939,15 @@ data:extend{
     },
     monitor_visualization_tint = {78, 173, 255},
     base_render_layer = "object",
-    base_picture =
+   graphics_set =
     {
-      sheets =
-      {
-        {
-          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base.png",
-          priority = "extra-high",
-          width = 261,
-          height = 273,
-          shift = util.by_pixel(-2.25, -4.75),
-          scale = 0.5,
-        },
-        {
-          filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-base-shadow.png",
-          width = 220,
-          height = 220,
-          scale = 0.5,
-          draw_as_shadow = true,
-          shift = util.by_pixel(6, 0.5)
-        }
-      }
+      animation = pumpjack_animation(),
+      working_visualisations = pumpjack_visualisations(false)
     },
-    graphics_set =
+    graphics_set_flipped =
     {
-      animation =
-      {
-        north =
-        {
-          layers =
-          {
-            {
-              priority = "high",
-              filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead.png",
-              animation_speed = 0.5,
-              scale = 0.5,
-              line_length = 8,
-              width = 206,
-              height = 202,
-              frame_count = 40,
-              shift = util.by_pixel(-4, -24),
-            },
-            {
-              priority = "high",
-              filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-horsehead-shadow.png",
-              animation_speed = 0.5,
-              draw_as_shadow = true,
-              line_length = 8,
-              width = 309,
-              height = 82,
-              frame_count = 40,
-              scale = 0.5,
-              shift = util.by_pixel(17.75, 14.5)
-            }
-          }
-        }
-      }
+      animation = pumpjack_animation(),
+      working_visualisations = pumpjack_visualisations(true)
     },
     open_sound = {filename = "__base__/sound/open-close/pumpjack-open.ogg", volume = 0.5},
     close_sound = {filename = "__base__/sound/open-close/pumpjack-close.ogg", volume = 0.5},

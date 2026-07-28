@@ -43,7 +43,7 @@ data:extend{
     },
     allow_productivity = true,
     categories = {"chemistry"},
-    auto_recycle = true,
+    auto_recycle = false,
     
     crafting_machine_tint =
     {
@@ -168,7 +168,7 @@ data:extend{
     },
     allow_productivity = true,
     categories = {"chemistry"},
-    auto_recycle = true,
+    auto_recycle = false,
     
     crafting_machine_tint =
     {

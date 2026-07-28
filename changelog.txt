@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.7
+Date: 2026-07-29
+  localeful:
+
+  Fixes:
+    - Fixed missing locale for vaterite processing technology.
+---------------------------------------------------------------------------------------------------
+Version: 1.9.6
+Date: 2026-07-25
+  cryovolcanic buff:
+
+  Changes:
+    - Buffed cryovolcanic turbine energy output and reduced fluid usage.
+    - Replaced turbine with engine unit in its recipe.
+
+  Fixes:
+    - Fixed Burner Pumpjack texture.
+    - Fixed incorrect recycling recipes.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.5
 Date: 2026-07-23
   Muriatic compliance:
