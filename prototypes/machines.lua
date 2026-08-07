@@ -897,6 +897,7 @@ data:extend{
     icon = "__Paracelsin-Graphics__/graphics/icons/burner-pumpjack.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "burner-pumpjack"},
+    placeable_by = {item = "pumpjack", count = 1},
     resource_categories = {"basic-fluid"},
     max_health = 200,
     corpse = "pumpjack-remnants",

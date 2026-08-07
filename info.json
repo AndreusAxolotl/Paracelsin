@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.9.7",
+  "version": "1.9.9",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -8,7 +8,7 @@
   "factorio_version": "2.1",
   "dependencies": [
     "base",
-    "space-age",
+    "space-age >= 2.1.13",
     "Paracelsin-Graphics = 1.9.6",
     "PlanetsLib >= 1.21.3",
     "SolarMatrix",

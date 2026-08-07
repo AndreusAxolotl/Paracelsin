@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.9
+Date: 2026-08-06
+  planets not planet i see what you're trying wube (i dont actually):
+
+  Fixes:
+    - Fixed crash with Factorio 2.1.13.
+---------------------------------------------------------------------------------------------------
+Version: 1.9.8
+Date: 2026-08-04
+  pumpjack pipette:
+
+  Fixes:
+    - Fixed the pipette choosing the burner pumpjack over the normal one when pipetting fluid nodes.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.7
 Date: 2026-07-29
   localeful:
