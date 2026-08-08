@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.10
+Date: 2026-08-08
+  mechanical plant buffs i see:
+
+  Changes:
+    - Added iron gear wheels, coppper cables, iron sticks, cars, tanks, spidertrons, some turrets, some weapons, trains, space machines and base machines (assemblers, chem plants, centrifuges, oil refineries) to the recipes the mechanical plant can craft.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.9
 Date: 2026-08-06
   planets not planet i see what you're trying wube (i dont actually):
