@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.11
+Date: 2026-08-09
+  and one more for the fans!:
+
+  Changes:
+    - Added flying robot grames to the mechanical plant.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.10
 Date: 2026-08-08
   mechanical plant buffs i see:
