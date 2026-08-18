@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.0
+Date: 2026-08-18
+  finally:
+
+  Changes:
+    - Added placeholder visible planet graphics for Paracelsin. They're currently a kitbash. Hopefully in the future they'll have entirely unique textures that will fully capture the planet's look.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.11
 Date: 2026-08-09
   and one more for the fans!:
