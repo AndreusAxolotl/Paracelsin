@@ -48,88 +48,50 @@ data.raw.planet["paracelsin"].platform_surface_render_parameters =
     },
     platform_backdrop =
     {
-  atmosphere_color = {
-    21,
-    26,
-    30,
-    255,
-  },
-  atmosphere_ray_light_color_1 = {
-    178,
-    161,
-    141,
-    255,
-  },
-  atmosphere_ray_light_color_2 = {
-    25.5,
-    21.49905,
-    12.900450000000001,
-    255,
-  },
-  atmosphere_thickness = 0.075,
-  cloud_flow_intensity = 0.3,
-  cloud_flow_seconds = 32,
-  cloud_normal_intensity = 0.3,
-  cloud_panning_rate = 0,
-  cloud_vertical_offset = 0.015,
-  cloudiness = 1,
-  emission_scalar = 0.1,
-  emission_scales_with_shadow = true,
-  global_cloud = {
-    filename = "__Paracelsin-Graphics__/graphics/planet/paracelsin-cloud.png",
-    width = 2048,
-    height = 1024,
-  },
-  global_cloud_flow = {
-    filename = "__space-age__/graphics/space/fulgora-cloud-flow.png",
-    width = 2048,
-    height = 1024,
-  },
-  global_cloud_normal = {
-    filename = "__space-age__/graphics/space/fulgora-cloud-normal.png",
-    width = 2048,
-    height = 1024,
-  },
-  light_color = {
-    250.002,
-    255,
-    255,
-    255,
-  },
-  light_direction = {
-    -1,
-    0,
-    0.5,
-  },
-  light_intensity_contrast = 0.7,
-  light_radius = 1,
-  planet_axis = {
-    -30,
-    20,
-  },
-  planet_axis_deviation_amplitude = {
-    0,
-    0,
-  },
-  planet_axis_deviation_seconds = {
-    609.2,
-    712.7,
-  },
-  planet_surface = {
+        cloudiness = 0.9,
+        surface_vertical_offset = 0.1,
+        cloud_vertical_offset = 0.015,
+        specular_intensity = 1,
+        atmosphere_color = { 0.055, 0.09, 0.11, 0.1 },
+        cloud_flow_intensity = 0.5,
+        cloud_panning_rate = -0.1,
+        rotation_seconds = -660,
+        planet_axis = { -33.0, -3.0 },
+        planet_axis_deviation_amplitude = { 10.0, 10.0 },
+        planet_axis_deviation_seconds = { 890.5, 753.7 },
+        position = { -680, 601 },
+        parallax_strength = { 0.95, 0.95 },
+        light_direction = { -0.42, 0.23, 0.67 },
+        light_radius = 8.9,
+        light_intensity_contrast = 0.3,
+        radius = 600,
+        planet_surface = {
     filename = "__Paracelsin-Graphics__/graphics/planet/paracelsin.png",
     width = 2048,
     height = 1024,
   },
-  radius = 400,
-  rotation_seconds = 340,
-  specular_color = {
-    255,
-    255,
-    255,
-    255,
+        planet_reflectivity =
+        {
+            filename = "__space-age__/graphics/space/vulcanus-emission.png",
+            width = 2048,
+            height = 1024
+        },
+        global_cloud = {
+    filename = "__Paracelsin-Graphics__/graphics/planet/paracelsin-cloud.png",
+    width = 2048,
+    height = 1024,
   },
-  specular_intensity = 1,
-  surface_normal_intensity = 0.349,
-  surface_vertical_offset = 0,
-}
+        global_cloud_normal =
+        {
+            filename = "__space-age__/graphics/space/fulgora-cloud-normal.png",
+            width = 2048,
+            height = 1024
+        },
+        global_cloud_flow =
+        {
+            filename = "__space-age__/graphics/space/fulgora-cloud-flow.png",
+            width = 2048,
+            height = 1024
+        }
+    }
 }
