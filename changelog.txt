@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.1
+Date: 2026-08-26
+  macerater than ever:
+
+  Changes:
+    - Added module slots and beacon interaction to the macerator. The machine's module slots will increase with quality.
+---------------------------------------------------------------------------------------------------
 Version: 1.10.0
 Date: 2026-08-18
   finally:
