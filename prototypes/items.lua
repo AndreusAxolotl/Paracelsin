@@ -255,5 +255,5 @@ data:extend{
 }
 
 data.raw.item["sulfur"].fuel_value = "1MJ"
-data.raw.item["sulfur"].fuel_category = "chemical"
+data.raw.item["sulfur"].fuel_categories = {"chemical"}
 data.raw.item["sulfur"].fuel_emissions_multiplier = 3
