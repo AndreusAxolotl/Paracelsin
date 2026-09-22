@@ -263,5 +263,10 @@ data:extend{
 }
 
 data.raw.item["sulfur"].fuel_value = "1MJ"
-data.raw.item["sulfur"].fuel_category = "chemical"
+if helpers.compare_versions(helpers.game_version, "2.1.20") < 0 then
+  data.raw.item["sulfur"].fuel_category = "chemical"
+else
+  data.raw.item["sulfur"].fuel_categories = data.raw.item["sulfur"].fuel_categories or {}
+  table.insert(data.raw.item["sulfur"].fuel_categories, "chemical")
+end
 data.raw.item["sulfur"].fuel_emissions_multiplier = 3
