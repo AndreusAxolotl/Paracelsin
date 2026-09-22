@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.2
+Date: 2026-09-20
+  took me long enough:
+
+  Changes:
+    - Moved the fluids to the fluid tab. I dont remember why i never put them there.
+---------------------------------------------------------------------------------------------------
 Version: 1.10.1
 Date: 2026-08-26
   macerater than ever:

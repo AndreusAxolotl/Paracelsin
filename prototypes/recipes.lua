@@ -15,7 +15,7 @@ data:extend{
     allow_productivity = true,
     categories = {"chemistry"},
     auto_recycle = true,
-    
+    main_product = "nitric-acid",
     crafting_machine_tint =
     {
         primary = {r = 0.14, g = 0.07, b = 0.09, a = 1.000},
@@ -200,7 +200,7 @@ data:extend{
     allow_quality = false,
     categories = {"metallurgy"},
     auto_recycle = true,
-    
+    main_product = "molten-iron",
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
 },
 {
@@ -257,7 +257,7 @@ data:extend{
     allow_quality = false,
     categories = {"metallurgy"},
     auto_recycle = true,
-    
+    main_product = "molten-copper",
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
 },
 {
@@ -336,7 +336,7 @@ data:extend{
     allow_quality = false,
     categories = {"chemistry"},
     auto_recycle = true,
-    
+    main_product = "dirty-zinc-solution",
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
     crafting_machine_tint =
     {
@@ -368,7 +368,7 @@ data:extend{
     allow_quality = false,
     categories = {"chemistry"},
     auto_recycle = true,
-    
+    main_product = "zinc-solution",
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
     crafting_machine_tint =
     {

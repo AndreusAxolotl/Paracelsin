@@ -20,16 +20,10 @@ data:extend{
     group = "intermediate-products",
     order = "p-b"
   },
-      {
-    type = "item-subgroup",
-    name = "zinc-fluids",
-    group = "intermediate-products",
-    order = "p-c"
-  },
   {
     type = "fluid",
     name = "dirty-zinc-solution",
-    subgroup = "zinc-fluids",
+    subgroup = "fluid",
     default_temperature = 200,
     max_temperature = 300,
     base_color = {0.8, 0.89, 0.84},
@@ -40,7 +34,7 @@ data:extend{
     {
     type = "fluid",
     name = "zinc-solution",
-    subgroup = "zinc-fluids",
+    subgroup = "fluid",
     default_temperature = 100,
     max_temperature = 200,
     base_color = {0.64, 0.67, 0.56},
@@ -51,7 +45,7 @@ data:extend{
     {
     type = "fluid",
     name = "zinc-concentrate",
-    subgroup = "zinc-fluids",
+    subgroup = "fluid",
     default_temperature = 300,
     max_temperature = 400,
     base_color = {0.69, 0.65, 0.49},
@@ -62,8 +56,7 @@ data:extend{
       {
     type = "fluid",
     name = "nitrogen",
-    order = "a",
-    subgroup = "nitric-acid-and-nitrogen",
+    subgroup = "fluid",
     default_temperature = -200,
     max_temperature = -195,
     base_color = {0.40, 0.55, 0.71},
@@ -74,8 +67,7 @@ data:extend{
   {
     type = "fluid",
     name = "nitric-acid",
-    order = "b",
-    subgroup = "nitric-acid-and-nitrogen",
+    subgroup = "fluid",
     default_temperature = 0,
     max_temperature = 83,
     base_color = {0.14, 0.07, 0.09},
