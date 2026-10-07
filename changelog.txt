@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.0
+Date: 2026-10-07
+  a new start (literally paracelsin has a new starting phase):
+
+  Changes:
+    - Removed burner pumpjack.
+    - Removed cryovolcanic turbine.
+    - Cryovolcanic turbine has been now replaced by the Pressure Turbine. Pressure Turbines can be used to extract gas vents (cryovolcanoes, vulcanus sulfuric acid, fluorine and some modded vents) at a slow speed while producing power.
+    - Renamed cryovolcanoes to cryovolcanic vents.
+    - Replaced water in cryovolcanoes with cryovolcanic mixture. The mixture can be split into water, extra nitrogen and ice.
+    - Restructured and rebalanced some recipes.
+    - Added a new recipe for concrete, using calcite and sulfur instead of iron and stone instead of stone bricks.
+    - Added reccomended dependency to Return Inserter.
+
+  Notes:
+    - Factories WILL have to be rebuilt.
+---------------------------------------------------------------------------------------------------
 Version: 1.10.3
 Date: 2026-09-22
   fuel categorieS:

@@ -41,18 +41,18 @@ data:extend {
   },
   {
     type = "technology",
-    name = "cryovolcanic-power",
-    icon = "__Paracelsin-Graphics__/graphics/technology/cryovolcanic-power.png",
+    name = "pressure-power",
+    icon = "__Paracelsin-Graphics__/graphics/technology/pressure-power.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "burner-pumpjack"
+        recipe = "pressure-turbine"
       },
       {
         type = "unlock-recipe",
-        recipe = "cryovolcanic-turbine"
+        recipe = "cryovolcanic-mixture-separation"
       },
     },
     prerequisites = { "planet-discovery-paracelsin" },
@@ -109,7 +109,7 @@ data:extend {
         recipe = "vaterite-processing"
       },
     },
-    prerequisites = { "nitric-acid-handling", "cryovolcanic-power"},
+    prerequisites = { "nitric-acid-handling", "pressure-power"},
     research_trigger =
     {
       type = "mine-entity",
@@ -218,9 +218,13 @@ data:extend {
         type = "unlock-recipe",
         recipe = "electrochemical-plant"
       },
-            {
+      {
         type = "unlock-recipe",
         recipe = "paracelsin-processing-units-from-nitric-acid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "concrete-from-calcium-sulfate"
       }
     },
     prerequisites = { "zinc-extraction" },

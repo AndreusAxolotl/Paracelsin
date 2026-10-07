@@ -14,3 +14,27 @@ for type_name in pairs(defines.prototypes.item) do
     end
   end
 end
+
+local function has_value (list, val)
+    for index, value in ipairs(list) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
+for name, drill in pairs(data.raw["mining-drill"]) do
+   if has_value (drill.resource_categories, "basic-fluid") then
+    table.insert(drill.resource_categories, "gas-vents")
+   end
+end
+
+
+data.raw.resource["sulfuric-acid-geyser"].category = "gas-vents"
+data.raw.resource["fluorine-vent"].category = "gas-vents"
+
+if mods["Moshine"] then
+data.raw.resource["steam_geyser"].category = "gas-vents"
+end

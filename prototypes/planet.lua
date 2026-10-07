@@ -34,7 +34,7 @@ data:extend(
   {
     type = "autoplace-control",
     name = "water_cryovolcano",
-    localised_name = {"", "[entity=water-cryovolcano] ", {"entity-name.water-cryovolcano"}},
+    localised_name = {"", "[entity=cryovolcanic-vent] ", {"entity-name.cryovolcanic-vent"}},
     richness = true,
     order = "z-d",
     category = "resource"
@@ -200,8 +200,8 @@ planet_map_gen.paracelsin = function()
       ["entity:tetrahedrite:richness"] = "paracelsin_tetrahedrite_richness",
       ["entity:vaterite:probability"] = "paracelsin_vaterite_probability",
       ["entity:vaterite:richness"] = "paracelsin_vaterite_richness",
-      ["entity:water-cryovolcano:probability"] = "paracelsin_water_cryovolcano_probability",
-      ["entity:water-cryovolcano:richness"] = "paracelsin_water_cryovolcano_richness",
+      ["entity:cryovolcanic-vent:probability"] = "paracelsin_water_cryovolcano_probability",
+      ["entity:cryovolcanic-vent:richness"] = "paracelsin_water_cryovolcano_richness",
     },
     cliff_settings =
     {
@@ -260,7 +260,7 @@ planet_map_gen.paracelsin = function()
         settings =
         {
           ["vaterite"] = {},
-          ["water-cryovolcano"] = {},
+          ["cryovolcanic-vent"] = {},
           ["sphalerite"] = {},
           ["tetrahedrite"] = {},
           ["crater-cliff"] = {},

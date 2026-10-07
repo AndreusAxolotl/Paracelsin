@@ -183,11 +183,15 @@ data:extend({
     map_color = {r = 205/256, g = 201/256, b = 182/256, a = 1.000}
   },
   {
+    type = "resource-category",
+    name = "gas-vents"
+  },
+  {
     type = "resource",
-    name = "water-cryovolcano",
+    name = "cryovolcanic-vent",
     icon = "__space-age__/graphics/icons/fluorine-vent.png",
     flags = {"placeable-neutral"},
-    category = "basic-fluid",
+    category = "gas-vents",
     subgroup = "mineable-fluids",
     order="z",
     highlight = true,
@@ -202,11 +206,10 @@ data:extend({
       {
         {
           type = "fluid",
-          name = "water",
-          amount_min = 5,
-          amount_max = 5,
+          name = "cryovolcanic-mixture",
+          amount_min = 10,
+          amount_max = 10,
           independent_probability = 1,
-          temperature = 30
         }
       }
     },

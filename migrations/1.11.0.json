@@ -1,0 +1,14 @@
+{
+    "technology": [
+        ["cryovolcanic-power", "pressure-power"]
+    ],
+    "item":[
+        ["cryovolcanic-turbine", "presure-turbine"]
+    ],
+    "entity": [
+        ["water-cryovolcano", "cryovolcanic-vent"]
+    ],
+    "recipe": [
+        ["cryovolcanic-turbine", "pressure-turbine"]
+]
+}

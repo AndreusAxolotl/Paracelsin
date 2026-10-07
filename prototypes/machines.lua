@@ -248,32 +248,17 @@ data:extend{
 },
 {
     type = "item",
-    name = "cryovolcanic-turbine",
+    name = "pressure-turbine",
     subgroup = "energy",
-    order = "f[nuclear-energy]-c[cryovolcanic-turbine]" ,
+    order = "f[nuclear-energy]-c[pressure-turbine]" ,
     pick_sound = item_sounds.steam_inventory_pickup,
     drop_sound = item_sounds.steam_inventory_move,
-    icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-turbine.png",
+    icon = "__Paracelsin-Graphics__/graphics/icons/pressure-turbine.png",
     icon_size = 64,
     stack_size = 10,
     default_import_location = "paracelsin",
     weight = 200000,
-    place_result = "cryovolcanic-turbine"
-},
-{
-    type = "item",
-    name = "burner-pumpjack",
-    subgroup = "extraction-machine",
-    order = "b[fluids]-c",
-    inventory_move_sound = item_sounds.pumpjack_inventory_move,
-    pick_sound = item_sounds.pumpjack_inventory_pickup,
-    drop_sound = item_sounds.pumpjack_inventory_move,
-    icon = "__Paracelsin-Graphics__/graphics/icons/burner-pumpjack.png",
-    icon_size = 64,
-    stack_size = 20,
-    default_import_location = "paracelsin",
-    weight = 50000,
-    place_result = "burner-pumpjack"
+    place_result = "pressure-turbine"
 },
   {
     type = "item",
@@ -337,7 +322,7 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "cryovolcanic-turbine",
+    name = "pressure-turbine",
     enabled = false,
     energy_required = 20,
     ingredients = {
@@ -347,29 +332,10 @@ data:extend{
         {type = "item", name = "copper-cable", amount = 10},
     },
     results = {
-        {type = "item", name = "cryovolcanic-turbine", amount = 1}
+        {type = "item", name = "pressure-turbine", amount = 1}
     },
     allow_productivity = false,
-    main_product = "cryovolcanic-turbine",
-    categories = {"crafting", "metallurgy", "mechanics"},
-    auto_recycle = true
-},
-{
-    type = "recipe",
-    name = "burner-pumpjack",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 5},
-      {type = "item", name = "iron-gear-wheel", amount = 15},
-      {type = "item", name = "engine-unit", amount = 2},
-      {type = "item", name = "pipe", amount = 5}
-    },
-    results = {
-        {type = "item", name = "burner-pumpjack", amount = 1}
-    },
-    allow_productivity = false,
-    main_product = "burner-pumpjack",
+    main_product = "pressure-turbine",
     categories = {"crafting", "metallurgy", "mechanics"},
     auto_recycle = true
 },
@@ -761,18 +727,15 @@ data:extend{
         },
       },
       {
-    type = "generator",
-    name = "cryovolcanic-turbine",
-    icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-turbine.png",
+    type = "mining-drill",
+    name = "pressure-turbine",
+    icon = "__Paracelsin-Graphics__/graphics/icons/pressure-turbine.png",
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 0.3, result = "cryovolcanic-turbine"},
+    minable = {mining_time = 0.3, result = "pressure-turbine"},
     max_health = 300,
     corpse = "small-remnants",
     dying_explosion = "medium-explosion",
-    effectivity = 5,
-    fluid_usage_per_tick = 0.05,
-    burns_fluid = false,
-    maximum_temperature = 30,
+    resource_categories = {"gas-vents"},
     resistances =
     {
       {
@@ -784,34 +747,43 @@ data:extend{
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     max_power_output= "200kW",
-    fluid_box =
+    output_fluid_box =
     {
-      volume = 200,
+      volume = 1000,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { flow_direction = "input-output", direction = defines.direction.south, position = {0, 1} },
-        { flow_direction = "input-output", direction = defines.direction.north, position = {0, -1} },
-        { flow_direction = "input-output", direction = defines.direction.east, position = {1, 0} },
-        { flow_direction = "input-output", direction = defines.direction.west, position = {-1, -0} }
-      },
-      production_type = "input",
-      filter = "water",
-      minimum_temperature = 15
+         { flow_direction = "output", direction = defines.direction.south, position = {0, 1} },
+        { flow_direction = "output", direction = defines.direction.north, position = {0, -1} },
+        { flow_direction = "output", direction = defines.direction.east, position = {1, 0} },
+        { flow_direction = "output", direction = defines.direction.west, position = {-1, -0} }
+      }
     },
     energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-output"
+      type = "void",
     },
-    two_direction_only = true,
-    pictures =
+    energy_usage = "1kW",
+    mining_speed = 0.25,
+    resource_searching_radius = 0.49,
+    vector_to_place_result = {0, 0},
+    module_slots = 0,
+    radius_visualisation_picture =
     {
-      north = {
+      filename = "__base__/graphics/entity/pumpjack/pumpjack-radius-visualization.png",
+      width = 12,
+      height = 12
+    },
+    migrate_horizontal_mirroring = true,
+    use_mirroring = true,
+    graphics_set =
+    {
         animation = {
+          north =
+    {
       layers = {
               {
-                filename = "__Paracelsin-Graphics__/graphics/entity/cryovolcanic-turbine/cryovolcanic-turbine-shadow.png",
+                filename = "__Paracelsin-Graphics__/graphics/entity/pressure-turbine/pressure-turbine-shadow.png",
                 size = {400, 350},
                 shift = util.by_pixel(0, -16),
                 scale = 0.5,
@@ -822,7 +794,7 @@ data:extend{
                 animation_speed = 1,
               },
               {
-                filename = "__Paracelsin-Graphics__/graphics/entity/cryovolcanic-turbine/cryovolcanic-turbine-animation.png",
+                filename = "__Paracelsin-Graphics__/graphics/entity/pressure-turbine/pressure-turbine-animation.png",
                 size = {210, 280},
                 shift = util.by_pixel(0, -16),
                 scale = 0.5,
@@ -834,11 +806,8 @@ data:extend{
             },
           },
         },
-        east = {
-        animation = {
-      layers = {
-              {
-                filename = "__Paracelsin-Graphics__/graphics/entity/cryovolcanic-turbine/cryovolcanic-turbine-shadow.png",
+working_visualisations = {{
+                filename = "__Paracelsin-Graphics__/graphics/entity/pressure-turbine/pressure-turbine-shadow.png",
                 size = {400, 350},
                 shift = util.by_pixel(0, -16),
                 scale = 0.5,
@@ -849,7 +818,7 @@ data:extend{
                 animation_speed = 1,
               },
               {
-                filename = "__Paracelsin-Graphics__/graphics/entity/cryovolcanic-turbine/cryovolcanic-turbine-animation.png",
+                filename = "__Paracelsin-Graphics__/graphics/entity/pressure-turbine/pressure-turbine-animation.png",
                 size = {210, 280},
                 shift = util.by_pixel(0, -16),
                 scale = 0.5,
@@ -859,8 +828,6 @@ data:extend{
                 animation_speed = 1,
               },
             },
-          },
-        },
           },
     impact_category = "metal-large",
     open_sound = sounds.machine_open,
@@ -881,88 +848,39 @@ data:extend{
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
-    surface_conditions =
-    {
-      {
-        property = "pressure",
-        min = 5300,
-        max = 5300
-      }
-    },
-  },
-    {
-    type = "mining-drill",
-    name = "burner-pumpjack",
-    icon = "__Paracelsin-Graphics__/graphics/icons/burner-pumpjack.png",
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "burner-pumpjack"},
-    placeable_by = {item = "pumpjack", count = 1},
-    resource_categories = {"basic-fluid"},
-    max_health = 200,
-    corpse = "pumpjack-remnants",
-    dying_explosion = "pumpjack-explosion",
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    damaged_trigger_effect = hit_effects.entity(),
-    drawing_box_vertical_extension = 1,
-    energy_usage = "150kW",
-    energy_source =
-        {
-            type = "burner",
-            fuel_categories = {"chemical"},
-            fuel_inventory_size = 1,
-            emissions_per_minute = { pollution = 50 },
-            effectivity = 0.01,
-        },
-    output_fluid_box =
-    {
-      volume = 1000,
-      pipe_covers = pipecoverspictures(),
-      pipe_connections =
-      {
-        {
-          direction = defines.direction.north,
-          positions = {{1, -1}, {1, -1}, {-1, 1}, {-1, 1}},
-          flow_direction = "output"
-        }
-      }
-    },
-    mining_speed = 5,
-    resource_searching_radius = 0.49,
-    vector_to_place_result = {0, 0},
-    module_slots = 0,
-    radius_visualisation_picture =
-    {
-      filename = "__Paracelsin-Graphics__/graphics/entity/burner-pumpjack/burner-pumpjack-radius-visualization.png",
-      width = 12,
-      height = 12
-    },
-    monitor_visualization_tint = {78, 173, 255},
-    base_render_layer = "object",
-   graphics_set =
-    {
-      animation = pumpjack_animation(),
-      working_visualisations = pumpjack_visualisations(false)
-    },
-    graphics_set_flipped =
-    {
-      animation = pumpjack_animation(),
-      working_visualisations = pumpjack_visualisations(true)
-    },
-    open_sound = {filename = "__base__/sound/open-close/pumpjack-open.ogg", volume = 0.5},
-    close_sound = {filename = "__base__/sound/open-close/pumpjack-close.ogg", volume = 0.5},
-    working_sound =
-    {
-      sound = {filename = "__base__/sound/pumpjack.ogg", volume = 0.7, audible_distance_modifier = 0.6},
-      max_sounds_per_prototype = 3,
-      fade_in_ticks = 4,
-      fade_out_ticks = 10
-    },
-    fast_replaceable_group = "pumpjack",
-
     circuit_connector = circuit_connector_definitions["pumpjack"],
     circuit_wire_max_distance = default_circuit_wire_max_distance
+  },
+  {
+    type = "electric-energy-interface",
+    name = "pressure-turbine-energy-interface",
+    icon = "__Paracelsin-Graphics__/graphics/icons/pressure-turbine.png",
+    localised_name = {"entity-name.pressure-turbine"},
+    localised_description = {"entity-description.pressure-turbine"},
+    flags = {"not-on-map", "not-blueprintable", "not-repairable", "not-selectable-in-game", "not-upgradable", "not-flammable", "hide-alt-info", "not-deconstructable", "not-in-kill-statistics", "no-copy-paste"},
+    hidden = true,
+    max_health = 150,
+    collision_box = {{-1.1, -1.1}, {1.1, 1.1}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    selectable_in_game = false,
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "1MW",
+      usage_priority = "tertiary",
+      input_flow_limit = "0kW",
+      output_flow_limit = "5.8MW"
+    },
+    energy_production = "5.8MW",
+    energy_usage = "0kW",
+    picture =
+    {
+      filename = "__core__/graphics/empty.png",
+      priority = "extra-high",
+      width = 1,
+      height = 1
+    },
+    order = "h-e-e-i"
   },
   {
     type = "furnace",

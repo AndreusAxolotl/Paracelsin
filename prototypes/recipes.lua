@@ -26,6 +26,36 @@ data:extend{
 },
 {
     type = "recipe",
+    name = "cryovolcanic-mixture-separation",
+    enabled = false,
+    icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-mixture-separation.png",
+    subgroup = "paracelsin-processes",
+    order = "1",
+    icon_size = 64,
+    energy_required = 1,
+    ingredients = {
+        {type = "fluid", name = "cryovolcanic-mixture",   amount = 50},
+
+    },
+    results = {
+        {type = "fluid", name = "water", amount = 40},
+        {type = "fluid", name = "nitrogen", amount = 5},
+        {type = "item", name = "ice", amount = 1}
+    },
+    allow_productivity = true,
+    categories = {"chemistry"},
+    auto_recycle = true,
+    main_product = "water",
+    crafting_machine_tint =
+    {
+        primary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        secondary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        tertiary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        quaternary = {r = 0.40, g = 0.76, b = 1, a = 1.000}
+    }
+},
+{
+    type = "recipe",
     name = "nitric-acid-plastic",
     subgroup = "nitric-acid-and-nitrogen",
     order = "c",
@@ -161,7 +191,7 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "nitrogen",   amount = 25},
-        {type = "item", name = "vaterite", amount = 2},
+        {type = "item", name = "sulfur", amount = 2},
     },
     results = {
         {type = "item", name = "solid-fuel", amount = 2}
@@ -361,8 +391,9 @@ data:extend{
         {type = "item", name = "copper-cable",       amount = 8},
     },
     results = {
-        {type = "fluid", name = "zinc-solution", amount = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
+        {type = "fluid", name = "zinc-solution", amount = 20, ignored_by_productivity = 20},
         {type = "item", name = "stone", amount_min = 5, amount_max = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
+        {type = "item", name = "copper-cable",       amount = 4, ignored_by_stats = 4, ignored_by_productivity = 4},
     },
     allow_productivity = false,
     allow_quality = false,
@@ -555,5 +586,25 @@ data:extend{
     auto_recycle = true,
     
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
+},
+{
+    type = "recipe",
+    name = "concrete-from-calcium-sulfate",
+    enabled = false,
+    icon = "__Paracelsin-Graphics__/graphics/icons/concrete-from-calcium-sulfate.png",
+    icon_size = 64,
+    energy_required = 10,
+    ingredients = {
+        {type = "item", name = "stone",   amount = 10},
+        {type = "item", name = "calcite", amount = 5},
+        {type = "item", name = "sulfur", amount = 5},
+        {type = "fluid", name = "water",   amount = 100},
+    },
+    results = {
+        {type = "item", name = "concrete", amount = 20},
+    },
+    allow_productivity = false,
+    categories = {"electrochemistry"},
+    auto_recycle = true,
 },
 }

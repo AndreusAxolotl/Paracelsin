@@ -75,6 +75,17 @@ data:extend{
     icon = "__Paracelsin-Graphics__/graphics/icons/nitric-acid.png",
     auto_barrel = true
   },
+        {
+    type = "fluid",
+    name = "cryovolcanic-mixture",
+    subgroup = "fluid",
+    default_temperature = -116,
+    max_temperature = 0,
+    base_color = {0.40, 0.76, 1},
+    flow_color = {0.40, 0.76, 1},
+    icon = "__Paracelsin-Graphics__/graphics/icons/cryovolcanic-mixture.png",
+    auto_barrel = false
+  },
 {
     type = "item",
     name = "sphalerite",

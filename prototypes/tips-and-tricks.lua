@@ -110,6 +110,6 @@ data:extend(
     trigger =
     {
       type = "research",
-      technology = "cryovolcanic-power"
+      technology = "pressure-power"
     },
   }})
