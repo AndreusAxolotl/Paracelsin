@@ -46,7 +46,11 @@ local lib = {
         [defines.events.on_resource_depleted] = function(event)
             local resource = event.entity
            if resource.prototype.resource_category ~= "gas-vents" then return end
-           resource.surface.find_entity("pressure-turbine-energy-interface", resource.position).disabled_by_script = true
+            local interface = resource.surface.find_entity("pressure-turbine-energy-interface", resource.position)
+            if interface == nil then return end
+            --if interface then interfae.disabled_by_script = true end
+            -- if not interface then return end
+           interface.disabled_by_script = true
         end
     }
 }

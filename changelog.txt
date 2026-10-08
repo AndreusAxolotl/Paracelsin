@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.2
+Date: 2026-10-08
+  fixing it up:
+
+  Changes:
+    - Added a custom tooltip to the pressure turbine.
+    - Removed productivity limitations on the sulfur made from tetrahedrite and sphalerite processing
+    - Added support for more gas vents.
+
+  Fixes:
+    - Fixed script error.
+    - Fixed copper cable and concrete recycling
+---------------------------------------------------------------------------------------------------
 Version: 1.11.1
 Date: 2026-10-08
   patch done quick:

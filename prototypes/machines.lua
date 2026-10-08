@@ -735,6 +735,7 @@ data:extend{
     max_health = 300,
     corpse = "small-remnants",
     dying_explosion = "medium-explosion",
+    custom_tooltip_fields = {{name = {"custom-tooltip.pressure-turbine-name"}, value = {"custom-tooltip.pressure-turbine-value"}}},
     resource_categories = {"gas-vents"},
     resistances =
     {

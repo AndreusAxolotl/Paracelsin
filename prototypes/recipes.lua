@@ -249,7 +249,7 @@ data:extend{
     results = {
         {type = "fluid", name = "zinc-concentrate", amount = 40},
         {type = "item", name = "iron-ore", amount = 2},
-        {type = "item", name = "sulfur", amount = 2, ignored_by_stats = 2, ignored_by_productivity = 2}
+        {type = "item", name = "sulfur", amount = 2}
     },
     allow_productivity = true,
     allow_quality = false,
@@ -306,7 +306,7 @@ data:extend{
     results = {
         {type = "fluid", name = "zinc-concentrate", amount = 20},
         {type = "item", name = "copper-ore", amount = 4},
-        {type = "item", name = "sulfur", amount = 2, ignored_by_stats = 2, ignored_by_productivity = 2}
+        {type = "item", name = "sulfur", amount = 2}
     },
     allow_productivity = true,
     allow_quality = false,
@@ -398,7 +398,7 @@ data:extend{
     allow_productivity = false,
     allow_quality = false,
     categories = {"chemistry"},
-    auto_recycle = true,
+    auto_recycle = false,
     main_product = "zinc-solution",
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
     crafting_machine_tint =
@@ -605,6 +605,6 @@ data:extend{
     },
     allow_productivity = false,
     categories = {"electrochemistry"},
-    auto_recycle = true,
+    auto_recycle = false,
 },
 }

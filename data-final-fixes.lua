@@ -38,3 +38,13 @@ data.raw.resource["fluorine-vent"].category = "gas-vents"
 if mods["Moshine"] then
 data.raw.resource["steam-geyser"].category = "gas-vents"
 end
+if mods["planet-rabbasca"] then
+data.raw.resource["harene-vent"].category = "gas-vents"
+end
+if mods["castra-prime"] then
+data.raw.resource["hydrogen-sulfide-vent"].category = "gas-vents"
+end
+if mods["carna"] then
+data.raw.resource["carnamechageyserhugeresource"].category = "gas-vents"
+data.raw.resource["steamvent"].category = "gas-vents"
+end
