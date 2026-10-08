@@ -36,5 +36,5 @@ data.raw.resource["sulfuric-acid-geyser"].category = "gas-vents"
 data.raw.resource["fluorine-vent"].category = "gas-vents"
 
 if mods["Moshine"] then
-data.raw.resource["steam_geyser"].category = "gas-vents"
+data.raw.resource["steam-geyser"].category = "gas-vents"
 end

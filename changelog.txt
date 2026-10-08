@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.1
+Date: 2026-10-08
+  patch done quick:
+
+  Fixes:
+    - Fixed crash with Moshine.
+    - Fixed typo in migration file for 1.11.0
+---------------------------------------------------------------------------------------------------
 Version: 1.11.0
 Date: 2026-10-07
   a new start (literally paracelsin has a new starting phase):
