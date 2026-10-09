@@ -62,7 +62,7 @@ data:extend{
     enabled = false,
     icon = "__Paracelsin-Graphics__/graphics/icons/nitric-acid-plastic.png",
     icon_size = 64,
-    energy_required = 2,
+    energy_required = 1,
     ingredients = {
         {type = "fluid", name = "water",   amount = 40},
         {type = "fluid", name = "nitric-acid",       amount = 20},
@@ -93,10 +93,10 @@ data:extend{
     icon_size = 64,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "water",   amount = 250},
+        {type = "fluid", name = "light-oil",   amount = 5},
         {type = "fluid", name = "nitric-acid",       amount = 100},
         {type = "item", name = "solid-fuel", amount = 5},
-        {type = "item", name = "sulfur", amount = 5},
+        {type = "item", name = "calcite", amount = 1},
     },
     results = {
         {type = "item", name = "rocket-fuel", amount = 1}
@@ -418,7 +418,7 @@ data:extend{
     energy_required = 3.2,
     ingredients = {
         {type = "fluid", name = "zinc-solution",   amount = 20},
-        {type = "item", name = "carbon",       amount = 4},
+        {type = "fluid", name = "heavy-oil",       amount = 5},
     },
     results = {
         {type = "item", name = "zinc", amount = 2},

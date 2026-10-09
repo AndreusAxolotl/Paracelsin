@@ -1,8 +1,8 @@
 local prereq 
 if not mods["Muria"] then 
-prereq = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" }
+prereq = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction" }
 else
-prereq = { "explosive-shotgun-shell", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack" }
+prereq = { "explosive-shotgun-shell", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction" }
 end
 
 data:extend {
@@ -75,10 +75,6 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "solid-fuel-from-nitrogen"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "nitric-acid-rocket-fuel"
       },
       {
@@ -135,6 +131,10 @@ data:extend {
         type = "unlock-recipe",
         recipe = "zinc-leaching"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "solid-fuel-from-nitrogen"
+      },
     },
     prerequisites = { "vaterite-processing" },
     research_trigger =
@@ -161,6 +161,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "zinc-leaching"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "solid-fuel-from-nitrogen"
       },
     },
     prerequisites = { "vaterite-processing" },

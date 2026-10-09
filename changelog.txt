@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.3
+Date: 2026-10-09
+  oily:
+
+  Changes:
+    - Implemented oil into some processes, justifying the amount of coal you can make with byproduct sulfur and carbon.
+    - Zinc now takes 5 heavy oil instead of 4 carbon.
+    - Nitric acid rocket fuel now takes 5 light oil, 5 solid fuel, 100 nitric acid and 1 calcite.
+    - Paracelsin now requires coal liquefaction to unlock.
+
+  Notes:
+    - Factories WILL have to be rebuilt. yada yada yeha its a minor version who cares semantic versioning is for losers and people who dont update daily
+---------------------------------------------------------------------------------------------------
 Version: 1.11.2
 Date: 2026-10-08
   fixing it up:
