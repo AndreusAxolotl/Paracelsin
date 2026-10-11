@@ -417,17 +417,16 @@ data:extend{
     icon_size = 64,
     energy_required = 3.2,
     ingredients = {
-        {type = "fluid", name = "zinc-solution",   amount = 20},
-        {type = "fluid", name = "heavy-oil",       amount = 5},
+        {type = "fluid", name = "zinc-solution",   amount = 10},
+        {type = "fluid", name = "heavy-oil",       amount = 10},
     },
     results = {
-        {type = "item", name = "zinc", amount = 2},
+        {type = "item", name = "zinc", amount = 1},
     },
     allow_productivity = true,
-    allow_quality = false,
+    allow_quality = true,
     categories = {"metallurgy"},
     auto_recycle = true,
-    
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
 },
 {

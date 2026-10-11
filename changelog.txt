@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.4
+Date: 2026-10-11
+  i forgot that was a thing:
+
+  Changes:
+    - Zinc now takes 10 solution and 10 heavy oil for one zinc instead of 20 and 5 for 2 zinc.
+    - Removed the quality lock from the zinc recipe. I dont know why that was there to begin with. A solution to easily get quality zinc now that the recipe was changed is being looked into.
+---------------------------------------------------------------------------------------------------
 Version: 1.11.3
 Date: 2026-10-09
   oily:
