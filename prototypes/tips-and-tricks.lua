@@ -60,8 +60,8 @@ simulations.paracelsin_briefing =
       game.surfaces[1].set_tiles{{position = position, name = "volcanic-cracks"}}
     end
 
-    game.surfaces[1].create_entity{name = "water-cryovolcano", position = {4.5, -0.5}}
-    game.surfaces[1].create_entity{name = "water-cryovolcano", position = {8.5, -3.5}}
+    game.surfaces[1].create_entity{name = "cryovolcanic-vent", position = {4.5, -0.5}}
+    game.surfaces[1].create_entity{name = "cryovolcanic-vent", position = {8.5, -3.5}}
 
     local create_list = {}
     table.insert(create_list, { name = "lithium-iceberg-tiny", position = {-3, 0}, amount = 1})
