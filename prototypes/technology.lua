@@ -9,7 +9,7 @@ data:extend {
   {
     type = "technology",
     name = "planet-discovery-paracelsin",
-    icons = util.technology_icon_constant_planet("__Paracelsin-Graphics__/graphics/technology/planet-discovery-paracelsin.png"),
+    icons = PlanetsLib.technology_icon_planet("__Paracelsin-Graphics__/graphics/technology/planet-discovery-paracelsin.png", 256, 0.87),
     icon_size = 256,
     essential = true,
     effects =
