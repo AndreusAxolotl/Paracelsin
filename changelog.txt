@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.12.0
+Date: 2026-11-04
+  quality up!:
+
+  Changes:
+    - Added the zinc refining recipe. This recipe will allow you to upgrade the quality of zinc ore!
+    - When Muria is installed, by default, the zinc refining recipe and tech will be replaced by the lead and zinc refining technology, which will expand the quality refining process by adding aqua regia, a mixture of nitric and hydrochloric acid! More uses for it are also considered.
+---------------------------------------------------------------------------------------------------
 Version: 1.11.6
 Date: 2026-10-20
   size up:
