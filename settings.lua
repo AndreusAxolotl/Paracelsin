@@ -22,7 +22,7 @@ data:extend({
   },
     })
 end
-if  mods["Muria"] then
+if  mods["Muria"] and  mods["quality"] then
 data:extend({
     {
       type = "bool-setting",

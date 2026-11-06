@@ -672,6 +672,7 @@ add_tech_prerequisites("promethium-science-pack", "galvanization-science-pack")
 add_science_pack("promethium-science-pack", { "galvanization-science-pack", 1 })
 add_science_pack("research-productivity", { "galvanization-science-pack", 1 })
 end
+if mods["quality"] then
 if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
 data:extend {{
     type = "technology",
@@ -704,4 +705,5 @@ data:extend {{
       time = 60
     }
   }}
+end
 end

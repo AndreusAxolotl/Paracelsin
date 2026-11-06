@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.12.1
+Date: 2026-11-05
+  quality... down?:
+
+  Changes:
+    - Refining recipes aren't activated if quality mod isnt active. Also no option to turn them off otherwise will be added, if you don't wanna use them just don't.
+---------------------------------------------------------------------------------------------------
 Version: 1.12.0
 Date: 2026-11-04
   quality up!:

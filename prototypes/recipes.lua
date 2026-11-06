@@ -604,7 +604,9 @@ data:extend{
     allow_productivity = false,
     categories = {"electrochemistry"},
     auto_recycle = false,
-},
+},}
+if mods["quality"] then
+data:extend{
 {
     type = "recipe",
     name = "zinc-refining",
@@ -631,3 +633,4 @@ data:extend{
     auto_recycle = false,
 },
 }
+end
