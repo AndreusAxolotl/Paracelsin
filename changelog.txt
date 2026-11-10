@@ -1,9 +1,18 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.11.7
-Date: 2026-10-28
-  Changes:
-    - Added a shadow to the planet discovery technology icon, matching vanilla planet discovery icons.
+Version: 1.12.1
+Date: 2026-11-05
+  quality... down?:
 
+  Changes:
+    - Refining recipes aren't activated if quality mod isnt active. Also no option to turn them off otherwise will be added, if you don't wanna use them just don't.
+---------------------------------------------------------------------------------------------------
+Version: 1.12.0
+Date: 2026-11-04
+  quality up!:
+
+  Changes:
+    - Added the zinc refining recipe. This recipe will allow you to upgrade the quality of zinc ore!
+    - When Muria is installed, by default, the zinc refining recipe and tech will be replaced by the lead and zinc refining technology, which will expand the quality refining process by adding aqua regia, a mixture of nitric and hydrochloric acid! More uses for it are also considered.
 ---------------------------------------------------------------------------------------------------
 Version: 1.11.6
 Date: 2026-10-20

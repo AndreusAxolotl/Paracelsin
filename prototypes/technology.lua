@@ -672,3 +672,38 @@ add_tech_prerequisites("promethium-science-pack", "galvanization-science-pack")
 add_science_pack("promethium-science-pack", { "galvanization-science-pack", 1 })
 add_science_pack("research-productivity", { "galvanization-science-pack", 1 })
 end
+if mods["quality"] then
+if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
+data:extend {{
+    type = "technology",
+    name = "zinc-refining",
+    icon = "__Paracelsin-Graphics__/graphics/technology/quality-zinc.png",
+    icon_size = 256,
+
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "zinc-refining"
+      }, 
+    },
+    prerequisites = {"galvanization-science-pack", "cryogenic-science-pack"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        { "automation-science-pack",               1 },
+        { "logistic-science-pack",                 1 },
+        { "chemical-science-pack",                 1 },
+        { "production-science-pack",               1 },
+        { "utility-science-pack",                  1 },
+        { "space-science-pack",                    1 },
+        { "galvanization-science-pack", 1 },
+        { "cryogenic-science-pack", 1 }
+      },
+      time = 60
+    }
+  }}
+end
+end
