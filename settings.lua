@@ -22,13 +22,3 @@ data:extend({
   },
     })
 end
-if  mods["Muria"] and  mods["quality"] then
-data:extend({
-    {
-      type = "bool-setting",
-      name = "paracelsin-muria-aqua-regia",
-      setting_type = "startup",
-      default_value = true
-  },
-    })
-end

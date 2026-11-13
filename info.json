@@ -1,6 +1,6 @@
 {
   "name": "Paracelsin",
-  "version": "1.12.1",
+  "version": "1.13.0",
   "title": "Paracelsin",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Paracelsin",
@@ -9,16 +9,18 @@
   "dependencies": [
     "base",
     "space-age >= 2.1.20",
-    "Paracelsin-Graphics = 1.12.0",
+    "Paracelsin-Graphics = 1.13.0",
     "PlanetsLib >= 1.21.3",
     "SolarMatrix",
+    "Crystalline-Library",
     "Accumulator-V2",
     "+ elevated-pipes",
-    "+ Return-Inserter",
+    "Return-Inserter >= 1.0.1",
     "(?) space_age_galore",
     "(?) aai-industry",
     "(?) canal-excavator",
     "? Muria"    
 ],
-"space_travel_required": true
+"space_travel_required": true,
+"freezing_required": true
 }

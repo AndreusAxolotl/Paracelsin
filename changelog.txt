@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.13.0
+Date: 2026-11-13
+  boundless worlds of lead and zinc:
+
+  Changes:
+    - Moved some prototypes to a new mod, Crystalline Library.
+    - The mod is now part of the Spelter Twins pack!
+    - Carbonic asteroids no longer appear on route to Paracelsin, replaced by crystalline asteroids.
+    - Crystalline asteroids contain vaterite and fluorite and split into 4 pieces instead of 3.
+    - Both the new soil and the old soil can now be placed over the natural soil of the opposite type, allowing you to fully remodulate the Murian surface if you so please.
+    - Added achievements.
+    - Muria integration is now more indepth, with Murian materials and technologies being required for Paracelsin things when both mods are installed.
+    - Added various new things coming from Crystalline Lib, which also exist with Muria. These are all related to fluorine and hydrogen fluoride and range from petroleum alkylation to uranium hexafluoride.
+    - Added advanced cryovolcanic mixture separation.
+    - Added a recipe to synthesize ammonia, while it doesnt serve any specific usage in progression, it can work as a way to sink hydrogen, now present in the mod because of hydrogen fluoride.
+---------------------------------------------------------------------------------------------------
 Version: 1.12.1
 Date: 2026-11-05
   quality... down?:

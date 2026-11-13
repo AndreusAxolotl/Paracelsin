@@ -58,6 +58,8 @@ data:extend({
       mining_particle = "stone-particle",
       mining_time = 3,
       result = "sphalerite",
+      fluid_amount = 1,
+      required_fluid = "hydrogen-fluoride"
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
@@ -105,6 +107,8 @@ data:extend({
       mining_particle = "stone-particle",
       mining_time = 3,
       result = "tetrahedrite",
+      fluid_amount = 1,
+      required_fluid = "hydrogen-fluoride"
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
@@ -138,10 +142,11 @@ data:extend({
   },
   {
     type = "resource",
-    name = "vaterite",
-    icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",
+    name = "calcium-crystals",
+    icon = "__Paracelsin-Graphics__/graphics/icons/calcium-crystals.png",
     flags = {"placeable-neutral"},
     order = "z",
+    subgroup = "grass",
     tree_removal_probability = 0.8,
     tree_removal_max_distance = 32 * 32,
     walking_sound = tile_sounds.walking.ore,
@@ -150,13 +155,27 @@ data:extend({
     {
       mining_particle = "stone-particle",
       mining_time = 1.5,
-      result = "vaterite",
+      results =
+      {
+        {
+          type = "item",
+          name = "vaterite",
+          amount = 1,
+          independent_probability = 60 /100,
+        },
+        {
+          type = "item",
+          name = "fluorite",
+          amount = 1,
+          independent_probability = 40 /100,
+        },
+       },
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "vaterite",
+      name = "calcium_crystals",
       order = "z",
       base_density = 0.5,
       base_spots_per_km2 = 2,
@@ -245,7 +264,7 @@ data:extend({
           priority = "extra-high",
           frame_count = 64,
           animation_speed = 0.35,
-          tint = {r=0.25, g=0.5, b=0.5,a= 1},
+          tint = {r=0.25, g=0.5, b=0.8,a= 1},
           scale = 0.75,
           shift = {0,-0.23}
         })
@@ -258,7 +277,7 @@ data:extend({
           priority = "extra-high",
           frame_count = 64,
           animation_speed = 0.35,
-          tint = {r=0, g=0.9, b=1,a= 0.35},
+          tint = {r=0, g=0.1, b=0.8,a= 0.35},
           scale = 0.75,
           shift = {0,-0.23}
         })
@@ -275,7 +294,7 @@ data:extend({
           animation_speed = 0.5,
           shift = util.by_pixel(-2, 24 -152),
           scale = 1.5,
-          tint = util.multiply_color({r=0.5, g=1, b=1}, 0.1)
+          tint = util.multiply_color({r=0, g=0.1, b=0.8}, 0.1)
         }
       },
       {
@@ -290,7 +309,7 @@ data:extend({
           animation_speed = 0.5,
           shift = util.by_pixel(0, 24 -78),
           scale = 1.5,
-          tint = util.multiply_color({r=0, g=0.9, b=1}, 0.1)
+          tint = util.multiply_color({r=0, g=0.1, b=0.8}, 0.1)
         }
       }
     },
@@ -394,6 +413,7 @@ data:extend({
       {
         {type = "item", name = "stone", amount_min = 0, amount_max = 4},
         {type = "item", name = "vaterite", amount_min = 1, amount_max = 2},
+        {type = "item", name = "fluorite", amount_min = 0, amount_max = 1},
         {type = "item", name = "iron-ore", amount_min = 5, amount_max = 11},
         {type = "item", name = "copper-ore", amount_min = 5, amount_max = 11},
         {type = "item", name = "sulfur", amount_min = 2, amount_max = 8}

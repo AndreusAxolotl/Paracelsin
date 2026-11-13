@@ -1,5 +1,8 @@
 [![foundrygg.com](https://img.shields.io/badge/foundrygg-4a1402?style=for-the-badge&logo=vercel&logoColor=white)](https://foundrygg.com)[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VuVhYUBbWE)
 
+
+# This mod is part of the [Spelter Twins](https://mods.factorio.com/mod/The-Spelter-Twins)!!!
+
 Another frozen world on the horizon... Paracelsin is much colder than Aquilo, but unlike the world of ammonia this planet has a solid surface.
 Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered in ice and liquid nitrogen.
 
@@ -15,14 +18,14 @@ Many rewards will come from conquering the frozen wasteland of nitrogen and zinc
 
 ## Planet
 
-Paracelsin is located farther than Aquilo in space. You can reach it from Fulgora or Aquilo, but beware of the large asteroids on the way. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
+Paracelsin is located farther than Aquilo in space. You can reach it from Fulgora or Aquilo, but beware of the large asteroids on the way. Also, be ready to face yourself against the mighty crystalline asteroids, which will hinder your travels by making sulfur for explosives extremely scarse in space. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
 
 ## Resources
 - Sphalerite, compound of zinc, iron and sulfur
 - Tetrahedrite, compound of copper, zinc and sulfur
-- Vaterite, a mineral not unlike Calcite
+- Calcium crystals, containing fluorite and vaterite
 - Nitrogen, which must be pumped from the shallow lakes on the surface
-- Water cryovolcanoes, ejecting water that can be extracted via pumpjack
+- Water cryovolcanoes, ejecting a mixture of gasses that can be extracted via pumpjack
 
 ## New Machines
 
@@ -37,7 +40,7 @@ The Mechanical Plant, on the other hand, can make engines, express belts, all ty
 # PLEASE REPORT ANY BUGS YOU FIND
 
 ## Compat:
-- [Muria](https://mods.factorio.com/mod/Muria): When Muria and Paracelsin are installed together, Murian technology is required to access Paracelsin.
+- [Muria](https://mods.factorio.com/mod/Muria): Muria and Paracelsin have various integrations, from technologies to recipes. When installed, Paracelsin will be locked behind it in many different ways.
 
 ### Future Plans:
 - Compatibility with other mods.

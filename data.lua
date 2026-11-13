@@ -177,5 +177,6 @@ require "prototypes.technology"
 require "prototypes.zinc-pipes"
 require "prototypes.tips-and-tricks"
 require "prototypes.aqua-regia"
+require "prototypes.achievements"
 
 require "compat.canal-excavator"

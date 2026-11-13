@@ -12,13 +12,13 @@ data:extend{
     type = "item-subgroup",
     name = "paracelsin-processes",
     group = "intermediate-products",
-    order = "p-a"
+    order = "q-c-a"
   },
   {
     type = "item-subgroup",
     name = "nitric-acid-and-nitrogen",
     group = "intermediate-products",
-    order = "p-b"
+    order = "q-c-b"
   },
   {
     type = "fluid",
@@ -120,26 +120,6 @@ data:extend{
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-1.png",   scale = 0.5},
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-2.png", scale = 0.5},
           { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/tetrahedrite-3.png", scale = 0.5},
-        },
-    icon_size = 64,
-    stack_size = 50,
-    default_import_location = "paracelsin",
-    weight = 10000,
-},
-{
-    type = "item",
-    name = "vaterite",
-    subgroup = "paracelsin-processes",
-    order = "c",
-    icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",
-    inventory_move_sound = item_sounds.resource_inventory_move,
-    pick_sound = item_sounds.resource_inventory_pickup,
-    drop_sound = item_sounds.resource_inventory_move,
-    pictures =
-        {
-          { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/vaterite-1.png",   scale = 0.5},
-          { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/vaterite-2.png", scale = 0.5},
-          { size = 64, filename = "__Paracelsin-Graphics__/graphics/icons/vaterite-3.png", scale = 0.5},
         },
     icon_size = 64,
     stack_size = 50,

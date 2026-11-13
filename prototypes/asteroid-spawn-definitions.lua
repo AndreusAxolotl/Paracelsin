@@ -7,10 +7,10 @@ asteroid_functions.weighted_average = function(A, B, weight)
   return result
 end
 
-asteroid_functions.paracelsin_ratio      = {20, 3, 10, 0}
-asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0}
-asteroid_functions.aquilo_ratio      = {1, 2, 20, 0}
-asteroid_functions.system_edge_ratio = {3, 5, 2 , 0}
+asteroid_functions.paracelsin_ratio      = {20, 0, 10, 0, 10}
+asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0, 0}
+asteroid_functions.aquilo_ratio      = {1, 2, 20, 0, 0}
+asteroid_functions.system_edge_ratio = {3, 5, 2 , 0, 0}
 asteroid_functions.paracelsin_chunks      = 0.0010
 asteroid_functions.paracelsin_big         = 0.0025
 asteroid_functions.fulgora_chunks     = 0.0025
@@ -26,7 +26,7 @@ asteroid_functions.big_angle = 0.5
 asteroid_functions.huge_angle = 0.4
 asteroid_functions.muria_chunks      = 0.0030
 asteroid_functions.muria_medium       = 0.0025
-asteroid_functions.muria_ratio      = {3, 3, 3, 0}
+asteroid_functions.muria_ratio      = {3, 0, 3, 0, 3}
 
 asteroid_functions.fulgora_paracelsin =
 {
@@ -94,13 +94,13 @@ asteroid_functions.paracelsin_solar_system_edge =
   type_ratios =
   {
     {position = 0.1, ratios = asteroid_functions.paracelsin_ratio},
-    {position = 0.2, ratios = {10,3,10, 0}},
-    {position = 0.3, ratios = {6,2,8, 0}},
-    {position = 0.4, ratios = {7,1,4, 0}},
-    {position = 0.5, ratios = {9,4,3, 0}},
-    {position = 0.6, ratios = {9,5,2, 0}},
-    {position = 0.7, ratios = {9,2,7, 0}},
-    {position = 0.8, ratios = {3,5,1, 0}},
+    {position = 0.2, ratios = {10, 0 ,10, 0, 7}},
+    {position = 0.3, ratios = {6,0,8, 0, 5}},
+    {position = 0.4, ratios = {7,0,4, 0, 3}},
+    {position = 0.5, ratios = {9,4,3, 0, 1}},
+    {position = 0.6, ratios = {9,5,2, 0,0}},
+    {position = 0.7, ratios = {9,2,7,0, 0}},
+    {position = 0.8, ratios = {3,5,1, 0,0}},
     {position = 0.9, ratios = asteroid_functions.system_edge_ratio},
   }
 }
@@ -263,9 +263,10 @@ end
 asteroid_functions.spawn_definitions = function(data, planet)
   local asteroid_spawn_definitions = {}
   local asteroid_sizes = {"chunk", "small", "medium", "big", "huge"}
-  local asteroid_types = {"metallic", "carbonic", "oxide"}
+  local asteroid_types = {"metallic", "oxide", "crystalline"}
   if data.has_promethium_asteroids == true then
-    asteroid_types = {"metallic", "carbonic", "oxide", "promethium"}
+    asteroid_types = {"metallic", "oxide", "promethium", "crystalline"}
+    --metallic then "carbonic",
   end
   for k, asteroid_size in pairs(asteroid_sizes) do
     for k, asteroid_type in pairs(asteroid_types) do
@@ -283,6 +284,8 @@ asteroid_functions.spawn_definitions = function(data, planet)
         asteroid_id = 2
       elseif asteroid_type == "oxide" then
         asteroid_id = 3
+        elseif asteroid_type == "crystalline" then
+        asteroid_id = 5
       else
         asteroid_id = 4
       end

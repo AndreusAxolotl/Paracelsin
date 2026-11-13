@@ -56,6 +56,54 @@ data:extend{
 },
 {
     type = "recipe",
+    name = "advanced-cryovolcanic-mixture-separation",
+    enabled = false,
+    icon = "__Paracelsin-Graphics__/graphics/icons/advanced-cryovolcanic-mixture-separation.png",
+    subgroup = "paracelsin-processes",
+    order = "1",
+    icon_size = 64,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "cryovolcanic-mixture",   amount = 100},
+        {type = "fluid", name = "fluorine",   amount = 10},
+    },
+    results = {
+        {type = "fluid", name = "water", amount = 100},
+        {type = "fluid", name = "nitrogen", amount = 20},
+        {type = "fluid", name = "petroleum-gas", amount = 50}
+    },
+    allow_productivity = true,
+    categories = {"cryogenics", "electrochemistry"},
+    auto_recycle = true,
+    main_product = "water",
+    crafting_machine_tint =
+    {
+        primary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        secondary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        tertiary = {r = 0.40, g = 0.76, b = 1, a = 1.000},
+        quaternary = {r = 0.40, g = 0.76, b = 1, a = 1.000}
+    }
+},
+{
+    type = "recipe",
+    name = "ammonia",
+    enabled = false,
+    icon_size = 64,
+    energy_required = 1.2,
+    ingredients = {
+        {type = "fluid", name = "hydrogen",   amount = 30},
+        {type = "fluid", name = "nitrogen",   amount = 10}
+    },
+    results = {
+        {type = "fluid", name = "ammonia", amount = 10}
+    },
+    allow_productivity = true,
+    categories = {"electrochemistry"},
+    auto_recycle = true,
+    main_product = "ammonia",
+},
+{
+    type = "recipe",
     name = "nitric-acid-plastic",
     subgroup = "nitric-acid-and-nitrogen",
     order = "c",
@@ -161,27 +209,6 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "lubricant-from-nitric-acid",
-    enabled = false,
-    subgroup = "nitric-acid-and-nitrogen",
-    order = "h",
-    icon = "__Paracelsin-Graphics__/graphics/icons/lubricant-from-nitric-acid.png",
-    icon_size = 64,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "nitric-acid",       amount = 5},
-        {type = "item", name = "carbon", amount = 5},
-    },
-    results = {
-        {type = "fluid", name = "lubricant", amount = 20}
-    },
-    allow_productivity = true,
-    categories = {"electrochemistry"},
-    auto_recycle = false,
-    
-},
-{
-    type = "recipe",
     name = "solid-fuel-from-nitrogen",
     enabled = false,
     subgroup = "nitric-acid-and-nitrogen",
@@ -191,7 +218,7 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "nitrogen",   amount = 25},
-        {type = "item", name = "sulfur", amount = 2},
+        {type = "item", name = "vaterite", amount = 2},
     },
     results = {
         {type = "item", name = "solid-fuel", amount = 2}
@@ -321,28 +348,6 @@ data:extend{
         tertiary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
         quaternary = {r = 0.69, g = 0.65, b = 0.49, a = 1.000},
     }
-},
-{
-    type = "recipe",
-    name = "vaterite-processing",
-    enabled = false,
-    subgroup = "paracelsin-processes",
-    icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-processing.png",
-    icon_size = 64,
-    order = "k",
-    energy_required = 1.5,
-    ingredients = {
-        {type = "fluid", name = "water",   amount = 20},
-        {type = "item", name = "vaterite",       amount = 3},
-    },
-    results = {
-        {type = "item", name = "calcite", amount = 1},
-        {type = "item", name = "carbon", amount = 2},
-    },
-    allow_productivity = true,
-    categories = {"chemistry"},
-    auto_recycle = true,
-    
 },
 {
     type = "recipe",
@@ -490,7 +495,7 @@ data:extend{
         {type = "item", name = "zinc-solder",   amount = 2},
         {type = "item", name = "iron-gear-wheel",   amount = 5},
         {type = "item", name = "copper-cable",   amount = 10},
-        {type = "fluid", name = "nitric-acid",   amount = 20},
+        {type = "fluid", name = "fluorine",   amount = 20},
     },
     results = {
         {type = "item", name = "electric-coil", amount = 1},
@@ -562,33 +567,12 @@ data:extend{
     allow_productivity = true,
     categories = {"metallurgy"},
     auto_recycle = false,
-    
-},
-{
-    type = "recipe",
-    name = "vaterite-formation",
-    enabled = false,
-    icon = "__Paracelsin-Graphics__/graphics/icons/vaterite-formation.png",
-    icon_size = 64,
-    energy_required = 5,
-    ingredients = {
-        {type = "item", name = "stone",   amount = 10},
-        {type = "item", name = "vaterite", amount = 1},
-        {type = "fluid", name = "nitrogen",   amount = 20},
-    },
-    results = {
-        {type = "item", name = "vaterite", amount_min = 1, amount_max = 10,},
-    },
-    allow_productivity = true,
-    categories = {"electrochemistry"},
-    auto_recycle = true,
-    
-    surface_conditions = {{property = "pressure", min = 5300, max = 5300}},
 },
 {
     type = "recipe",
     name = "concrete-from-calcium-sulfate",
     enabled = false,
+    subgroup = "paracelsin-processes",
     icon = "__Paracelsin-Graphics__/graphics/icons/concrete-from-calcium-sulfate.png",
     icon_size = 64,
     energy_required = 10,

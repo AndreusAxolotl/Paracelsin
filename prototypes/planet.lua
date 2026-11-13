@@ -25,15 +25,15 @@ data:extend(
   },
   {
     type = "autoplace-control",
-    name = "vaterite",
-    localised_name = {"", "[entity=vaterite] ", {"entity-name.vaterite"}},
+    name = "calcium_crystals",
+    localised_name = {"", "[entity=calcium-crystals] ", {"entity-name.calcium-crystals"}},
     richness = true,
     order = "z-c",
     category = "resource"
   },
   {
     type = "autoplace-control",
-    name = "water_cryovolcano",
+    name = "cryovolcanic_vent",
     localised_name = {"", "[entity=cryovolcanic-vent] ", {"entity-name.cryovolcanic-vent"}},
     richness = true,
     order = "z-d",
@@ -77,42 +77,42 @@ data:extend(
   },
     {
     type = "noise-expression",
-    name = "paracelsin_starting_water_cryovolcano",
+    name = "paracelsin_starting_cryovolcanic_vent",
     expression = "starting_spot_at_angle{angle = aquilo_angle, distance = 40, radius = aquilo_spot_size * 0.8, x_distortion = 0, y_distortion = 0}"
   },
   {
     type = "noise-expression",
-    name = "paracelsin_water_cryovolcano_spots",
+    name = "paracelsin_cryovolcanic_vent_spots",
     expression = "aquilo_spot_noise{seed = 567,\z
                                     count = 4,\z
                                     skip_offset = 0,\z
-                                    region_size = 600 + 400 / control:water_cryovolcano:frequency,\z
+                                    region_size = 600 + 400 / control:cryovolcanic_vent:frequency,\z
                                     density = 1,\z
-                                    radius = aquilo_spot_size * sqrt(control:water_cryovolcano:size),\z
+                                    radius = aquilo_spot_size * sqrt(control:cryovolcanic_vent:size),\z
                                     favorability = 1}"
   },
   {
     type = "noise-expression",
-    name = "paracelsin_water_cryovolcano_probability",
-    expression = "(control:water_cryovolcano:size > 0)\z
-                  * (max(paracelsin_starting_water_cryovolcano * 0.02,\z
-                         min(aquilo_starting_mask, paracelsin_water_cryovolcano_spots) * 0.015))"
+    name = "paracelsin_cryovolcanic_vent_probability",
+    expression = "(control:cryovolcanic_vent:size > 0)\z
+                  * (max(paracelsin_starting_cryovolcanic_vent * 0.02,\z
+                         min(aquilo_starting_mask, paracelsin_cryovolcanic_vent_spots) * 0.015))"
   },
   {
     type = "noise-expression",
-    name = "paracelsin_water_cryovolcano_richness",
-    expression = "max(paracelsin_starting_water_cryovolcano * 1800000,\z
-                      paracelsin_water_cryovolcano_spots * 1440000) * control:water_cryovolcano:richness"
+    name = "paracelsin_cryovolcanic_vent_richness",
+    expression = "max(paracelsin_starting_cryovolcanic_vent * 1800000,\z
+                      paracelsin_cryovolcanic_vent_spots * 1440000) * control:cryovolcanic_vent:richness"
   },
  {
     type = "noise-expression",
-    name = "paracelsin_vaterite_richness",
+    name = "paracelsin_calcium_crystals_richness",
     expression = "4000 * max(starting, (gleba_simple_spot(1000, 6 * size ^ 0.5, 80 / frequency ^ 0.5, gleba_highland) * max(gleba_highland, gleba_midland_aux_2)*(sqrt(x*x + y*y)/20))) * richness / size",
     local_expressions =
     {
-      richness = "control:vaterite:richness",
-      frequency = "control:vaterite:frequency",
-      size = "control:vaterite:size",
+      richness = "control:calcium_crystals:richness",
+      frequency = "control:calcium_crystals:frequency",
+      size = "control:calcium_crystals:size",
       starting = "starting_spot_at_angle{ angle = gleba_starting_angle + 85 * gleba_starting_direction,\z
                                           distance = 80 * gleba_starting_area_multiplier,\z
                                           radius = 7 * size ^ 0.5,\z
@@ -122,8 +122,8 @@ data:extend(
   },
   {
     type = "noise-expression",
-    name = "paracelsin_vaterite_probability",
-    expression = "(control:vaterite:size > 0) * (paracelsin_vaterite_richness > 1)"
+    name = "paracelsin_calcium_crystals_probability",
+    expression = "(control:calcium_crystals:size > 0) * (paracelsin_calcium_crystals_richness > 1)"
   },
   {
     type = "noise-expression",
@@ -198,10 +198,10 @@ planet_map_gen.paracelsin = function()
       ["entity:sphalerite:richness"] = "paracelsin_sphalerite_richness",
       ["entity:tetrahedrite:probability"] = "paracelsin_tetrahedrite_probability",
       ["entity:tetrahedrite:richness"] = "paracelsin_tetrahedrite_richness",
-      ["entity:vaterite:probability"] = "paracelsin_vaterite_probability",
-      ["entity:vaterite:richness"] = "paracelsin_vaterite_richness",
-      ["entity:cryovolcanic-vent:probability"] = "paracelsin_water_cryovolcano_probability",
-      ["entity:cryovolcanic-vent:richness"] = "paracelsin_water_cryovolcano_richness",
+      ["entity:calcium-crystals:probability"] = "paracelsin_calcium_crystals_probability",
+      ["entity:calcium-crystals:richness"] = "paracelsin_calcium_crystals_richness",
+      ["entity:cryovolcanic-vent:probability"] = "paracelsin_cryovolcanic_vent_probability",
+      ["entity:cryovolcanic-vent:richness"] = "paracelsin_cryovolcanic_vent_richness",
     },
     cliff_settings =
     {
@@ -212,9 +212,9 @@ planet_map_gen.paracelsin = function()
     autoplace_controls =
     {
       ["sphalerite"] = {},
-      ["water_cryovolcano"] = {},
+      ["cryovolcanic_vent"] = {},
       ["tetrahedrite"] = {},
-      ["vaterite"] = {},
+      ["calcium_crystals"] = {},
     },
     autoplace_settings =
     {
@@ -259,7 +259,7 @@ planet_map_gen.paracelsin = function()
       {
         settings =
         {
-          ["vaterite"] = {},
+          ["calcium-crystals"] = {},
           ["cryovolcanic-vent"] = {},
           ["sphalerite"] = {},
           ["tetrahedrite"] = {},

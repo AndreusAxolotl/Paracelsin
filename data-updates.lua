@@ -3,6 +3,17 @@ require "compat.galore"
 
 PlanetsLib.set_special_properties("paracelsin",{rocket_part_multiplier=2})
 
+if  mods["Muria"] then
+  data.raw.recipe["pressure-turbine"].ingredients = {
+    {type = "item", name = "iron-gear-wheel", amount = 15},
+        {type = "item", name = "engine-unit", amount = 2},
+        {type = "item", name = "lead-plate", amount = 5},
+        {type = "item", name = "copper-cable", amount = 10},
+  }
+table.insert(data.raw.recipe["mechanical-plant"].ingredients, {type = "item", name = "anti-corrosion-cladding",       amount = 5})
+table.insert(data.raw.recipe["electrochemical-plant"].ingredients, {type = "item", name = "anti-corrosion-cladding",       amount = 5})
+end
+
 data.raw.planet["paracelsin"].platform_surface_render_parameters =
 {
     shadow_opacity = 0.5,

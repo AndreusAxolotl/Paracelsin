@@ -1,8 +1,15 @@
-local prereq 
+local discreq 
 if not mods["Muria"] then 
-prereq = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction" }
+discreq = { "rocket-turret", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction",}
 else
-prereq = { "explosive-shotgun-shell", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction" }
+discreq = { "explosive-shotgun-shell", "advanced-asteroid-processing", "heating-tower", "asteroid-reprocessing", "electromagnetic-science-pack", "coal-liquefaction"}
+end
+
+local vateritestuff 
+if mods["Muria"] then 
+vateritestuff = { "planet-discovery-paracelsin" }
+else
+vateritestuff = { "vaterite-processing" }
 end
 
 data:extend {
@@ -20,7 +27,7 @@ data:extend {
         use_icon_overlay_constant = true
       },
     },
-    prerequisites = prereq,
+    prerequisites = discreq,
     unit =
     {
       count = 3000,
@@ -55,7 +62,7 @@ data:extend {
         recipe = "cryovolcanic-mixture-separation"
       },
     },
-    prerequisites = { "planet-discovery-paracelsin" },
+    prerequisites = vateritestuff,
     research_trigger =
     {
       type = "mine-entity",
@@ -81,35 +88,12 @@ data:extend {
         type = "unlock-recipe",
         recipe = "nitric-acid-plastic"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "lubricant-from-nitric-acid"
-      },
     },
-    prerequisites = { "planet-discovery-paracelsin" },
+    prerequisites = vateritestuff,
     research_trigger =
     {
       type = "mine-entity",
       entities = {"big-metallic-rock"}
-    }
-  },
-  {
-    type = "technology",
-    name = "vaterite-processing",
-    icon = "__Paracelsin-Graphics__/graphics/technology/vaterite-processing.png",
-    icon_size = 256,
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "vaterite-processing"
-      },
-    },
-    prerequisites = { "nitric-acid-handling", "pressure-power"},
-    research_trigger =
-    {
-      type = "mine-entity",
-      entities = {"vaterite"}
     }
   },
   {
@@ -136,7 +120,7 @@ data:extend {
         recipe = "solid-fuel-from-nitrogen"
       },
     },
-    prerequisites = { "vaterite-processing" },
+    prerequisites = { "nitric-acid-handling", "pressure-power", "fluorite-processing"},
     research_trigger =
     {
       type = "mine-entity",
@@ -167,7 +151,7 @@ data:extend {
         recipe = "solid-fuel-from-nitrogen"
       },
     },
-    prerequisites = { "vaterite-processing" },
+    prerequisites = { "nitric-acid-handling", "pressure-power", "fluorite-processing"},
     research_trigger =
     {
       type = "mine-entity",
@@ -287,37 +271,6 @@ data:extend {
       item = "electric-coil",
       count = 100
     },
-  },
-  {
-    type = "technology",
-    name = "vaterite-processing-productivity",
-    icons = util.technology_icon_constant_recipe_productivity("__Paracelsin-Graphics__/graphics/technology/vaterite-processing-prod.png"),
-
-    effects =
-    {
-      {
-        type = "change-recipe-productivity",
-        recipe = "vaterite-processing",
-        change = 0.1
-      },
-    },
-    prerequisites = { "galvanization-science-pack" },
-    unit =
-    {
-      count_formula = "1.5^L*500",      
-      ingredients =
-      {
-        { "automation-science-pack",               1 },
-        { "logistic-science-pack",                 1 },
-        { "chemical-science-pack",                 1 },
-        { "production-science-pack",               1 },
-        { "space-science-pack",                    1 },
-        { "galvanization-science-pack", 1 }
-      },
-      time = 60
-    },
-    max_level = "infinite",
-    upgrade = true
   },
   {
         type = "technology",
@@ -538,18 +491,18 @@ data:extend {
   },
   {
     type = "technology",
-    name = "vaterite-formation",
-    icon = "__Paracelsin-Graphics__/graphics/technology/vaterite-formation.png",
+    name = "advanced-cryovolcanic-mixture-separation",
+    icon = "__Paracelsin-Graphics__/graphics/technology/advanced-cryovolcanic-mixture-separation.png",
     icon_size = 256,
 
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "vaterite-formation"
+        recipe = "advanced-cryovolcanic-mixture-separation"
       }, 
     },
-    prerequisites = { "galvanization-science-pack"},
+    prerequisites = { "galvanization-science-pack", "fluorite-processing"},
     unit =
     {
       count = 1000,
@@ -663,6 +616,7 @@ add_science_pack("railgun-shooting-speed-1", { "galvanization-science-pack", 1 }
 add_science_pack("railgun-damage-1", { "galvanization-science-pack", 1 })
 add_tech_prerequisites("quantum-processor", "galvanization-science-pack")
 end
+
 add_tech_effect("plastic-bar-productivity",
   { type = "change-recipe-productivity", recipe = "nitric-acid-plastic", change = 0.1 })
 add_tech_effect("rocket-fuel-productivity",
@@ -671,6 +625,12 @@ if settings.startup["paracelsin-galvanized-promethium"].value then
 add_tech_prerequisites("promethium-science-pack", "galvanization-science-pack")
 add_science_pack("promethium-science-pack", { "galvanization-science-pack", 1 })
 add_science_pack("research-productivity", { "galvanization-science-pack", 1 })
+end
+
+add_tech_effect("quantum-processor",{ type = "unlock-recipe", recipe = "ammonia"})
+
+if mods["Muria"] then
+  add_science_pack("planet-discovery-paracelsin", { "acidworking-science-pack", 1 })
 end
 if mods["quality"] then
 if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
