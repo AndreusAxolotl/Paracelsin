@@ -5,7 +5,7 @@ data:extend(
     name = "visit-paracelsin",
     order = "a[progress]-g[visit-planet]-q[paracelsin]",
     surface = "paracelsin",
-    icon = "__Paracelsin-Graphics__/graphics/achievements/visit-muria.png",
+    icon = "__Paracelsin-Graphics__/graphics/achievements/visit-paracelsin.png",
     icon_size = 128,
   },
   {
