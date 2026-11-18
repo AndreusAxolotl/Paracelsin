@@ -1,3 +1,19 @@
+require "prototypes.items"
+require "prototypes.machines"
+require "prototypes.tiles"
+require "prototypes.asteroid-spawn-definitions"
+require "prototypes.planet"
+require "prototypes.ambient-sounds"
+require "prototypes.recipes"
+require "prototypes.resources"
+require "prototypes.technology"
+require "prototypes.zinc-pipes"
+require "prototypes.tips-and-tricks"
+require "prototypes.aqua-regia"
+require "prototypes.achievements"
+
+require "compat.canal-excavator"
+
 table.insert(data.raw.lab["lab"].inputs, "galvanization-science-pack")
 table.insert(data.raw.lab["biolab"].inputs, "galvanization-science-pack")
 
@@ -11,6 +27,22 @@ main_menu_simulations.paracelsin_cryovolcanoes = paracelsin_menu_simulations.par
 main_menu_simulations.paracelsin_desolation = paracelsin_menu_simulations.paracelsin_desolation
 main_menu_simulations.paracelsin_zinc = paracelsin_menu_simulations.paracelsin_zinc
 main_menu_simulations.paracelsin_nitric = paracelsin_menu_simulations.paracelsin_nitric
+
+if settings.startup["PlanetsLib-enable-oxygen"].value == true then
+  data.raw.planet["paracelsin"].surface_properties.oxygen = 1
+end
+
+if settings.startup["PlanetsLib-enable-nitrogen"].value == true then
+  data.raw.planet["paracelsin"].surface_properties.nitrogen = 90
+end
+
+if settings.startup["PlanetsLib-enable-carbon-dioxide"].value == true then
+  data.raw.planet["paracelsin"].surface_properties["carbon-dioxide"] = 0.001
+end
+
+if settings.startup["PlanetsLib-enable-argon"].value == true then
+  data.raw.planet["paracelsin"].surface_properties.argon = 0
+end
 
 local function is_in_table(table_, value)
   for _, item in pairs(table_) do
@@ -164,19 +196,3 @@ for _, entity in pairs(data.raw.character) do
 end
 
 add_player_crafting_categories({"hand-crafting"})
-
-require "prototypes.items"
-require "prototypes.machines"
-require "prototypes.tiles"
-require "prototypes.asteroid-spawn-definitions"
-require "prototypes.planet"
-require "prototypes.ambient-sounds"
-require "prototypes.recipes"
-require "prototypes.resources"
-require "prototypes.technology"
-require "prototypes.zinc-pipes"
-require "prototypes.tips-and-tricks"
-require "prototypes.aqua-regia"
-require "prototypes.achievements"
-
-require "compat.canal-excavator"

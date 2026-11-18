@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.13.1
+Date: 2026-11-18
+  conditional:
+
+  Changes:
+    - Added values for the other PlanetsLib surface conditions.
+
+  Notes:
+    - Here's some missing info from the previous changelog:
+    - Removed vaterite formation recipe, as vaterite is now infinite in space.
+    - Added fluorine to electric coil, replaces nitric acid.
+---------------------------------------------------------------------------------------------------
 Version: 1.13.0
 Date: 2026-11-13
   boundless worlds of lead and zinc:
@@ -8,7 +20,6 @@ Date: 2026-11-13
     - The mod is now part of the Spelter Twins pack!
     - Carbonic asteroids no longer appear on route to Paracelsin, replaced by crystalline asteroids.
     - Crystalline asteroids contain vaterite and fluorite and split into 4 pieces instead of 3.
-    - Both the new soil and the old soil can now be placed over the natural soil of the opposite type, allowing you to fully remodulate the Murian surface if you so please.
     - Added achievements.
     - Muria integration is now more indepth, with Murian materials and technologies being required for Paracelsin things when both mods are installed.
     - Added various new things coming from Crystalline Lib, which also exist with Muria. These are all related to fluorine and hydrogen fluoride and range from petroleum alkylation to uranium hexafluoride.
